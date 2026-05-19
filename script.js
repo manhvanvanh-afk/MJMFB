@@ -121,7 +121,7 @@ function renderYesterdayWinners(bets) {
   list.innerHTML = bets.map((p, i) => {
     const medal = i < 3 ? medals[i] : `${i+1}.`;
     const isProfit = p.netProfit >= 0;
-    return `<div class="bet-card">
+    return `<div class="bet-card${i < 3 ? ' rank-' + (i+1) : ''}">
       <div class="bet-header">
         <span class="bet-medal">${medal}</span>
         <img class="bet-avatar" src="assets/avatars/${p.name}.jpg" alt="${p.name}"

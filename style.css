@@ -414,7 +414,46 @@ body {
   border-radius: var(--radius);
   padding: 16px 18px;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
+
+
+/* 前三名奖牌淡显背景 */
+.bet-card.rank-1::before,
+.bet-card.rank-2::before,
+.bet-card.rank-3::before {
+  position: absolute;
+  font-size: 96px;
+  opacity: 0.06;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 0;
+  line-height: 1;
+}
+.bet-card.rank-1::before { content: '🥇'; }
+.bet-card.rank-2::before { content: '🥈'; }
+.bet-card.rank-3::before { content: '🥉'; }
+
+/* 排行榜前三名奖牌背景（leaderboard-item 已有 overflow:hidden） */
+.leaderboard-item.top-1::before,
+.leaderboard-item.top-2::before,
+.leaderboard-item.top-3::before {
+  position: absolute;
+  font-size: 80px;
+  opacity: 0.06;
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 0;
+  line-height: 1;
+}
+.leaderboard-item.top-1::before { content: '🥇'; }
+.leaderboard-item.top-2::before { content: '🥈'; }
+.leaderboard-item.top-3::before { content: '🥉'; }
 
 .bet-card:hover {
   background: var(--bg-card-hover);
@@ -712,7 +751,23 @@ body {
   scrollbar-width: none;
 }
 
-.round-tabs::-webkit-scrollbar { display: none; }
+.round-tabs::-webkit-scrollbar {
+  height: 3px;
+}
+
+.round-tabs::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+}
+
+.round-tabs::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+
+.round-tabs::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
 
 .round-tab {
   flex-shrink: 0;

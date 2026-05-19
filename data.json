@@ -1259,7 +1259,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇰🇷韩国 2:1 🇨🇿捷克",
           "amount": 50,
           "result": "中",
           "payout": 100
@@ -1276,7 +1276,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 大小球",
+          "matches": "🇨🇭瑞士 0:1 🇧🇦波黑",
           "amount": 30,
           "result": "中",
           "payout": 90
@@ -1293,7 +1293,7 @@
         {
           "type": "单场",
           "detail": "猜大小球",
-          "matches": "比赛 胜平负",
+          "matches": "🇮🇶伊拉克 3:1 🇳🇴挪威",
           "amount": 100,
           "result": "中",
           "payout": 500
@@ -1310,7 +1310,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 胜平负",
+          "matches": "🇲🇽墨西哥 2:0 🇨🇿捷克",
           "amount": 80,
           "result": "中",
           "payout": 400
@@ -1327,7 +1327,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 大小球",
+          "matches": "🇨🇭瑞士 0:1 🇧🇦波黑",
           "amount": 80,
           "result": "未中",
           "payout": 0
@@ -1352,7 +1352,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 大小球",
+          "matches": "🇦🇷阿根廷 1:0 🇩🇿阿尔及利亚",
           "amount": 150,
           "result": "中",
           "payout": 750
@@ -1386,7 +1386,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 胜平负",
+          "matches": "🇲🇽墨西哥 2:2 🇿🇦南非",
           "amount": 100,
           "result": "中",
           "payout": 500
@@ -1403,7 +1403,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇳🇱荷兰 1:0 🇸🇪瑞典",
           "amount": 200,
           "result": "中",
           "payout": 400
@@ -1411,7 +1411,7 @@
         {
           "type": "单场",
           "detail": "猜大小球",
-          "matches": "比赛 准确比分",
+          "matches": "🇵🇹葡萄牙 4:1 🇨🇴哥伦比亚",
           "amount": 200,
           "result": "中",
           "payout": 1600
@@ -1428,7 +1428,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 准确比分",
+          "matches": "🇵🇾巴拉圭 1:0 🇦🇺澳大利亚",
           "amount": 30,
           "result": "中",
           "payout": 60
@@ -1436,7 +1436,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 胜平负",
+          "matches": "🇹🇷土耳其 0:1 🇵🇾巴拉圭",
           "amount": 30,
           "result": "中",
           "payout": 150
@@ -1453,7 +1453,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇯🇴约旦 2:0 🇩🇿阿尔及利亚",
           "amount": 50,
           "result": "中",
           "payout": 150
@@ -1461,7 +1461,7 @@
         {
           "type": "单场",
           "detail": "猜大小球",
-          "matches": "比赛 准确比分",
+          "matches": "🇰🇷韩国 2:1 🇨🇿捷克",
           "amount": 100,
           "result": "未中",
           "payout": 0
@@ -1478,7 +1478,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 胜平负",
+          "matches": "🇩🇪德国 2:1 🇨🇼库拉索",
           "amount": 150,
           "result": "未中",
           "payout": 0
@@ -1511,7 +1511,7 @@
         {
           "type": "单场",
           "detail": "猜大小球",
-          "matches": "比赛 胜平负",
+          "matches": "🇵🇹葡萄牙 1:0 🇨🇩刚果(金)",
           "amount": 80,
           "result": "未中",
           "payout": 0
@@ -1528,7 +1528,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 准确比分",
+          "matches": "🇯🇴约旦 2:0 🇩🇿阿尔及利亚",
           "amount": 30,
           "result": "中",
           "payout": 90
@@ -1545,7 +1545,7 @@
         {
           "type": "单场",
           "detail": "猜大小球",
-          "matches": "比赛 胜平负",
+          "matches": "🇵🇾巴拉圭 1:0 🇦🇺澳大利亚",
           "amount": 50,
           "result": "未中",
           "payout": 0
@@ -1562,7 +1562,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇹🇷土耳其 0:1 🇵🇾巴拉圭",
           "amount": 80,
           "result": "未中",
           "payout": 0
@@ -1587,7 +1587,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 胜平负",
+          "matches": "🇳🇿新西兰 2:2 🇪🇬埃及",
           "amount": 50,
           "result": "中",
           "payout": 100
@@ -1612,7 +1612,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 准确比分",
+          "matches": "🇩🇪德国 2:1 🇨🇼库拉索",
           "amount": 150,
           "result": "未中",
           "payout": 0
@@ -1629,7 +1629,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 大小球",
+          "matches": "🇲🇽墨西哥 2:1 🇰🇷韩国",
           "amount": 100,
           "result": "未中",
           "payout": 0
@@ -1646,7 +1646,7 @@
         {
           "type": "单场",
           "detail": "猜大小球",
-          "matches": "比赛 胜平负",
+          "matches": "🇨🇼库拉索 0:0 🇨🇮科特迪瓦",
           "amount": 100,
           "result": "中",
           "payout": 300
@@ -1654,7 +1654,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 大小球",
+          "matches": "🇮🇶伊拉克 3:1 🇳🇴挪威",
           "amount": 150,
           "result": "未中",
           "payout": 0
@@ -1696,7 +1696,7 @@
         {
           "type": "单场",
           "detail": "猜大小球",
-          "matches": "比赛 大小球",
+          "matches": "🇳🇱荷兰 1:0 🇸🇪瑞典",
           "amount": 50,
           "result": "未中",
           "payout": 0
@@ -1713,7 +1713,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇨🇦加拿大 0:0 🇧🇦波黑",
           "amount": 100,
           "result": "中",
           "payout": 200
@@ -1721,7 +1721,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 大小球",
+          "matches": "🇲🇽墨西哥 2:1 🇰🇷韩国",
           "amount": 100,
           "result": "中",
           "payout": 200
@@ -1755,7 +1755,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 胜平负",
+          "matches": "🇺🇸美国 3:1 🇦🇺澳大利亚",
           "amount": 50,
           "result": "未中",
           "payout": 0
@@ -1772,7 +1772,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 准确比分",
+          "matches": "🇸🇳塞内加尔 3:0 🇮🇶伊拉克",
           "amount": 100,
           "result": "中",
           "payout": 200
@@ -1797,7 +1797,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 准确比分",
+          "matches": "🇦🇷阿根廷 1:0 🇩🇿阿尔及利亚",
           "amount": 100,
           "result": "未中",
           "payout": 0
@@ -1814,7 +1814,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 准确比分",
+          "matches": "🇪🇸西班牙 1:0 🇨🇻佛得角",
           "amount": 30,
           "result": "未中",
           "payout": 0
@@ -1831,7 +1831,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇮🇶伊拉克 3:1 🇳🇴挪威",
           "amount": 200,
           "result": "未中",
           "payout": 0
@@ -1839,7 +1839,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇦🇺澳大利亚 4:1 🇹🇷土耳其",
           "amount": 50,
           "result": "中",
           "payout": 100
@@ -1856,7 +1856,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 大小球",
+          "matches": "🇺🇸美国 1:2 🇵🇾巴拉圭",
           "amount": 30,
           "result": "未中",
           "payout": 0
@@ -1924,7 +1924,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 胜平负",
+          "matches": "🇧🇷巴西 0:2 🇲🇦摩洛哥",
           "amount": 200,
           "result": "未中",
           "payout": 0
@@ -1932,7 +1932,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 准确比分",
+          "matches": "🇫🇷法国 4:1 🇮🇶伊拉克",
           "amount": 50,
           "result": "未中",
           "payout": 0
@@ -1949,7 +1949,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 大小球",
+          "matches": "🇨🇼库拉索 0:0 🇨🇮科特迪瓦",
           "amount": 30,
           "result": "未中",
           "payout": 0
@@ -1974,7 +1974,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 准确比分",
+          "matches": "🇨🇻佛得角 2:2 🇸🇦沙特",
           "amount": 50,
           "result": "中",
           "payout": 150
@@ -2016,7 +2016,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 胜平负",
+          "matches": "🇯🇵日本 0:1 🇸🇪瑞典",
           "amount": 150,
           "result": "中",
           "payout": 750
@@ -2033,7 +2033,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 准确比分",
+          "matches": "🇪🇸西班牙 1:2 🇸🇦沙特",
           "amount": 30,
           "result": "中",
           "payout": 240
@@ -2058,7 +2058,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇳🇱荷兰 1:0 🇹🇳突尼斯",
           "amount": 150,
           "result": "未中",
           "payout": 0
@@ -2100,7 +2100,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 胜平负",
+          "matches": "🇲🇽墨西哥 2:2 🇿🇦南非",
           "amount": 30,
           "result": "未中",
           "payout": 0
@@ -2134,7 +2134,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 胜平负",
+          "matches": "🇳🇴挪威 2:1 🇸🇳塞内加尔",
           "amount": 50,
           "result": "未中",
           "payout": 0
@@ -2151,7 +2151,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 胜平负",
+          "matches": "🇯🇴约旦 2:0 🇩🇿阿尔及利亚",
           "amount": 200,
           "result": "未中",
           "payout": 0
@@ -2168,7 +2168,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 准确比分",
+          "matches": "🇧🇪比利时 4:1 🇳🇿新西兰",
           "amount": 100,
           "result": "未中",
           "payout": 0
@@ -2176,7 +2176,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 胜平负",
+          "matches": "🇯🇵日本 0:1 🇸🇪瑞典",
           "amount": 100,
           "result": "中",
           "payout": 300
@@ -2193,7 +2193,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 准确比分",
+          "matches": "🇧🇪比利时 4:1 🇪🇬埃及",
           "amount": 80,
           "result": "中",
           "payout": 160
@@ -2210,7 +2210,7 @@
         {
           "type": "单场",
           "detail": "猜大小球",
-          "matches": "比赛 胜平负",
+          "matches": "🇪🇬埃及 2:0 🇮🇷伊朗",
           "amount": 80,
           "result": "未中",
           "payout": 0
@@ -2218,7 +2218,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 准确比分",
+          "matches": "🇪🇸西班牙 2:1 🇺🇾乌拉圭",
           "amount": 150,
           "result": "未中",
           "payout": 0
@@ -2277,7 +2277,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 大小球",
+          "matches": "🇺🇸美国 3:1 🇦🇺澳大利亚",
           "amount": 200,
           "result": "未中",
           "payout": 0
@@ -2285,7 +2285,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇨🇦加拿大 1:1 🇶🇦卡塔尔",
           "amount": 80,
           "result": "中",
           "payout": 400
@@ -2302,7 +2302,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇹🇳突尼斯 0:1 🇯🇵日本",
           "amount": 200,
           "result": "未中",
           "payout": 0
@@ -2319,7 +2319,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 准确比分",
+          "matches": "🇲🇦摩洛哥 2:2 🇭🇹海地",
           "amount": 150,
           "result": "未中",
           "payout": 0
@@ -2336,7 +2336,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 准确比分",
+          "matches": "🇨🇼库拉索 0:0 🇨🇮科特迪瓦",
           "amount": 150,
           "result": "未中",
           "payout": 0
@@ -2344,7 +2344,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇵🇹葡萄牙 4:1 🇨🇴哥伦比亚",
           "amount": 100,
           "result": "未中",
           "payout": 0
@@ -2361,7 +2361,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 大小球",
+          "matches": "🇦🇷阿根廷 1:0 🇯🇴约旦",
           "amount": 80,
           "result": "未中",
           "payout": 0
@@ -2369,7 +2369,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 胜平负",
+          "matches": "🇧🇪比利时 4:1 🇳🇿新西兰",
           "amount": 50,
           "result": "未中",
           "payout": 0
@@ -2386,7 +2386,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 大小球",
+          "matches": "🇿🇦南非 2:0 🇰🇷韩国",
           "amount": 30,
           "result": "中",
           "payout": 240
@@ -2403,7 +2403,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇨🇴哥伦比亚 2:0 🇨🇩刚果(金)",
           "amount": 200,
           "result": "未中",
           "payout": 0
@@ -2420,7 +2420,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 胜平负",
+          "matches": "🇲🇦摩洛哥 2:2 🇭🇹海地",
           "amount": 50,
           "result": "中",
           "payout": 100
@@ -2428,7 +2428,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇲🇽墨西哥 2:2 🇿🇦南非",
           "amount": 50,
           "result": "未中",
           "payout": 0
@@ -2470,7 +2470,7 @@
         {
           "type": "单场",
           "detail": "猜大小球",
-          "matches": "比赛 准确比分",
+          "matches": "🇬🇭加纳 1:1 🇵🇦巴拿马",
           "amount": 200,
           "result": "未中",
           "payout": 0
@@ -2478,7 +2478,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 准确比分",
+          "matches": "🇶🇦卡塔尔 1:1 🇨🇭瑞士",
           "amount": 200,
           "result": "未中",
           "payout": 0
@@ -2495,7 +2495,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 胜平负",
+          "matches": "🇦🇷阿根廷 1:0 🇯🇴约旦",
           "amount": 150,
           "result": "未中",
           "payout": 0
@@ -2503,7 +2503,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 胜平负",
+          "matches": "🇪🇸西班牙 1:2 🇸🇦沙特",
           "amount": 30,
           "result": "未中",
           "payout": 0
@@ -2520,7 +2520,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 胜平负",
+          "matches": "🏴󠁧󠁢󠁥󠁮󠁧󠁿英格兰 2:1 🇭🇷克罗地亚",
           "amount": 150,
           "result": "中",
           "payout": 450
@@ -2528,7 +2528,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 准确比分",
+          "matches": "🇹🇷土耳其 0:1 🇵🇾巴拉圭",
           "amount": 200,
           "result": "中",
           "payout": 1600
@@ -2545,7 +2545,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 准确比分",
+          "matches": "🇯🇴约旦 2:0 🇩🇿阿尔及利亚",
           "amount": 30,
           "result": "中",
           "payout": 240
@@ -2570,7 +2570,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇺🇸美国 3:0 🇹🇷土耳其",
           "amount": 100,
           "result": "未中",
           "payout": 0
@@ -2578,7 +2578,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 胜平负",
+          "matches": "🇹🇳突尼斯 0:1 🇯🇵日本",
           "amount": 50,
           "result": "中",
           "payout": 400
@@ -2595,7 +2595,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 胜平负",
+          "matches": "🇫🇷法国 1:1 🇸🇳塞内加尔",
           "amount": 200,
           "result": "中",
           "payout": 1600
@@ -2620,7 +2620,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 胜平负",
+          "matches": "🇨🇦加拿大 3:2 🇨🇭瑞士",
           "amount": 30,
           "result": "中",
           "payout": 150
@@ -2637,7 +2637,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 准确比分",
+          "matches": "🏴󠁧󠁢󠁥󠁮󠁧󠁿英格兰 1:0 🇬🇭加纳",
           "amount": 100,
           "result": "中",
           "payout": 800
@@ -2662,7 +2662,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 胜平负",
+          "matches": "🇨🇻佛得角 2:2 🇸🇦沙特",
           "amount": 200,
           "result": "中",
           "payout": 400
@@ -2679,7 +2679,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 准确比分",
+          "matches": "🇯🇴约旦 2:0 🇩🇿阿尔及利亚",
           "amount": 150,
           "result": "中",
           "payout": 450
@@ -2696,7 +2696,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 胜平负",
+          "matches": "🇧🇷巴西 0:2 🇲🇦摩洛哥",
           "amount": 200,
           "result": "中",
           "payout": 1000
@@ -2713,7 +2713,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 准确比分",
+          "matches": "🇳🇱荷兰 1:1 🇯🇵日本",
           "amount": 30,
           "result": "未中",
           "payout": 0
@@ -2730,7 +2730,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇭🇷克罗地亚 0:0 🇬🇭加纳",
           "amount": 30,
           "result": "未中",
           "payout": 0
@@ -2738,7 +2738,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 大小球",
+          "matches": "🇮🇶伊拉克 3:1 🇳🇴挪威",
           "amount": 200,
           "result": "未中",
           "payout": 0
@@ -2772,7 +2772,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 胜平负",
+          "matches": "🇪🇨厄瓜多尔 1:1 🇨🇼库拉索",
           "amount": 100,
           "result": "未中",
           "payout": 0
@@ -2789,7 +2789,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇨🇦加拿大 1:1 🇶🇦卡塔尔",
           "amount": 200,
           "result": "中",
           "payout": 600
@@ -2797,7 +2797,7 @@
         {
           "type": "单场",
           "detail": "猜大小球",
-          "matches": "比赛 准确比分",
+          "matches": "🇵🇹葡萄牙 3:1 🇺🇿乌兹别克斯坦",
           "amount": 150,
           "result": "未中",
           "payout": 0
@@ -2814,7 +2814,7 @@
         {
           "type": "单场",
           "detail": "猜胜负",
-          "matches": "比赛 胜平负",
+          "matches": "🇧🇪比利时 1:1 🇮🇷伊朗",
           "amount": 50,
           "result": "未中",
           "payout": 0
@@ -2822,7 +2822,7 @@
         {
           "type": "单场",
           "detail": "猜比分",
-          "matches": "比赛 大小球",
+          "matches": "🇵🇦巴拿马 1:0 🇭🇷克罗地亚",
           "amount": 50,
           "result": "未中",
           "payout": 0
