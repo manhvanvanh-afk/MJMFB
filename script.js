@@ -67,6 +67,7 @@ async function loadData() {
     renderAIComments(data.aiComments);
     renderMVP(data.mvp);
     renderFullSchedule(data.schedule);
+    setupPlayerModal(data);
 
     document.getElementById('loading').classList.add('hidden');
   } catch (e) {
@@ -97,9 +98,12 @@ function renderMatchesByDate(containerId, labelId, schedule, today, mode) {
     const hf = getFlag(m.home), af = getFlag(m.away);
     const hasScore = m.score && m.score !== '-';
     return `<div class="match-card">
-      <span class="match-team home">${hf} ${m.home}</span>
-      <span class="match-score ${!hasScore?'pending':''}">${m.score||'-'}</span>
-      <span class="match-team away">${af} ${m.away}</span>
+      <div class="match-main">
+        <span class="match-team home">${hf} ${m.home}</span>
+        <span class="match-score ${!hasScore?'pending':''}">${m.score||'-'}</span>
+        <span class="match-team away">${af} ${m.away}</span>
+      </div>
+      ${m.time ? `<div class="match-time-below">⏰ ${m.time}</div>` : ''}
     </div>`;
   }).join('');
 }
@@ -291,10 +295,12 @@ function renderFullSchedule(schedule) {
             const hasScore = m.score && m.score !== '-';
             const groupLabel = m.group ? ` <span class="match-group">${m.group}组</span>` : '';
             return `<div class="match-card">
-              <span class="match-team home">${hf} ${m.home}</span>
-              <span class="match-time-tag">${m.time || ''}</span>
-              <span class="match-score ${!hasScore?'pending':''}">${m.score||'-'}</span>
-              <span class="match-team away">${af} ${m.away}</span>
+              <div class="match-main">
+                <span class="match-team home">${hf} ${m.home}</span>
+                <span class="match-score ${!hasScore?'pending':''}">${m.score||'-'}</span>
+                <span class="match-team away">${af} ${m.away}</span>
+              </div>
+              ${m.time ? `<div class="match-time-below">⏰ ${m.time}</div>` : ''}
             </div>`;
           }).join('')}
         </div>`;
@@ -322,4 +328,78 @@ function showError(msg) {
   document.getElementById('errorMessage').textContent = msg;
   toast.classList.add('show');
   setTimeout(() => toast.classList.remove('show'), 5000);
+}
+
+// ============================================
+// 排行榜点击弹窗
+// ============================================
+function setupPlayerModal(data) {
+  const board = document.getElementById('leaderboard');
+  const overlay = document.getElementById('modalOverlay');
+  const title = document.getElementById('modalTitle');
+  const body = document.getElementById('modalBody');
+  const close = document.getElementById('modalClose');
+
+  function closeModal() {
+    overlay.classList.remove('active');
+  }
+
+  close.addEventListener('click', closeModal);
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  board.addEventListener('click', (e) => {
+    const item = e.target.closest('.leaderboard-item');
+    if (!item) return;
+
+    const nameEl = item.querySelector('.leaderboard-name');
+    if (!nameEl) return;
+    const name = nameEl.textContent;
+
+    const history = (data.betHistory || []).filter(h => h.name === name);
+    title.textContent = name + ' 的投注记录';
+
+    if (history.length === 0) {
+      body.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:30px;">暂无投注记录</div>';
+    } else {
+      history.sort((a, b) => b.date.localeCompare(a.date));
+
+      body.innerHTML = history.map(h => {
+        const betsHtml = h.bets.map(b => {
+          const isWin = b.result === '中';
+          const emoji = b.type === '串关' ? '🎲' : '⚽';
+          const detail = b.type === '串关'
+            ? emoji + ' ' + b.detail + ' · ' + b.matches
+            : emoji + ' ' + b.matches + ' · ' + b.detail;
+          const result = isWin
+            ? (b.type === '串关' ? '✅ 全中 +' + b.payout : '✅ 中 +' + b.payout)
+            : '❌ 未中';
+          const color = isWin ? '#ff4444' : 'var(--green)';
+          return '<div class="modal-history-row">'
+            + '<span>' + detail + '</span>'
+            + '<span style="font-weight:600;color:' + color + '">' + result + '</span>'
+            + '</div>';
+        }).join('');
+
+        const profitColor = h.netProfit >= 0 ? '#ff4444' : 'var(--green)';
+        const profitSign = h.netProfit >= 0 ? '+' : '';
+
+        return '<div class="modal-history-item">'
+          + '<div class="modal-history-date">📅 ' + h.date + '</div>'
+          + betsHtml
+          + '<div class="modal-history-row" style="border-top:1px solid rgba(255,255,255,0.06);padding-top:8px;margin-top:4px;">'
+          + '<span style="font-weight:600;">合计</span>'
+          + '<span style="font-weight:700;color:' + profitColor + '">' + profitSign + h.netProfit + '</span>'
+          + '</div>'
+          + '</div>';
+      }).join('');
+    }
+
+    overlay.classList.add('active');
+  });
 }
