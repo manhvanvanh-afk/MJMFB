@@ -927,6 +927,14 @@ body {
   font-size: 12px;
   margin-top: 4px;
 }
+.footer-disclaimer {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  letter-spacing: 0.5px;
+}
 
 
 /* ============================================

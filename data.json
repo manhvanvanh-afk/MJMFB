@@ -1,2836 +1,1250 @@
 {
   "schedule": [
     {
-      "id": 1001,
-      "group": "A",
-      "matchday": 0,
-      "date": "2026-05-18",
-      "time": "19:30",
-      "home": "墨西哥",
-      "away": "韩国",
-      "score": "2:1"
-    },
-    {
-      "id": 1002,
-      "group": "B",
-      "matchday": 0,
-      "date": "2026-05-18",
-      "time": "21:00",
-      "home": "加拿大",
-      "away": "卡塔尔",
-      "score": "1:1"
-    },
-    {
-      "id": 1003,
-      "group": "C",
-      "matchday": 0,
-      "date": "2026-05-19",
-      "time": "19:30",
-      "home": "巴西",
-      "away": "摩洛哥",
-      "score": "0:2"
-    },
-    {
-      "id": 1004,
-      "group": "D",
-      "matchday": 0,
-      "date": "2026-05-19",
-      "time": "21:00",
-      "home": "美国",
-      "away": "澳大利亚",
-      "score": "1:0"
-    },
-    {
       "id": 1,
       "group": "A",
       "matchday": 1,
-      "date": "2026-06-11",
-      "time": "18:00",
+      "date": "2026-06-12",
+      "time": "03:00",
       "home": "墨西哥",
       "away": "南非",
-      "score": "2:2"
-    },
-    {
-      "id": 43,
-      "group": "H",
-      "matchday": 1,
-      "date": "2026-06-11",
-      "time": "18:00",
-      "home": "西班牙",
-      "away": "佛得角",
-      "score": "1:0"
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 2,
       "group": "A",
       "matchday": 1,
-      "date": "2026-06-11",
-      "time": "21:00",
+      "date": "2026-06-12",
+      "time": "10:00",
       "home": "韩国",
       "away": "捷克",
-      "score": "2:1"
-    },
-    {
-      "id": 44,
-      "group": "H",
-      "matchday": 1,
-      "date": "2026-06-11",
-      "time": "21:00",
-      "home": "沙特",
-      "away": "乌拉圭",
-      "score": "3:0"
-    },
-    {
-      "id": 7,
-      "group": "B",
-      "matchday": 1,
-      "date": "2026-06-12",
-      "time": "18:00",
-      "home": "加拿大",
-      "away": "波黑",
-      "score": "0:0"
-    },
-    {
-      "id": 49,
-      "group": "I",
-      "matchday": 1,
-      "date": "2026-06-12",
-      "time": "18:00",
-      "home": "法国",
-      "away": "塞内加尔",
-      "score": "1:1"
-    },
-    {
-      "id": 8,
-      "group": "B",
-      "matchday": 1,
-      "date": "2026-06-12",
-      "time": "21:00",
-      "home": "卡塔尔",
-      "away": "瑞士",
-      "score": "1:1"
-    },
-    {
-      "id": 50,
-      "group": "I",
-      "matchday": 1,
-      "date": "2026-06-12",
-      "time": "21:00",
-      "home": "伊拉克",
-      "away": "挪威",
-      "score": "3:1"
-    },
-    {
-      "id": 13,
-      "group": "C",
-      "matchday": 1,
-      "date": "2026-06-13",
-      "time": "18:00",
-      "home": "巴西",
-      "away": "摩洛哥",
-      "score": "3:0"
-    },
-    {
-      "id": 55,
-      "group": "J",
-      "matchday": 1,
-      "date": "2026-06-13",
-      "time": "18:00",
-      "home": "阿根廷",
-      "away": "阿尔及利亚",
-      "score": "1:0"
-    },
-    {
-      "id": 14,
-      "group": "C",
-      "matchday": 1,
-      "date": "2026-06-13",
-      "time": "21:00",
-      "home": "海地",
-      "away": "苏格兰",
-      "score": "2:2"
-    },
-    {
-      "id": 56,
-      "group": "J",
-      "matchday": 1,
-      "date": "2026-06-13",
-      "time": "21:00",
-      "home": "奥地利",
-      "away": "约旦",
-      "score": "3:0"
-    },
-    {
-      "id": 19,
-      "group": "D",
-      "matchday": 1,
-      "date": "2026-06-14",
-      "time": "18:00",
-      "home": "美国",
-      "away": "巴拉圭",
-      "score": "1:2"
-    },
-    {
-      "id": 61,
-      "group": "K",
-      "matchday": 1,
-      "date": "2026-06-14",
-      "time": "18:00",
-      "home": "葡萄牙",
-      "away": "刚果(金)",
-      "score": "1:0"
-    },
-    {
-      "id": 20,
-      "group": "D",
-      "matchday": 1,
-      "date": "2026-06-14",
-      "time": "21:00",
-      "home": "澳大利亚",
-      "away": "土耳其",
-      "score": "4:1"
-    },
-    {
-      "id": 62,
-      "group": "K",
-      "matchday": 1,
-      "date": "2026-06-14",
-      "time": "21:00",
-      "home": "乌兹别克斯坦",
-      "away": "哥伦比亚",
-      "score": "0:1"
-    },
-    {
-      "id": 25,
-      "group": "E",
-      "matchday": 1,
-      "date": "2026-06-15",
-      "time": "18:00",
-      "home": "德国",
-      "away": "库拉索",
-      "score": "2:1"
-    },
-    {
-      "id": 67,
-      "group": "L",
-      "matchday": 1,
-      "date": "2026-06-15",
-      "time": "18:00",
-      "home": "英格兰",
-      "away": "克罗地亚",
-      "score": "2:1"
-    },
-    {
-      "id": 26,
-      "group": "E",
-      "matchday": 1,
-      "date": "2026-06-15",
-      "time": "21:00",
-      "home": "科特迪瓦",
-      "away": "厄瓜多尔",
-      "score": "1:0"
-    },
-    {
-      "id": 68,
-      "group": "L",
-      "matchday": 1,
-      "date": "2026-06-15",
-      "time": "21:00",
-      "home": "加纳",
-      "away": "巴拿马",
-      "score": "1:1"
-    },
-    {
-      "id": 31,
-      "group": "F",
-      "matchday": 1,
-      "date": "2026-06-16",
-      "time": "18:00",
-      "home": "荷兰",
-      "away": "日本",
-      "score": "1:1"
-    },
-    {
-      "id": 32,
-      "group": "F",
-      "matchday": 1,
-      "date": "2026-06-16",
-      "time": "21:00",
-      "home": "瑞典",
-      "away": "突尼斯",
-      "score": "1:2"
-    },
-    {
-      "id": 37,
-      "group": "G",
-      "matchday": 1,
-      "date": "2026-06-17",
-      "time": "18:00",
-      "home": "比利时",
-      "away": "埃及",
-      "score": "4:1"
-    },
-    {
-      "id": 38,
-      "group": "G",
-      "matchday": 1,
-      "date": "2026-06-17",
-      "time": "21:00",
-      "home": "伊朗",
-      "away": "新西兰",
-      "score": "2:1"
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 3,
       "group": "A",
       "matchday": 2,
-      "date": "2026-06-18",
-      "time": "18:00",
-      "home": "墨西哥",
-      "away": "韩国",
-      "score": "1:2"
-    },
-    {
-      "id": 39,
-      "group": "G",
-      "matchday": 2,
-      "date": "2026-06-18",
-      "time": "18:00",
-      "home": "比利时",
-      "away": "伊朗",
-      "score": "1:1"
+      "date": "2026-06-13",
+      "time": "03:00",
+      "home": "加拿大",
+      "away": "波黑",
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 4,
       "group": "A",
       "matchday": 2,
-      "date": "2026-06-18",
-      "time": "21:00",
-      "home": "捷克",
-      "away": "南非",
-      "score": "3:0"
-    },
-    {
-      "id": 40,
-      "group": "G",
-      "matchday": 2,
-      "date": "2026-06-18",
-      "time": "21:00",
-      "home": "新西兰",
-      "away": "埃及",
-      "score": "2:2"
-    },
-    {
-      "id": 9,
-      "group": "B",
-      "matchday": 2,
-      "date": "2026-06-19",
-      "time": "18:00",
-      "home": "加拿大",
-      "away": "卡塔尔",
-      "score": "3:0"
-    },
-    {
-      "id": 45,
-      "group": "H",
-      "matchday": 2,
-      "date": "2026-06-19",
-      "time": "18:00",
-      "home": "西班牙",
-      "away": "沙特",
-      "score": "1:2"
-    },
-    {
-      "id": 10,
-      "group": "B",
-      "matchday": 2,
-      "date": "2026-06-19",
-      "time": "21:00",
-      "home": "瑞士",
-      "away": "波黑",
-      "score": "0:1"
-    },
-    {
-      "id": 46,
-      "group": "H",
-      "matchday": 2,
-      "date": "2026-06-19",
-      "time": "21:00",
-      "home": "乌拉圭",
-      "away": "佛得角",
-      "score": "1:1"
-    },
-    {
-      "id": 15,
-      "group": "C",
-      "matchday": 2,
-      "date": "2026-06-20",
-      "time": "18:00",
-      "home": "巴西",
-      "away": "海地",
-      "score": "3:2"
-    },
-    {
-      "id": 51,
-      "group": "I",
-      "matchday": 2,
-      "date": "2026-06-20",
-      "time": "18:00",
-      "home": "法国",
-      "away": "伊拉克",
-      "score": "4:1"
-    },
-    {
-      "id": 16,
-      "group": "C",
-      "matchday": 2,
-      "date": "2026-06-20",
-      "time": "21:00",
-      "home": "苏格兰",
-      "away": "摩洛哥",
-      "score": "0:0"
-    },
-    {
-      "id": 52,
-      "group": "I",
-      "matchday": 2,
-      "date": "2026-06-20",
-      "time": "21:00",
-      "home": "挪威",
-      "away": "塞内加尔",
-      "score": "2:1"
-    },
-    {
-      "id": 21,
-      "group": "D",
-      "matchday": 2,
-      "date": "2026-06-21",
-      "time": "18:00",
+      "date": "2026-06-13",
+      "time": "09:00",
       "home": "美国",
-      "away": "澳大利亚",
-      "score": "3:1"
-    },
-    {
-      "id": 57,
-      "group": "J",
-      "matchday": 2,
-      "date": "2026-06-21",
-      "time": "18:00",
-      "home": "阿根廷",
-      "away": "奥地利",
-      "score": "3:0"
-    },
-    {
-      "id": 22,
-      "group": "D",
-      "matchday": 2,
-      "date": "2026-06-21",
-      "time": "21:00",
-      "home": "土耳其",
       "away": "巴拉圭",
-      "score": "0:1"
-    },
-    {
-      "id": 58,
-      "group": "J",
-      "matchday": 2,
-      "date": "2026-06-21",
-      "time": "21:00",
-      "home": "约旦",
-      "away": "阿尔及利亚",
-      "score": "2:0"
-    },
-    {
-      "id": 27,
-      "group": "E",
-      "matchday": 2,
-      "date": "2026-06-22",
-      "time": "18:00",
-      "home": "德国",
-      "away": "科特迪瓦",
-      "score": "0:0"
-    },
-    {
-      "id": 63,
-      "group": "K",
-      "matchday": 2,
-      "date": "2026-06-22",
-      "time": "18:00",
-      "home": "葡萄牙",
-      "away": "乌兹别克斯坦",
-      "score": "3:1"
-    },
-    {
-      "id": 28,
-      "group": "E",
-      "matchday": 2,
-      "date": "2026-06-22",
-      "time": "21:00",
-      "home": "厄瓜多尔",
-      "away": "库拉索",
-      "score": "1:1"
-    },
-    {
-      "id": 64,
-      "group": "K",
-      "matchday": 2,
-      "date": "2026-06-22",
-      "time": "21:00",
-      "home": "哥伦比亚",
-      "away": "刚果(金)",
-      "score": "2:0"
-    },
-    {
-      "id": 33,
-      "group": "F",
-      "matchday": 2,
-      "date": "2026-06-23",
-      "time": "18:00",
-      "home": "荷兰",
-      "away": "瑞典",
-      "score": "1:0"
-    },
-    {
-      "id": 69,
-      "group": "L",
-      "matchday": 2,
-      "date": "2026-06-23",
-      "time": "18:00",
-      "home": "英格兰",
-      "away": "加纳",
-      "score": "1:0"
-    },
-    {
-      "id": 34,
-      "group": "F",
-      "matchday": 2,
-      "date": "2026-06-23",
-      "time": "21:00",
-      "home": "突尼斯",
-      "away": "日本",
-      "score": "0:1"
-    },
-    {
-      "id": 70,
-      "group": "L",
-      "matchday": 2,
-      "date": "2026-06-23",
-      "time": "21:00",
-      "home": "巴拿马",
-      "away": "克罗地亚",
-      "score": "1:0"
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 5,
       "group": "A",
       "matchday": 3,
-      "date": "2026-06-24",
-      "time": "18:00",
-      "home": "墨西哥",
-      "away": "捷克",
-      "score": "2:0"
+      "date": "2026-06-14",
+      "time": "03:00",
+      "home": "卡塔尔",
+      "away": "瑞士",
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 6,
       "group": "A",
       "matchday": 3,
-      "date": "2026-06-24",
-      "time": "18:00",
-      "home": "南非",
-      "away": "韩国",
-      "score": "2:0"
+      "date": "2026-06-14",
+      "time": "06:00",
+      "home": "巴西",
+      "away": "摩洛哥",
+      "score": "-",
+      "round": "group"
     },
     {
-      "id": 29,
-      "group": "E",
+      "id": 7,
+      "group": "B",
       "matchday": 3,
-      "date": "2026-06-24",
-      "time": "18:00",
+      "date": "2026-06-14",
+      "time": "09:00",
+      "home": "海地",
+      "away": "苏格兰",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 8,
+      "group": "B",
+      "matchday": 3,
+      "date": "2026-06-14",
+      "time": "12:00",
+      "home": "澳大利亚",
+      "away": "土耳其",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 9,
+      "group": "B",
+      "matchday": 4,
+      "date": "2026-06-15",
+      "time": "01:00",
       "home": "德国",
-      "away": "厄瓜多尔",
-      "score": "4:1"
+      "away": "库拉索",
+      "score": "-",
+      "round": "group"
     },
     {
-      "id": 30,
-      "group": "E",
-      "matchday": 3,
-      "date": "2026-06-24",
-      "time": "18:00",
-      "home": "库拉索",
-      "away": "科特迪瓦",
-      "score": "0:0"
-    },
-    {
-      "id": 53,
-      "group": "I",
-      "matchday": 3,
-      "date": "2026-06-24",
-      "time": "18:00",
-      "home": "法国",
-      "away": "挪威",
-      "score": "2:1"
-    },
-    {
-      "id": 54,
-      "group": "I",
-      "matchday": 3,
-      "date": "2026-06-24",
-      "time": "18:00",
-      "home": "塞内加尔",
-      "away": "伊拉克",
-      "score": "3:0"
+      "id": 10,
+      "group": "B",
+      "matchday": 4,
+      "date": "2026-06-15",
+      "time": "04:00",
+      "home": "荷兰",
+      "away": "日本",
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 11,
       "group": "B",
-      "matchday": 3,
-      "date": "2026-06-25",
-      "time": "18:00",
-      "home": "加拿大",
-      "away": "瑞士",
-      "score": "3:2"
+      "matchday": 4,
+      "date": "2026-06-15",
+      "time": "07:00",
+      "home": "科特迪瓦",
+      "away": "厄瓜多尔",
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 12,
       "group": "B",
-      "matchday": 3,
-      "date": "2026-06-25",
-      "time": "18:00",
-      "home": "波黑",
-      "away": "卡塔尔",
-      "score": "1:2"
-    },
-    {
-      "id": 35,
-      "group": "F",
-      "matchday": 3,
-      "date": "2026-06-25",
-      "time": "18:00",
-      "home": "荷兰",
+      "matchday": 4,
+      "date": "2026-06-15",
+      "time": "10:00",
+      "home": "瑞典",
       "away": "突尼斯",
-      "score": "1:0"
+      "score": "-",
+      "round": "group"
     },
     {
-      "id": 36,
-      "group": "F",
-      "matchday": 3,
-      "date": "2026-06-25",
-      "time": "18:00",
-      "home": "日本",
-      "away": "瑞典",
-      "score": "0:1"
+      "id": 13,
+      "group": "C",
+      "matchday": 5,
+      "date": "2026-06-16",
+      "time": "00:00",
+      "home": "西班牙",
+      "away": "佛得角",
+      "score": "-",
+      "round": "group"
     },
     {
-      "id": 59,
-      "group": "J",
-      "matchday": 3,
-      "date": "2026-06-25",
-      "time": "18:00",
-      "home": "阿根廷",
-      "away": "约旦",
-      "score": "1:0"
+      "id": 14,
+      "group": "C",
+      "matchday": 5,
+      "date": "2026-06-16",
+      "time": "03:00",
+      "home": "比利时",
+      "away": "埃及",
+      "score": "-",
+      "round": "group"
     },
     {
-      "id": 60,
-      "group": "J",
-      "matchday": 3,
-      "date": "2026-06-25",
-      "time": "18:00",
-      "home": "阿尔及利亚",
-      "away": "奥地利",
-      "score": "1:2"
+      "id": 15,
+      "group": "C",
+      "matchday": 5,
+      "date": "2026-06-16",
+      "time": "06:00",
+      "home": "沙特",
+      "away": "乌拉圭",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 16,
+      "group": "C",
+      "matchday": 5,
+      "date": "2026-06-16",
+      "time": "09:00",
+      "home": "伊朗",
+      "away": "新西兰",
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 17,
       "group": "C",
-      "matchday": 3,
-      "date": "2026-06-26",
-      "time": "18:00",
-      "home": "巴西",
-      "away": "苏格兰",
-      "score": "0:0"
+      "matchday": 6,
+      "date": "2026-06-17",
+      "time": "03:00",
+      "home": "法国",
+      "away": "塞内加尔",
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 18,
       "group": "C",
-      "matchday": 3,
-      "date": "2026-06-26",
-      "time": "18:00",
-      "home": "摩洛哥",
-      "away": "海地",
-      "score": "2:2"
+      "matchday": 6,
+      "date": "2026-06-17",
+      "time": "06:00",
+      "home": "伊拉克",
+      "away": "挪威",
+      "score": "-",
+      "round": "group"
     },
     {
-      "id": 41,
-      "group": "G",
-      "matchday": 3,
-      "date": "2026-06-26",
-      "time": "18:00",
-      "home": "比利时",
-      "away": "新西兰",
-      "score": "4:1"
+      "id": 19,
+      "group": "D",
+      "matchday": 6,
+      "date": "2026-06-17",
+      "time": "09:00",
+      "home": "阿根廷",
+      "away": "阿尔及利亚",
+      "score": "-",
+      "round": "group"
     },
     {
-      "id": 42,
-      "group": "G",
-      "matchday": 3,
-      "date": "2026-06-26",
-      "time": "18:00",
-      "home": "埃及",
-      "away": "伊朗",
-      "score": "2:0"
+      "id": 20,
+      "group": "D",
+      "matchday": 6,
+      "date": "2026-06-17",
+      "time": "12:00",
+      "home": "奥地利",
+      "away": "约旦",
+      "score": "-",
+      "round": "group"
     },
     {
-      "id": 65,
-      "group": "K",
-      "matchday": 3,
-      "date": "2026-06-26",
-      "time": "18:00",
+      "id": 21,
+      "group": "D",
+      "matchday": 7,
+      "date": "2026-06-18",
+      "time": "01:00",
       "home": "葡萄牙",
-      "away": "哥伦比亚",
-      "score": "4:1"
+      "away": "刚果(金)",
+      "score": "-",
+      "round": "group"
     },
     {
-      "id": 66,
-      "group": "K",
-      "matchday": 3,
-      "date": "2026-06-26",
-      "time": "18:00",
-      "home": "刚果(金)",
-      "away": "乌兹别克斯坦",
-      "score": "1:1"
+      "id": 22,
+      "group": "D",
+      "matchday": 7,
+      "date": "2026-06-18",
+      "time": "04:00",
+      "home": "英格兰",
+      "away": "克罗地亚",
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 23,
       "group": "D",
-      "matchday": 3,
-      "date": "2026-06-27",
-      "time": "18:00",
-      "home": "美国",
-      "away": "土耳其",
-      "score": "3:0"
+      "matchday": 7,
+      "date": "2026-06-18",
+      "time": "07:00",
+      "home": "加纳",
+      "away": "巴拿马",
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 24,
       "group": "D",
-      "matchday": 3,
-      "date": "2026-06-27",
-      "time": "18:00",
-      "home": "巴拉圭",
+      "matchday": 7,
+      "date": "2026-06-18",
+      "time": "10:00",
+      "home": "乌兹别克斯坦",
+      "away": "哥伦比亚",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 25,
+      "group": "E",
+      "matchday": 8,
+      "date": "2026-06-19",
+      "time": "00:00",
+      "home": "捷克",
+      "away": "南非",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 26,
+      "group": "E",
+      "matchday": 8,
+      "date": "2026-06-19",
+      "time": "03:00",
+      "home": "瑞士",
+      "away": "波黑",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 27,
+      "group": "E",
+      "matchday": 8,
+      "date": "2026-06-19",
+      "time": "06:00",
+      "home": "加拿大",
+      "away": "卡塔尔",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 28,
+      "group": "E",
+      "matchday": 8,
+      "date": "2026-06-19",
+      "time": "09:00",
+      "home": "墨西哥",
+      "away": "韩国",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 29,
+      "group": "E",
+      "matchday": 9,
+      "date": "2026-06-20",
+      "time": "03:00",
+      "home": "美国",
       "away": "澳大利亚",
-      "score": "1:0"
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 30,
+      "group": "E",
+      "matchday": 9,
+      "date": "2026-06-20",
+      "time": "06:00",
+      "home": "苏格兰",
+      "away": "摩洛哥",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 31,
+      "group": "F",
+      "matchday": 9,
+      "date": "2026-06-20",
+      "time": "08:30",
+      "home": "巴西",
+      "away": "海地",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 32,
+      "group": "F",
+      "matchday": 9,
+      "date": "2026-06-20",
+      "time": "11:00",
+      "home": "土耳其",
+      "away": "巴拉圭",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 33,
+      "group": "F",
+      "matchday": 10,
+      "date": "2026-06-21",
+      "time": "01:00",
+      "home": "荷兰",
+      "away": "瑞典",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 34,
+      "group": "F",
+      "matchday": 10,
+      "date": "2026-06-21",
+      "time": "04:00",
+      "home": "德国",
+      "away": "科特迪瓦",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 35,
+      "group": "F",
+      "matchday": 10,
+      "date": "2026-06-21",
+      "time": "08:00",
+      "home": "厄瓜多尔",
+      "away": "库拉索",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 36,
+      "group": "F",
+      "matchday": 10,
+      "date": "2026-06-21",
+      "time": "12:00",
+      "home": "突尼斯",
+      "away": "日本",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 37,
+      "group": "G",
+      "matchday": 11,
+      "date": "2026-06-22",
+      "time": "00:00",
+      "home": "西班牙",
+      "away": "沙特",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 38,
+      "group": "G",
+      "matchday": 11,
+      "date": "2026-06-22",
+      "time": "03:00",
+      "home": "比利时",
+      "away": "伊朗",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 39,
+      "group": "G",
+      "matchday": 11,
+      "date": "2026-06-22",
+      "time": "06:00",
+      "home": "乌拉圭",
+      "away": "佛得角",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 40,
+      "group": "G",
+      "matchday": 11,
+      "date": "2026-06-22",
+      "time": "09:00",
+      "home": "新西兰",
+      "away": "埃及",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 41,
+      "group": "G",
+      "matchday": 12,
+      "date": "2026-06-23",
+      "time": "01:00",
+      "home": "阿根廷",
+      "away": "奥地利",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 42,
+      "group": "G",
+      "matchday": 12,
+      "date": "2026-06-23",
+      "time": "05:00",
+      "home": "法国",
+      "away": "伊拉克",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 43,
+      "group": "H",
+      "matchday": 12,
+      "date": "2026-06-23",
+      "time": "08:00",
+      "home": "挪威",
+      "away": "塞内加尔",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 44,
+      "group": "H",
+      "matchday": 12,
+      "date": "2026-06-23",
+      "time": "11:00",
+      "home": "约旦",
+      "away": "阿尔及利亚",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 45,
+      "group": "H",
+      "matchday": 13,
+      "date": "2026-06-24",
+      "time": "01:00",
+      "home": "葡萄牙",
+      "away": "乌兹别克斯坦",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 46,
+      "group": "H",
+      "matchday": 13,
+      "date": "2026-06-24",
+      "time": "04:00",
+      "home": "英格兰",
+      "away": "加纳",
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 47,
       "group": "H",
-      "matchday": 3,
-      "date": "2026-06-27",
-      "time": "18:00",
-      "home": "西班牙",
-      "away": "乌拉圭",
-      "score": "2:1"
+      "matchday": 13,
+      "date": "2026-06-24",
+      "time": "07:00",
+      "home": "巴拿马",
+      "away": "克罗地亚",
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 48,
       "group": "H",
-      "matchday": 3,
+      "matchday": 13,
+      "date": "2026-06-24",
+      "time": "10:00",
+      "home": "哥伦比亚",
+      "away": "刚果(金)",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 49,
+      "group": "I",
+      "matchday": 14,
+      "date": "2026-06-25",
+      "time": "03:00",
+      "home": "波黑",
+      "away": "卡塔尔",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 50,
+      "group": "I",
+      "matchday": 14,
+      "date": "2026-06-25",
+      "time": "03:00",
+      "home": "瑞士",
+      "away": "加拿大",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 51,
+      "group": "I",
+      "matchday": 14,
+      "date": "2026-06-25",
+      "time": "06:00",
+      "home": "苏格兰",
+      "away": "巴西",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 52,
+      "group": "I",
+      "matchday": 14,
+      "date": "2026-06-25",
+      "time": "06:00",
+      "home": "摩洛哥",
+      "away": "海地",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 53,
+      "group": "I",
+      "matchday": 14,
+      "date": "2026-06-25",
+      "time": "09:00",
+      "home": "南非",
+      "away": "韩国",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 54,
+      "group": "I",
+      "matchday": 14,
+      "date": "2026-06-25",
+      "time": "09:00",
+      "home": "捷克",
+      "away": "墨西哥",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 55,
+      "group": "J",
+      "matchday": 15,
+      "date": "2026-06-26",
+      "time": "04:00",
+      "home": "库拉索",
+      "away": "科特迪瓦",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 56,
+      "group": "J",
+      "matchday": 15,
+      "date": "2026-06-26",
+      "time": "04:00",
+      "home": "厄瓜多尔",
+      "away": "德国",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 57,
+      "group": "J",
+      "matchday": 15,
+      "date": "2026-06-26",
+      "time": "07:00",
+      "home": "日本",
+      "away": "瑞典",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 58,
+      "group": "J",
+      "matchday": 15,
+      "date": "2026-06-26",
+      "time": "07:00",
+      "home": "突尼斯",
+      "away": "荷兰",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 59,
+      "group": "J",
+      "matchday": 15,
+      "date": "2026-06-26",
+      "time": "10:00",
+      "home": "土耳其",
+      "away": "美国",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 60,
+      "group": "J",
+      "matchday": 15,
+      "date": "2026-06-26",
+      "time": "10:00",
+      "home": "巴拉圭",
+      "away": "澳大利亚",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 61,
+      "group": "K",
+      "matchday": 16,
       "date": "2026-06-27",
-      "time": "18:00",
+      "time": "03:00",
+      "home": "塞内加尔",
+      "away": "伊拉克",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 62,
+      "group": "K",
+      "matchday": 16,
+      "date": "2026-06-27",
+      "time": "03:00",
+      "home": "挪威",
+      "away": "法国",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 63,
+      "group": "K",
+      "matchday": 16,
+      "date": "2026-06-27",
+      "time": "08:00",
       "home": "佛得角",
       "away": "沙特",
-      "score": "2:2"
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 64,
+      "group": "K",
+      "matchday": 16,
+      "date": "2026-06-27",
+      "time": "08:00",
+      "home": "乌拉圭",
+      "away": "西班牙",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 65,
+      "group": "K",
+      "matchday": 16,
+      "date": "2026-06-27",
+      "time": "11:00",
+      "home": "埃及",
+      "away": "伊朗",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 66,
+      "group": "K",
+      "matchday": 16,
+      "date": "2026-06-27",
+      "time": "11:00",
+      "home": "新西兰",
+      "away": "比利时",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 67,
+      "group": "L",
+      "matchday": 17,
+      "date": "2026-06-28",
+      "time": "05:00",
+      "home": "克罗地亚",
+      "away": "加纳",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 68,
+      "group": "L",
+      "matchday": 17,
+      "date": "2026-06-28",
+      "time": "05:00",
+      "home": "巴拿马",
+      "away": "英格兰",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 69,
+      "group": "L",
+      "matchday": 17,
+      "date": "2026-06-28",
+      "time": "07:30",
+      "home": "哥伦比亚",
+      "away": "葡萄牙",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 70,
+      "group": "L",
+      "matchday": 17,
+      "date": "2026-06-28",
+      "time": "07:30",
+      "home": "刚果(金)",
+      "away": "乌兹别克斯坦",
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 71,
       "group": "L",
-      "matchday": 3,
-      "date": "2026-06-27",
-      "time": "18:00",
-      "home": "英格兰",
-      "away": "巴拿马",
-      "score": "1:1"
+      "matchday": 17,
+      "date": "2026-06-28",
+      "time": "10:00",
+      "home": "阿尔及利亚",
+      "away": "奥地利",
+      "score": "-",
+      "round": "group"
     },
     {
       "id": 72,
       "group": "L",
-      "matchday": 3,
-      "date": "2026-06-27",
-      "time": "18:00",
-      "home": "克罗地亚",
-      "away": "加纳",
-      "score": "0:0"
+      "matchday": 17,
+      "date": "2026-06-28",
+      "time": "10:00",
+      "home": "约旦",
+      "away": "阿根廷",
+      "score": "-",
+      "round": "group"
+    },
+    {
+      "id": 73,
+      "group": "",
+      "matchday": 18,
+      "date": "2026-06-29",
+      "time": "03:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 74,
+      "group": "",
+      "matchday": 19,
+      "date": "2026-06-30",
+      "time": "01:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 75,
+      "group": "",
+      "matchday": 19,
+      "date": "2026-06-30",
+      "time": "04:30",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 76,
+      "group": "",
+      "matchday": 19,
+      "date": "2026-06-30",
+      "time": "09:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 77,
+      "group": "",
+      "matchday": 20,
+      "date": "2026-07-01",
+      "time": "01:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 78,
+      "group": "",
+      "matchday": 20,
+      "date": "2026-07-01",
+      "time": "05:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 79,
+      "group": "",
+      "matchday": 20,
+      "date": "2026-07-01",
+      "time": "09:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 80,
+      "group": "",
+      "matchday": 21,
+      "date": "2026-07-02",
+      "time": "00:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 81,
+      "group": "",
+      "matchday": 21,
+      "date": "2026-07-02",
+      "time": "04:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 82,
+      "group": "",
+      "matchday": 21,
+      "date": "2026-07-02",
+      "time": "08:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 83,
+      "group": "",
+      "matchday": 22,
+      "date": "2026-07-03",
+      "time": "03:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 84,
+      "group": "",
+      "matchday": 22,
+      "date": "2026-07-03",
+      "time": "07:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 85,
+      "group": "",
+      "matchday": 22,
+      "date": "2026-07-03",
+      "time": "11:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 86,
+      "group": "",
+      "matchday": 23,
+      "date": "2026-07-04",
+      "time": "02:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 87,
+      "group": "",
+      "matchday": 23,
+      "date": "2026-07-04",
+      "time": "06:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 88,
+      "group": "",
+      "matchday": 23,
+      "date": "2026-07-04",
+      "time": "09:30",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r32"
+    },
+    {
+      "id": 89,
+      "group": "",
+      "matchday": 24,
+      "date": "2026-07-05",
+      "time": "01:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r16"
+    },
+    {
+      "id": 90,
+      "group": "",
+      "matchday": 24,
+      "date": "2026-07-05",
+      "time": "05:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r16"
+    },
+    {
+      "id": 91,
+      "group": "",
+      "matchday": 25,
+      "date": "2026-07-06",
+      "time": "04:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r16"
+    },
+    {
+      "id": 92,
+      "group": "",
+      "matchday": 25,
+      "date": "2026-07-06",
+      "time": "08:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r16"
+    },
+    {
+      "id": 93,
+      "group": "",
+      "matchday": 26,
+      "date": "2026-07-07",
+      "time": "03:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r16"
+    },
+    {
+      "id": 94,
+      "group": "",
+      "matchday": 26,
+      "date": "2026-07-07",
+      "time": "08:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r16"
+    },
+    {
+      "id": 95,
+      "group": "",
+      "matchday": 27,
+      "date": "2026-07-08",
+      "time": "00:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r16"
+    },
+    {
+      "id": 96,
+      "group": "",
+      "matchday": 27,
+      "date": "2026-07-08",
+      "time": "04:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r16"
+    },
+    {
+      "id": 97,
+      "group": "",
+      "matchday": 28,
+      "date": "2026-07-10",
+      "time": "04:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r8"
+    },
+    {
+      "id": 98,
+      "group": "",
+      "matchday": 29,
+      "date": "2026-07-11",
+      "time": "03:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r8"
+    },
+    {
+      "id": 99,
+      "group": "",
+      "matchday": 30,
+      "date": "2026-07-12",
+      "time": "05:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r8"
+    },
+    {
+      "id": 100,
+      "group": "",
+      "matchday": 30,
+      "date": "2026-07-12",
+      "time": "09:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "r8"
+    },
+    {
+      "id": 101,
+      "group": "",
+      "matchday": 31,
+      "date": "2026-07-15",
+      "time": "03:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "semi"
+    },
+    {
+      "id": 102,
+      "group": "",
+      "matchday": 32,
+      "date": "2026-07-16",
+      "time": "03:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "semi"
+    },
+    {
+      "id": 103,
+      "group": "",
+      "matchday": 33,
+      "date": "2026-07-19",
+      "time": "05:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "thirdPlace"
+    },
+    {
+      "id": 104,
+      "group": "",
+      "matchday": 34,
+      "date": "2026-07-20",
+      "time": "03:00",
+      "home": "待定",
+      "away": "待定",
+      "score": "-",
+      "round": "final"
     }
   ],
   "leaderboard": [
     {
       "name": "凡强",
-      "score": 830,
-      "today": 320
+      "score": 0,
+      "today": 0
     },
     {
       "name": "佑仔",
-      "score": 620,
-      "today": 400
+      "score": 0,
+      "today": 0
     },
     {
       "name": "阿全",
-      "score": 1400,
-      "today": -350
+      "score": 0,
+      "today": 0
     },
     {
       "name": "瓜龙",
-      "score": -950,
-      "today": -380
+      "score": 0,
+      "today": 0
     },
     {
       "name": "阿福",
-      "score": 2650,
-      "today": 50
+      "score": 0,
+      "today": 0
     },
     {
       "name": "阿苍",
-      "score": 3050,
-      "today": -300
+      "score": 0,
+      "today": 0
     },
     {
       "name": "阿哲",
-      "score": -180,
-      "today": -30
+      "score": 0,
+      "today": 0
     },
     {
       "name": "俊杰",
-      "score": 9220,
-      "today": 9500
+      "score": 0,
+      "today": 0
     },
     {
       "name": "小明",
-      "score": -480,
-      "today": 100
+      "score": 0,
+      "today": 0
     },
     {
       "name": "总统",
-      "score": 1160,
-      "today": -250
+      "score": 0,
+      "today": 0
     },
     {
       "name": "月月",
-      "score": -780,
-      "today": -50
+      "score": 0,
+      "today": 0
     },
     {
       "name": "维敏",
-      "score": -250,
-      "today": -230
+      "score": 0,
+      "today": 0
     },
     {
       "name": "群少",
-      "score": 8020,
-      "today": -200
+      "score": 0,
+      "today": 0
     },
     {
       "name": "老色",
-      "score": -320,
-      "today": 210
+      "score": 0,
+      "today": 0
     },
     {
       "name": "老赖",
-      "score": -1000,
-      "today": -400
+      "score": 0,
+      "today": 0
     },
     {
       "name": "色霸",
-      "score": 1480,
-      "today": 250
+      "score": 0,
+      "today": 0
     },
     {
       "name": "钟董",
-      "score": 3720,
-      "today": 200
+      "score": 0,
+      "today": 0
     },
     {
       "name": "面包",
-      "score": 840,
-      "today": -230
+      "score": 0,
+      "today": 0
     },
     {
       "name": "小亮",
-      "score": -450,
-      "today": -100
+      "score": 0,
+      "today": 0
     }
   ],
-  "curseRanking": [
-    "阿哲 连错3天，反向明灯",
-    "小亮 10串1全错，精准避开所有正确选项",
-    "老色 押哪队哪队输，建议反买",
-    "色霸 猜比分永远差一球",
-    "老赖 连续5场猜大球出小球"
-  ],
-  "aiComments": [
-    "🎙️ 凡强 10串1全中，这是开挂了吧？建议尿检！",
-    "🎙️ 佑仔 8串1命中，老同学里的赌神",
-    "🎙️ 阿全 单场猜胜负小赚，稳健型选手",
-    "🎙️ 瓜龙 猜比分命中，建议去买彩票",
-    "🎙️ 阿哲 又又又又没中，建议改行当毒奶"
-  ],
-  "mvp": "🌟 凡强 · 10串1全中狂揽40万分，今日最佳！",
-  "yesterdayBets": [
-    {
-      "name": "俊杰",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "10串1",
-          "matches": "10串1 比赛串联",
-          "amount": 500,
-          "result": "中",
-          "payout": 10000
-        }
-      ],
-      "totalBet": 500,
-      "totalWon": 10000,
-      "netProfit": 9500
-    },
-    {
-      "name": "佑仔",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "比赛 胜平负",
-          "amount": 100,
-          "result": "中",
-          "payout": 500
-        }
-      ],
-      "totalBet": 100,
-      "totalWon": 500,
-      "netProfit": 400
-    },
-    {
-      "name": "凡强",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "比赛 胜平负",
-          "amount": 80,
-          "result": "中",
-          "payout": 400
-        }
-      ],
-      "totalBet": 80,
-      "totalWon": 400,
-      "netProfit": 320
-    },
-    {
-      "name": "色霸",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "比赛 大小球",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "比赛 胜平负",
-          "amount": 50,
-          "result": "中",
-          "payout": 400
-        }
-      ],
-      "totalBet": 150,
-      "totalWon": 400,
-      "netProfit": 250
-    },
-    {
-      "name": "老色",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "比赛 大小球",
-          "amount": 30,
-          "result": "中",
-          "payout": 240
-        }
-      ],
-      "totalBet": 30,
-      "totalWon": 240,
-      "netProfit": 210
-    },
-    {
-      "name": "钟董",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "比赛 胜平负",
-          "amount": 200,
-          "result": "中",
-          "payout": 400
-        }
-      ],
-      "totalBet": 200,
-      "totalWon": 400,
-      "netProfit": 200
-    },
-    {
-      "name": "小明",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "比赛 准确比分",
-          "amount": 50,
-          "result": "中",
-          "payout": 150
-        }
-      ],
-      "totalBet": 50,
-      "totalWon": 150,
-      "netProfit": 100
-    },
-    {
-      "name": "阿福",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜大小球",
-          "matches": "比赛 胜平负",
-          "amount": 100,
-          "result": "中",
-          "payout": 300
-        },
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "比赛 大小球",
-          "amount": 150,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 250,
-      "totalWon": 300,
-      "netProfit": 50
-    },
-    {
-      "name": "阿哲",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "比赛 准确比分",
-          "amount": 30,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 30,
-      "totalWon": 0,
-      "netProfit": -30
-    },
-    {
-      "name": "月月",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "比赛 胜平负",
-          "amount": 50,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 50,
-      "totalWon": 0,
-      "netProfit": -50
-    },
-    {
-      "name": "小亮",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "比赛 胜平负",
-          "amount": 50,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "比赛 大小球",
-          "amount": 50,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 100,
-      "totalWon": 0,
-      "netProfit": -100
-    },
-    {
-      "name": "群少",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "比赛 大小球",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 200,
-      "totalWon": 0,
-      "netProfit": -200
-    },
-    {
-      "name": "维敏",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜大小球",
-          "matches": "比赛 胜平负",
-          "amount": 80,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "比赛 准确比分",
-          "amount": 150,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 230,
-      "totalWon": 0,
-      "netProfit": -230
-    },
-    {
-      "name": "面包",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "比赛 大小球",
-          "amount": 30,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "比赛 大小球",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 230,
-      "totalWon": 0,
-      "netProfit": -230
-    },
-    {
-      "name": "总统",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "比赛 大小球",
-          "amount": 150,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "串关",
-          "detail": "8串1",
-          "matches": "8串1 比赛串联",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 250,
-      "totalWon": 0,
-      "netProfit": -250
-    },
-    {
-      "name": "阿苍",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "12串1",
-          "matches": "12串1 比赛串联",
-          "amount": 300,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 300,
-      "totalWon": 0,
-      "netProfit": -300
-    },
-    {
-      "name": "阿全",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "比赛 胜平负",
-          "amount": 150,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "串关",
-          "detail": "10串1",
-          "matches": "10串1 比赛串联",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 350,
-      "totalWon": 0,
-      "netProfit": -350
-    },
-    {
-      "name": "瓜龙",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "比赛 大小球",
-          "amount": 80,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "串关",
-          "detail": "5串1",
-          "matches": "5串1 比赛串联",
-          "amount": 300,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 380,
-      "totalWon": 0,
-      "netProfit": -380
-    },
-    {
-      "name": "老赖",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜大小球",
-          "matches": "比赛 准确比分",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "比赛 准确比分",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 400,
-      "totalWon": 0,
-      "netProfit": -400
-    }
-  ],
-  "betHistory": [
-    {
-      "date": "2026-05-18",
-      "name": "凡强",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇰🇷韩国 2:1 🇨🇿捷克",
-          "amount": 50,
-          "result": "中",
-          "payout": 100
-        }
-      ],
-      "totalBet": 50,
-      "totalWon": 100,
-      "netProfit": 50
-    },
-    {
-      "date": "2026-05-19",
-      "name": "凡强",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇨🇭瑞士 0:1 🇧🇦波黑",
-          "amount": 30,
-          "result": "中",
-          "payout": 90
-        }
-      ],
-      "totalBet": 30,
-      "totalWon": 90,
-      "netProfit": 60
-    },
-    {
-      "date": "2026-05-20",
-      "name": "凡强",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜大小球",
-          "matches": "🇮🇶伊拉克 3:1 🇳🇴挪威",
-          "amount": 100,
-          "result": "中",
-          "payout": 500
-        }
-      ],
-      "totalBet": 100,
-      "totalWon": 500,
-      "netProfit": 400
-    },
-    {
-      "date": "2026-05-21",
-      "name": "凡强",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇲🇽墨西哥 2:0 🇨🇿捷克",
-          "amount": 80,
-          "result": "中",
-          "payout": 400
-        }
-      ],
-      "totalBet": 80,
-      "totalWon": 400,
-      "netProfit": 320
-    },
-    {
-      "date": "2026-05-18",
-      "name": "佑仔",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇨🇭瑞士 0:1 🇧🇦波黑",
-          "amount": 80,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 80,
-      "totalWon": 0,
-      "netProfit": -80
-    },
-    {
-      "date": "2026-05-19",
-      "name": "佑仔",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "12串1",
-          "matches": "12串1 比赛串联",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇦🇷阿根廷 1:0 🇩🇿阿尔及利亚",
-          "amount": 150,
-          "result": "中",
-          "payout": 750
-        }
-      ],
-      "totalBet": 250,
-      "totalWon": 750,
-      "netProfit": 500
-    },
-    {
-      "date": "2026-05-20",
-      "name": "佑仔",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "8串1",
-          "matches": "8串1 比赛串联",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 200,
-      "totalWon": 0,
-      "netProfit": -200
-    },
-    {
-      "date": "2026-05-21",
-      "name": "佑仔",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇲🇽墨西哥 2:2 🇿🇦南非",
-          "amount": 100,
-          "result": "中",
-          "payout": 500
-        }
-      ],
-      "totalBet": 100,
-      "totalWon": 500,
-      "netProfit": 400
-    },
-    {
-      "date": "2026-05-18",
-      "name": "阿全",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇳🇱荷兰 1:0 🇸🇪瑞典",
-          "amount": 200,
-          "result": "中",
-          "payout": 400
-        },
-        {
-          "type": "单场",
-          "detail": "猜大小球",
-          "matches": "🇵🇹葡萄牙 4:1 🇨🇴哥伦比亚",
-          "amount": 200,
-          "result": "中",
-          "payout": 1600
-        }
-      ],
-      "totalBet": 400,
-      "totalWon": 2000,
-      "netProfit": 1600
-    },
-    {
-      "date": "2026-05-19",
-      "name": "阿全",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇵🇾巴拉圭 1:0 🇦🇺澳大利亚",
-          "amount": 30,
-          "result": "中",
-          "payout": 60
-        },
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇹🇷土耳其 0:1 🇵🇾巴拉圭",
-          "amount": 30,
-          "result": "中",
-          "payout": 150
-        }
-      ],
-      "totalBet": 60,
-      "totalWon": 210,
-      "netProfit": 150
-    },
-    {
-      "date": "2026-05-20",
-      "name": "阿全",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇯🇴约旦 2:0 🇩🇿阿尔及利亚",
-          "amount": 50,
-          "result": "中",
-          "payout": 150
-        },
-        {
-          "type": "单场",
-          "detail": "猜大小球",
-          "matches": "🇰🇷韩国 2:1 🇨🇿捷克",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 150,
-      "totalWon": 150,
-      "netProfit": 0
-    },
-    {
-      "date": "2026-05-21",
-      "name": "阿全",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇩🇪德国 2:1 🇨🇼库拉索",
-          "amount": 150,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "串关",
-          "detail": "10串1",
-          "matches": "10串1 比赛串联",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 350,
-      "totalWon": 0,
-      "netProfit": -350
-    },
-    {
-      "date": "2026-05-18",
-      "name": "瓜龙",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "12串1",
-          "matches": "12串1 比赛串联",
-          "amount": 500,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜大小球",
-          "matches": "🇵🇹葡萄牙 1:0 🇨🇩刚果(金)",
-          "amount": 80,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 580,
-      "totalWon": 0,
-      "netProfit": -580
-    },
-    {
-      "date": "2026-05-19",
-      "name": "瓜龙",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇯🇴约旦 2:0 🇩🇿阿尔及利亚",
-          "amount": 30,
-          "result": "中",
-          "payout": 90
-        }
-      ],
-      "totalBet": 30,
-      "totalWon": 90,
-      "netProfit": 60
-    },
-    {
-      "date": "2026-05-20",
-      "name": "瓜龙",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜大小球",
-          "matches": "🇵🇾巴拉圭 1:0 🇦🇺澳大利亚",
-          "amount": 50,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 50,
-      "totalWon": 0,
-      "netProfit": -50
-    },
-    {
-      "date": "2026-05-21",
-      "name": "瓜龙",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇹🇷土耳其 0:1 🇵🇾巴拉圭",
-          "amount": 80,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "串关",
-          "detail": "5串1",
-          "matches": "5串1 比赛串联",
-          "amount": 300,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 380,
-      "totalWon": 0,
-      "netProfit": -380
-    },
-    {
-      "date": "2026-05-18",
-      "name": "阿福",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇳🇿新西兰 2:2 🇪🇬埃及",
-          "amount": 50,
-          "result": "中",
-          "payout": 100
-        }
-      ],
-      "totalBet": 50,
-      "totalWon": 100,
-      "netProfit": 50
-    },
-    {
-      "date": "2026-05-19",
-      "name": "阿福",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "5串1",
-          "matches": "5串1 比赛串联",
-          "amount": 200,
-          "result": "中",
-          "payout": 3000
-        },
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇩🇪德国 2:1 🇨🇼库拉索",
-          "amount": 150,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 350,
-      "totalWon": 3000,
-      "netProfit": 2650
-    },
-    {
-      "date": "2026-05-20",
-      "name": "阿福",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇲🇽墨西哥 2:1 🇰🇷韩国",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 100,
-      "totalWon": 0,
-      "netProfit": -100
-    },
-    {
-      "date": "2026-05-21",
-      "name": "阿福",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜大小球",
-          "matches": "🇨🇼库拉索 0:0 🇨🇮科特迪瓦",
-          "amount": 100,
-          "result": "中",
-          "payout": 300
-        },
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇮🇶伊拉克 3:1 🇳🇴挪威",
-          "amount": 150,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 250,
-      "totalWon": 300,
-      "netProfit": 50
-    },
-    {
-      "date": "2026-05-18",
-      "name": "阿苍",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "8串1",
-          "matches": "8串1 比赛串联",
-          "amount": 100,
-          "result": "中",
-          "payout": 500
-        }
-      ],
-      "totalBet": 100,
-      "totalWon": 500,
-      "netProfit": 400
-    },
-    {
-      "date": "2026-05-19",
-      "name": "阿苍",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "5串1",
-          "matches": "5串1 比赛串联",
-          "amount": 200,
-          "result": "中",
-          "payout": 3000
-        },
-        {
-          "type": "单场",
-          "detail": "猜大小球",
-          "matches": "🇳🇱荷兰 1:0 🇸🇪瑞典",
-          "amount": 50,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 250,
-      "totalWon": 3000,
-      "netProfit": 2750
-    },
-    {
-      "date": "2026-05-20",
-      "name": "阿苍",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇨🇦加拿大 0:0 🇧🇦波黑",
-          "amount": 100,
-          "result": "中",
-          "payout": 200
-        },
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇲🇽墨西哥 2:1 🇰🇷韩国",
-          "amount": 100,
-          "result": "中",
-          "payout": 200
-        }
-      ],
-      "totalBet": 200,
-      "totalWon": 400,
-      "netProfit": 200
-    },
-    {
-      "date": "2026-05-21",
-      "name": "阿苍",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "12串1",
-          "matches": "12串1 比赛串联",
-          "amount": 300,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 300,
-      "totalWon": 0,
-      "netProfit": -300
-    },
-    {
-      "date": "2026-05-18",
-      "name": "阿哲",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇺🇸美国 3:1 🇦🇺澳大利亚",
-          "amount": 50,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 50,
-      "totalWon": 0,
-      "netProfit": -50
-    },
-    {
-      "date": "2026-05-19",
-      "name": "阿哲",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇸🇳塞内加尔 3:0 🇮🇶伊拉克",
-          "amount": 100,
-          "result": "中",
-          "payout": 200
-        },
-        {
-          "type": "串关",
-          "detail": "8串1",
-          "matches": "8串1 比赛串联",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 200,
-      "totalWon": 200,
-      "netProfit": 0
-    },
-    {
-      "date": "2026-05-20",
-      "name": "阿哲",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇦🇷阿根廷 1:0 🇩🇿阿尔及利亚",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 100,
-      "totalWon": 0,
-      "netProfit": -100
-    },
-    {
-      "date": "2026-05-21",
-      "name": "阿哲",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇪🇸西班牙 1:0 🇨🇻佛得角",
-          "amount": 30,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 30,
-      "totalWon": 0,
-      "netProfit": -30
-    },
-    {
-      "date": "2026-05-18",
-      "name": "俊杰",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇮🇶伊拉克 3:1 🇳🇴挪威",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇦🇺澳大利亚 4:1 🇹🇷土耳其",
-          "amount": 50,
-          "result": "中",
-          "payout": 100
-        }
-      ],
-      "totalBet": 250,
-      "totalWon": 100,
-      "netProfit": -150
-    },
-    {
-      "date": "2026-05-19",
-      "name": "俊杰",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇺🇸美国 1:2 🇵🇾巴拉圭",
-          "amount": 30,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 30,
-      "totalWon": 0,
-      "netProfit": -30
-    },
-    {
-      "date": "2026-05-20",
-      "name": "俊杰",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "5串1",
-          "matches": "5串1 比赛串联",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 100,
-      "totalWon": 0,
-      "netProfit": -100
-    },
-    {
-      "date": "2026-05-21",
-      "name": "俊杰",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "10串1",
-          "matches": "10串1 比赛串联",
-          "amount": 500,
-          "result": "中",
-          "payout": 10000
-        }
-      ],
-      "totalBet": 500,
-      "totalWon": 10000,
-      "netProfit": 9500
-    },
-    {
-      "date": "2026-05-18",
-      "name": "小明",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "5串1",
-          "matches": "5串1 比赛串联",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 100,
-      "totalWon": 0,
-      "netProfit": -100
-    },
-    {
-      "date": "2026-05-19",
-      "name": "小明",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇧🇷巴西 0:2 🇲🇦摩洛哥",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇫🇷法国 4:1 🇮🇶伊拉克",
-          "amount": 50,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 250,
-      "totalWon": 0,
-      "netProfit": -250
-    },
-    {
-      "date": "2026-05-20",
-      "name": "小明",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇨🇼库拉索 0:0 🇨🇮科特迪瓦",
-          "amount": 30,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "串关",
-          "detail": "8串1",
-          "matches": "8串1 比赛串联",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 230,
-      "totalWon": 0,
-      "netProfit": -230
-    },
-    {
-      "date": "2026-05-21",
-      "name": "小明",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇨🇻佛得角 2:2 🇸🇦沙特",
-          "amount": 50,
-          "result": "中",
-          "payout": 150
-        }
-      ],
-      "totalBet": 50,
-      "totalWon": 150,
-      "netProfit": 100
-    },
-    {
-      "date": "2026-05-18",
-      "name": "总统",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "5串1",
-          "matches": "5串1 比赛串联",
-          "amount": 300,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "串关",
-          "detail": "10串1",
-          "matches": "10串1 比赛串联",
-          "amount": 300,
-          "result": "中",
-          "payout": 1500
-        }
-      ],
-      "totalBet": 600,
-      "totalWon": 1500,
-      "netProfit": 900
-    },
-    {
-      "date": "2026-05-19",
-      "name": "总统",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇯🇵日本 0:1 🇸🇪瑞典",
-          "amount": 150,
-          "result": "中",
-          "payout": 750
-        }
-      ],
-      "totalBet": 150,
-      "totalWon": 750,
-      "netProfit": 600
-    },
-    {
-      "date": "2026-05-20",
-      "name": "总统",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇪🇸西班牙 1:2 🇸🇦沙特",
-          "amount": 30,
-          "result": "中",
-          "payout": 240
-        },
-        {
-          "type": "串关",
-          "detail": "8串1",
-          "matches": "8串1 比赛串联",
-          "amount": 300,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 330,
-      "totalWon": 240,
-      "netProfit": -90
-    },
-    {
-      "date": "2026-05-21",
-      "name": "总统",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇳🇱荷兰 1:0 🇹🇳突尼斯",
-          "amount": 150,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "串关",
-          "detail": "8串1",
-          "matches": "8串1 比赛串联",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 250,
-      "totalWon": 0,
-      "netProfit": -250
-    },
-    {
-      "date": "2026-05-18",
-      "name": "月月",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "6串1",
-          "matches": "6串1 比赛串联",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 200,
-      "totalWon": 0,
-      "netProfit": -200
-    },
-    {
-      "date": "2026-05-19",
-      "name": "月月",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇲🇽墨西哥 2:2 🇿🇦南非",
-          "amount": 30,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 30,
-      "totalWon": 0,
-      "netProfit": -30
-    },
-    {
-      "date": "2026-05-20",
-      "name": "月月",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "6串1",
-          "matches": "6串1 比赛串联",
-          "amount": 500,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 500,
-      "totalWon": 0,
-      "netProfit": -500
-    },
-    {
-      "date": "2026-05-21",
-      "name": "月月",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇳🇴挪威 2:1 🇸🇳塞内加尔",
-          "amount": 50,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 50,
-      "totalWon": 0,
-      "netProfit": -50
-    },
-    {
-      "date": "2026-05-18",
-      "name": "维敏",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇯🇴约旦 2:0 🇩🇿阿尔及利亚",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 200,
-      "totalWon": 0,
-      "netProfit": -200
-    },
-    {
-      "date": "2026-05-19",
-      "name": "维敏",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇧🇪比利时 4:1 🇳🇿新西兰",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇯🇵日本 0:1 🇸🇪瑞典",
-          "amount": 100,
-          "result": "中",
-          "payout": 300
-        }
-      ],
-      "totalBet": 200,
-      "totalWon": 300,
-      "netProfit": 100
-    },
-    {
-      "date": "2026-05-20",
-      "name": "维敏",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇧🇪比利时 4:1 🇪🇬埃及",
-          "amount": 80,
-          "result": "中",
-          "payout": 160
-        }
-      ],
-      "totalBet": 80,
-      "totalWon": 160,
-      "netProfit": 80
-    },
-    {
-      "date": "2026-05-21",
-      "name": "维敏",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜大小球",
-          "matches": "🇪🇬埃及 2:0 🇮🇷伊朗",
-          "amount": 80,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇪🇸西班牙 2:1 🇺🇾乌拉圭",
-          "amount": 150,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 230,
-      "totalWon": 0,
-      "netProfit": -230
-    },
-    {
-      "date": "2026-05-18",
-      "name": "群少",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "5串1",
-          "matches": "5串1 比赛串联",
-          "amount": 500,
-          "result": "中",
-          "payout": 5000
-        }
-      ],
-      "totalBet": 500,
-      "totalWon": 5000,
-      "netProfit": 4500
-    },
-    {
-      "date": "2026-05-19",
-      "name": "群少",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "12串1",
-          "matches": "12串1 比赛串联",
-          "amount": 200,
-          "result": "中",
-          "payout": 3000
-        },
-        {
-          "type": "串关",
-          "detail": "5串1",
-          "matches": "5串1 比赛串联",
-          "amount": 200,
-          "result": "中",
-          "payout": 1000
-        }
-      ],
-      "totalBet": 400,
-      "totalWon": 4000,
-      "netProfit": 3600
-    },
-    {
-      "date": "2026-05-20",
-      "name": "群少",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇺🇸美国 3:1 🇦🇺澳大利亚",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇨🇦加拿大 1:1 🇶🇦卡塔尔",
-          "amount": 80,
-          "result": "中",
-          "payout": 400
-        }
-      ],
-      "totalBet": 280,
-      "totalWon": 400,
-      "netProfit": 120
-    },
-    {
-      "date": "2026-05-21",
-      "name": "群少",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇹🇳突尼斯 0:1 🇯🇵日本",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 200,
-      "totalWon": 0,
-      "netProfit": -200
-    },
-    {
-      "date": "2026-05-18",
-      "name": "老色",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇲🇦摩洛哥 2:2 🇭🇹海地",
-          "amount": 150,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 150,
-      "totalWon": 0,
-      "netProfit": -150
-    },
-    {
-      "date": "2026-05-19",
-      "name": "老色",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇨🇼库拉索 0:0 🇨🇮科特迪瓦",
-          "amount": 150,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇵🇹葡萄牙 4:1 🇨🇴哥伦比亚",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 250,
-      "totalWon": 0,
-      "netProfit": -250
-    },
-    {
-      "date": "2026-05-20",
-      "name": "老色",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇦🇷阿根廷 1:0 🇯🇴约旦",
-          "amount": 80,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇧🇪比利时 4:1 🇳🇿新西兰",
-          "amount": 50,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 130,
-      "totalWon": 0,
-      "netProfit": -130
-    },
-    {
-      "date": "2026-05-21",
-      "name": "老色",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇿🇦南非 2:0 🇰🇷韩国",
-          "amount": 30,
-          "result": "中",
-          "payout": 240
-        }
-      ],
-      "totalBet": 30,
-      "totalWon": 240,
-      "netProfit": 210
-    },
-    {
-      "date": "2026-05-18",
-      "name": "老赖",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇨🇴哥伦比亚 2:0 🇨🇩刚果(金)",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 200,
-      "totalWon": 0,
-      "netProfit": -200
-    },
-    {
-      "date": "2026-05-19",
-      "name": "老赖",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇲🇦摩洛哥 2:2 🇭🇹海地",
-          "amount": 50,
-          "result": "中",
-          "payout": 100
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇲🇽墨西哥 2:2 🇿🇦南非",
-          "amount": 50,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 100,
-      "totalWon": 100,
-      "netProfit": 0
-    },
-    {
-      "date": "2026-05-20",
-      "name": "老赖",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "5串1",
-          "matches": "5串1 比赛串联",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "串关",
-          "detail": "12串1",
-          "matches": "12串1 比赛串联",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 400,
-      "totalWon": 0,
-      "netProfit": -400
-    },
-    {
-      "date": "2026-05-21",
-      "name": "老赖",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜大小球",
-          "matches": "🇬🇭加纳 1:1 🇵🇦巴拿马",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇶🇦卡塔尔 1:1 🇨🇭瑞士",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 400,
-      "totalWon": 0,
-      "netProfit": -400
-    },
-    {
-      "date": "2026-05-18",
-      "name": "色霸",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇦🇷阿根廷 1:0 🇯🇴约旦",
-          "amount": 150,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇪🇸西班牙 1:2 🇸🇦沙特",
-          "amount": 30,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 180,
-      "totalWon": 0,
-      "netProfit": -180
-    },
-    {
-      "date": "2026-05-19",
-      "name": "色霸",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🏴󠁧󠁢󠁥󠁮󠁧󠁿英格兰 2:1 🇭🇷克罗地亚",
-          "amount": 150,
-          "result": "中",
-          "payout": 450
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇹🇷土耳其 0:1 🇵🇾巴拉圭",
-          "amount": 200,
-          "result": "中",
-          "payout": 1600
-        }
-      ],
-      "totalBet": 350,
-      "totalWon": 2050,
-      "netProfit": 1700
-    },
-    {
-      "date": "2026-05-20",
-      "name": "色霸",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇯🇴约旦 2:0 🇩🇿阿尔及利亚",
-          "amount": 30,
-          "result": "中",
-          "payout": 240
-        },
-        {
-          "type": "串关",
-          "detail": "5串1",
-          "matches": "5串1 比赛串联",
-          "amount": 500,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 530,
-      "totalWon": 240,
-      "netProfit": -290
-    },
-    {
-      "date": "2026-05-21",
-      "name": "色霸",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇺🇸美国 3:0 🇹🇷土耳其",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇹🇳突尼斯 0:1 🇯🇵日本",
-          "amount": 50,
-          "result": "中",
-          "payout": 400
-        }
-      ],
-      "totalBet": 150,
-      "totalWon": 400,
-      "netProfit": 250
-    },
-    {
-      "date": "2026-05-18",
-      "name": "钟董",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇫🇷法国 1:1 🇸🇳塞内加尔",
-          "amount": 200,
-          "result": "中",
-          "payout": 1600
-        },
-        {
-          "type": "串关",
-          "detail": "12串1",
-          "matches": "12串1 比赛串联",
-          "amount": 100,
-          "result": "中",
-          "payout": 1500
-        }
-      ],
-      "totalBet": 300,
-      "totalWon": 3100,
-      "netProfit": 2800
-    },
-    {
-      "date": "2026-05-19",
-      "name": "钟董",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇨🇦加拿大 3:2 🇨🇭瑞士",
-          "amount": 30,
-          "result": "中",
-          "payout": 150
-        }
-      ],
-      "totalBet": 30,
-      "totalWon": 150,
-      "netProfit": 120
-    },
-    {
-      "date": "2026-05-20",
-      "name": "钟董",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🏴󠁧󠁢󠁥󠁮󠁧󠁿英格兰 1:0 🇬🇭加纳",
-          "amount": 100,
-          "result": "中",
-          "payout": 800
-        },
-        {
-          "type": "串关",
-          "detail": "12串1",
-          "matches": "12串1 比赛串联",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 200,
-      "totalWon": 800,
-      "netProfit": 600
-    },
-    {
-      "date": "2026-05-21",
-      "name": "钟董",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇨🇻佛得角 2:2 🇸🇦沙特",
-          "amount": 200,
-          "result": "中",
-          "payout": 400
-        }
-      ],
-      "totalBet": 200,
-      "totalWon": 400,
-      "netProfit": 200
-    },
-    {
-      "date": "2026-05-18",
-      "name": "面包",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇯🇴约旦 2:0 🇩🇿阿尔及利亚",
-          "amount": 150,
-          "result": "中",
-          "payout": 450
-        }
-      ],
-      "totalBet": 150,
-      "totalWon": 450,
-      "netProfit": 300
-    },
-    {
-      "date": "2026-05-19",
-      "name": "面包",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇧🇷巴西 0:2 🇲🇦摩洛哥",
-          "amount": 200,
-          "result": "中",
-          "payout": 1000
-        }
-      ],
-      "totalBet": 200,
-      "totalWon": 1000,
-      "netProfit": 800
-    },
-    {
-      "date": "2026-05-20",
-      "name": "面包",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇳🇱荷兰 1:1 🇯🇵日本",
-          "amount": 30,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 30,
-      "totalWon": 0,
-      "netProfit": -30
-    },
-    {
-      "date": "2026-05-21",
-      "name": "面包",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇭🇷克罗地亚 0:0 🇬🇭加纳",
-          "amount": 30,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇮🇶伊拉克 3:1 🇳🇴挪威",
-          "amount": 200,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 230,
-      "totalWon": 0,
-      "netProfit": -230
-    },
-    {
-      "date": "2026-05-18",
-      "name": "小亮",
-      "bets": [
-        {
-          "type": "串关",
-          "detail": "6串1",
-          "matches": "6串1 比赛串联",
-          "amount": 500,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 500,
-      "totalWon": 0,
-      "netProfit": -500
-    },
-    {
-      "date": "2026-05-19",
-      "name": "小亮",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇪🇨厄瓜多尔 1:1 🇨🇼库拉索",
-          "amount": 100,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 100,
-      "totalWon": 0,
-      "netProfit": -100
-    },
-    {
-      "date": "2026-05-20",
-      "name": "小亮",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇨🇦加拿大 1:1 🇶🇦卡塔尔",
-          "amount": 200,
-          "result": "中",
-          "payout": 600
-        },
-        {
-          "type": "单场",
-          "detail": "猜大小球",
-          "matches": "🇵🇹葡萄牙 3:1 🇺🇿乌兹别克斯坦",
-          "amount": 150,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 350,
-      "totalWon": 600,
-      "netProfit": 250
-    },
-    {
-      "date": "2026-05-21",
-      "name": "小亮",
-      "bets": [
-        {
-          "type": "单场",
-          "detail": "猜胜负",
-          "matches": "🇧🇪比利时 1:1 🇮🇷伊朗",
-          "amount": 50,
-          "result": "未中",
-          "payout": 0
-        },
-        {
-          "type": "单场",
-          "detail": "猜比分",
-          "matches": "🇵🇦巴拿马 1:0 🇭🇷克罗地亚",
-          "amount": 50,
-          "result": "未中",
-          "payout": 0
-        }
-      ],
-      "totalBet": 100,
-      "totalWon": 0,
-      "netProfit": -100
-    }
-  ]
+  "curseRanking": [],
+  "aiComments": [],
+  "mvp": "",
+  "yesterdayBets": [],
+  "betHistory": []
 }

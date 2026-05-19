@@ -86,13 +86,13 @@ function renderMatchesByDate(containerId, labelId, schedule, today, mode) {
   const d = new Date(today);
   if (mode === 'yesterday') d.setDate(d.getDate() - 1);
   const target = fmt(d);
-  document.getElementById(labelId).textContent = target;
-
   const ms = schedule ? schedule.filter(m => m.date === target) : [];
   if (ms.length === 0) {
+    document.getElementById(labelId).textContent = '';
     container.innerHTML = `<div class="match-card"><span style="color:var(--text-muted)">${mode==='today'?'今天':'昨天'}没有比赛</span></div>`;
     return;
   }
+  document.getElementById(labelId).textContent = target;
   ms.sort((a,b) => (a.time||'') > (b.time||'') ? 1 : -1);
   container.innerHTML = ms.map(m => {
     const hf = getFlag(m.home), af = getFlag(m.away);
@@ -203,56 +203,35 @@ function renderFullSchedule(schedule) {
 
   // 定义轮次及其匹配规则
   const rounds = [
-    { key: 'md1', label: '小组赛·第1轮', matchday: 1 },
-    { key: 'md2', label: '小组赛·第2轮', matchday: 2 },
-    { key: 'md3', label: '小组赛·第3轮', matchday: 3 },
-    { key: 'r32', label: '32强淘汰赛', matchday: 4 },
-    { key: 'r16', label: '16强淘汰赛', matchday: 5 },
-    { key: 'qf',  label: '八强赛', matchday: 6 },
-    { key: 'sf',  label: '半决赛', matchday: 7 },
-    { key: '3rd', label: '季军赛', matchday: 8 },
-    { key: 'final', label: '🏆 决赛', matchday: 9 }
+    { key: 'group', label: '小组赛' },
+    { key: 'r32', label: '1/16决赛' },
+    { key: 'r16', label: '1/8决赛' },
+    { key: 'r8', label: '1/4决赛' },
+    { key: 'semi', label: '半决赛' },
+    { key: 'thirdPlace', label: '季军赛' },
+    { key: 'final', label: '🏆 总决赛' }
   ];
 
-  // 把比赛分组
+  // 按 round 字段分组
   let groups = {};
-  // 示例比赛（matchday 0）归入 md1
   rounds.forEach(r => { groups[r.key] = []; });
 
   schedule.forEach(m => {
-    let md = m.matchday || 0;
-    if (md === 0) md = 1; // 示例比赛归入第1轮
-    const round = rounds.find(r => r.matchday === md);
+    const round = rounds.find(r => r.key === m.round);
     if (round) {
       groups[round.key].push(m);
     }
   });
 
-  // 淘汰赛占位比赛
-  const koPlaceholders = {
-    'r32': [{ date:'2026-06-28', time:'待定', home:'TBD', away:'TBD', score:'-' }],
-    'r16': [{ date:'2026-07-04', time:'待定', home:'TBD', away:'TBD', score:'-' }],
-    'qf':  [{ date:'2026-07-09', time:'待定', home:'TBD', away:'TBD', score:'-' }],
-    'sf':  [{ date:'2026-07-14', time:'待定', home:'TBD', away:'TBD', score:'-' }],
-    '3rd': [{ date:'2026-07-18', time:'待定', home:'TBD', away:'TBD', score:'-' }],
-    'final': [{ date:'2026-07-19', time:'待定', home:'TBD', away:'TBD', score:'-' }]
-  };
-
   // 找到第一个有比赛的轮次
   let activeKey = null;
   for (const r of rounds) {
-    const ms = groups[r.key];
-    if (ms.length > 0 || koPlaceholders[r.key]) {
-      // 如果实际比赛没有，但有占位
-      if (ms.length === 0 && koPlaceholders[r.key]) {
-        groups[r.key] = koPlaceholders[r.key];
-      }
+    if (groups[r.key].length > 0) {
       if (!activeKey) activeKey = r.key;
     }
   }
 
-  // 生成 tab 按钮
-  tabsEl.innerHTML = rounds.map(r => {
+    tabsEl.innerHTML = rounds.map(r => {
     const ms = groups[r.key] || [];
     const hasContent = ms.length > 0;
     const isActive = r.key === activeKey;
