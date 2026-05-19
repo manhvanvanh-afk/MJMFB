@@ -1,6 +1,46 @@
 {
   "schedule": [
     {
+      "id": 1001,
+      "group": "A",
+      "matchday": 0,
+      "date": "2026-05-18",
+      "time": "19:30",
+      "home": "墨西哥",
+      "away": "韩国",
+      "score": "2:1"
+    },
+    {
+      "id": 1002,
+      "group": "B",
+      "matchday": 0,
+      "date": "2026-05-18",
+      "time": "21:00",
+      "home": "加拿大",
+      "away": "卡塔尔",
+      "score": "1:1"
+    },
+    {
+      "id": 1003,
+      "group": "C",
+      "matchday": 0,
+      "date": "2026-05-19",
+      "time": "19:30",
+      "home": "巴西",
+      "away": "摩洛哥",
+      "score": "-"
+    },
+    {
+      "id": 1004,
+      "group": "D",
+      "matchday": 0,
+      "date": "2026-05-19",
+      "time": "21:00",
+      "home": "美国",
+      "away": "澳大利亚",
+      "score": "-"
+    },
+    {
       "id": 1,
       "group": "A",
       "matchday": 1,
@@ -723,43 +763,43 @@
   ],
   "leaderboard": [
     {
-      "name": "阿全",
-      "score": 0,
-      "today": 0
+      "name": "凡强",
+      "score": 400000,
+      "today": 400000
     },
     {
-      "name": "阿哲",
-      "score": 0,
-      "today": 0
+      "name": "佑仔",
+      "score": 30200,
+      "today": 30000
+    },
+    {
+      "name": "阿全",
+      "score": 180,
+      "today": 80
+    },
+    {
+      "name": "瓜龙",
+      "score": 120,
+      "today": 70
     },
     {
       "name": "阿福",
-      "score": 0,
+      "score": 85,
       "today": 0
     },
     {
       "name": "阿苍",
-      "score": 0,
+      "score": 65,
       "today": 0
     },
     {
-      "name": "佑仔",
-      "score": 0,
-      "today": 0
+      "name": "阿哲",
+      "score": 30,
+      "today": -30
     },
     {
       "name": "俊杰",
-      "score": 0,
-      "today": 0
-    },
-    {
-      "name": "凡强",
-      "score": 0,
-      "today": 0
-    },
-    {
-      "name": "小亮",
-      "score": 0,
+      "score": 20,
       "today": 0
     },
     {
@@ -774,11 +814,6 @@
     },
     {
       "name": "月月",
-      "score": 0,
-      "today": 0
-    },
-    {
-      "name": "瓜龙",
       "score": 0,
       "today": 0
     },
@@ -816,14 +851,121 @@
       "name": "面包",
       "score": 0,
       "today": 0
+    },
+    {
+      "name": "小亮",
+      "score": -200,
+      "today": -200
     }
   ],
   "curseRanking": [
-    "等待世界杯开赛... ⚽"
+    "小亮连续三次预测翻车，建议改名为\"反向明灯\" 🤡",
+    "阿哲跟单小亮，成功被带进沟里 🎯",
+    "凡强10串1全中净赚40万，系统检测到非人类操作 ⚡"
   ],
   "aiComments": [
-    "🎙️ 2026 美加墨世界杯即将开始，敬请期待！"
+    "🎙️ 凡强昨晚完成10串1神级操作，净赚40万！建议直接退役当职业选手",
+    "🎙️ 佑仔8串1全中怒赚3万，老同学群隐藏赌神浮出水面",
+    "🎙️ 小亮已连续三场反向命中，建议大伙反向跟单致富",
+    "🎙️ 系统提示：串关有风险，跟单需谨慎——除非你叫凡强"
   ],
-  "mvp": "等待第一位 MVP 诞生... 🌟",
-  "yesterdayBets": []
+  "mvp": "凡强 — 10串1 神级命中，净赚 40 万！当之无愧的昨日 MVP 🏆💰",
+  "yesterdayBets": [
+    {
+      "name": "凡强",
+      "bets": [
+        {
+          "type": "串关",
+          "detail": "10串1",
+          "matches": "10场比赛串联",
+          "amount": 300,
+          "result": "中",
+          "payout": 400300
+        }
+      ],
+      "totalBet": 300,
+      "totalWon": 400300,
+      "netProfit": 400000
+    },
+    {
+      "name": "佑仔",
+      "bets": [
+        {
+          "type": "串关",
+          "detail": "8串1",
+          "matches": "8场比赛串联",
+          "amount": 200,
+          "result": "中",
+          "payout": 30200
+        }
+      ],
+      "totalBet": 200,
+      "totalWon": 30200,
+      "netProfit": 30000
+    },
+    {
+      "name": "阿全",
+      "bets": [
+        {
+          "type": "单场",
+          "detail": "猜胜负",
+          "matches": "墨西哥 vs 韩国",
+          "amount": 100,
+          "result": "中",
+          "payout": 180
+        }
+      ],
+      "totalBet": 100,
+      "totalWon": 180,
+      "netProfit": 80
+    },
+    {
+      "name": "瓜龙",
+      "bets": [
+        {
+          "type": "单场",
+          "detail": "猜比分",
+          "matches": "加拿大 vs 卡塔尔",
+          "amount": 50,
+          "result": "中",
+          "payout": 120
+        }
+      ],
+      "totalBet": 50,
+      "totalWon": 120,
+      "netProfit": 70
+    },
+    {
+      "name": "阿哲",
+      "bets": [
+        {
+          "type": "单场",
+          "detail": "猜胜负",
+          "matches": "墨西哥 vs 韩国",
+          "amount": 30,
+          "result": "未中",
+          "payout": 0
+        }
+      ],
+      "totalBet": 30,
+      "totalWon": 0,
+      "netProfit": -30
+    },
+    {
+      "name": "小亮",
+      "bets": [
+        {
+          "type": "单场",
+          "detail": "猜胜负",
+          "matches": "加拿大 vs 卡塔尔",
+          "amount": 200,
+          "result": "未中",
+          "payout": 0
+        }
+      ],
+      "totalBet": 200,
+      "totalWon": 0,
+      "netProfit": -200
+    }
+  ]
 }
