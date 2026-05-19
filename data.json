@@ -1,0 +1,35 @@
+{
+  "leaderboard": [
+    { "name": "阿全", "score": 0, "today": 0 },
+    { "name": "阿哲", "score": 0, "today": 0 },
+    { "name": "阿福", "score": 0, "today": 0 },
+    { "name": "阿苍", "score": 0, "today": 0 },
+    { "name": "佑仔", "score": 0, "today": 0 },
+    { "name": "俊杰", "score": 0, "today": 0 },
+    { "name": "凡强", "score": 0, "today": 0 },
+    { "name": "小亮", "score": 0, "today": 0 },
+    { "name": "小明", "score": 0, "today": 0 },
+    { "name": "总统", "score": 0, "today": 0 },
+    { "name": "月月", "score": 0, "today": 0 },
+    { "name": "瓜龙", "score": 0, "today": 0 },
+    { "name": "维敏", "score": 0, "today": 0 },
+    { "name": "群少", "score": 0, "today": 0 },
+    { "name": "老色", "score": 0, "today": 0 },
+    { "name": "老赖", "score": 0, "today": 0 },
+    { "name": "色霸", "score": 0, "today": 0 },
+    { "name": "钟董", "score": 0, "today": 0 },
+    { "name": "面包", "score": 0, "today": 0 }
+  ],
+  "matches": [
+    { "home": "阿根廷", "away": "法国", "score": "-" },
+    { "home": "葡萄牙", "away": "墨西哥", "score": "-" },
+    { "home": "巴西", "away": "德国", "score": "-" }
+  ],
+  "curseRanking": [
+    "还没有毒奶记录，大家快开始预测吧 🎯"
+  ],
+  "aiComments": [
+    "⚽ 世界杯还没开始，大家的热情已经点燃了！"
+  ],
+  "mvp": "等待第一位 MVP 诞生..."
+}

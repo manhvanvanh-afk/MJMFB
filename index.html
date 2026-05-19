@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>2026 老同学世界杯联赛</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====== 导航栏 ====== -->
+  <nav class="top-nav">
+    <div class="nav-inner">
+      <span class="nav-logo">🏆 WorldCup League 2026</span>
+      <span class="nav-date" id="navDate"></span>
+    </div>
+  </nav>
+
+  <!-- ====== Hero 顶部区域 ====== -->
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">2026 世界杯</div>
+      <h1 class="hero-title">WORLD CUP<br>LEAGUE 2026</h1>
+      <p class="hero-subtitle">老同学世界杯联赛</p>
+      <div class="hero-stadium-light"></div>
+    </div>
+  </header>
+
+  <!-- ====== 主内容区 ====== -->
+  <main class="container">
+
+    <!-- 今日赛果 -->
+    <section class="section" id="matchesSection">
+      <div class="section-header">
+        <h2>📋 今日赛果</h2>
+        <span class="section-subtitle">Match Results</span>
+      </div>
+      <div class="matches-grid" id="matchesGrid">
+        <!-- 由 JavaScript 渲染 -->
+      </div>
+    </section>
+
+    <!-- 今日赢家 -->
+    <section class="section" id="winnersSection">
+      <div class="section-header">
+        <h2>🔥 今日赢家</h2>
+        <span class="section-subtitle">Daily Winners</span>
+      </div>
+      <div class="winners-list" id="winnersList">
+        <!-- 由 JavaScript 渲染 -->
+      </div>
+    </section>
+
+    <!-- 总排行榜 -->
+    <section class="section leaderboard-section" id="leaderboardSection">
+      <div class="section-header">
+        <h2>🏅 总排行榜</h2>
+        <span class="section-subtitle">Leaderboard</span>
+      </div>
+      <div class="leaderboard" id="leaderboard">
+        <!-- 由 JavaScript 渲染 -->
+      </div>
+    </section>
+
+    <!-- 毒奶榜 -->
+    <section class="section" id="curseSection">
+      <div class="section-header">
+        <h2>🤡 毒奶榜</h2>
+        <span class="section-subtitle">Curse Ranking</span>
+      </div>
+      <div class="curse-list" id="curseList">
+        <!-- 由 JavaScript 渲染 -->
+      </div>
+    </section>
+
+    <!-- AI 锐评 -->
+    <section class="section" id="aiSection">
+      <div class="section-header">
+        <h2>🎙️ AI 锐评</h2>
+        <span class="section-subtitle">Hot Takes</span>
+      </div>
+      <div class="ai-comments" id="aiComments">
+        <!-- 由 JavaScript 渲染 -->
+      </div>
+    </section>
+
+    <!-- 今日 MVP -->
+    <section class="section mvp-section" id="mvpSection">
+      <div class="mvp-card" id="mvpCard">
+        <div class="mvp-glow"></div>
+        <div class="mvp-content">
+          <div class="mvp-badge">🌟 今日球神</div>
+          <p class="mvp-text" id="mvpText">加载中...</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== 页脚 ====== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>🏆 2026 老同学世界杯联赛 · 纯属娱乐</p>
+      <p class="footer-small">数据每日更新 · 一切为开心</p>
+    </div>
+  </footer>
+
+  <!-- ====== 加载状态 ====== -->
+  <div class="loading" id="loading">
+    <div class="loading-spinner"></div>
+    <p>⚽ 正在加载战报...</p>
+  </div>
+
+  <!-- ====== 错误提示 ====== -->
+  <div class="error-toast" id="errorToast">
+    <span>⚠️</span>
+    <span id="errorMessage">数据加载失败</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

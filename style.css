@@ -1,0 +1,683 @@
+/* ============================================
+   2026 老同学世界杯联赛 — 主样式表
+   风格：世界杯深夜观赛大厅
+   配色：深黑 · 草坪绿 · 金色 · 荧光蓝
+   ============================================ */
+
+/* ----- CSS 变量 ----- */
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-card: rgba(20, 20, 20, 0.85);
+  --bg-card-hover: rgba(30, 30, 30, 0.9);
+  --green: #00d26a;
+  --gold: #ffd700;
+  --blue: #00d4ff;
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted: rgba(255, 255, 255, 0.4);
+  --border-glow: rgba(0, 210, 106, 0.3);
+  --gold-glow: rgba(255, 215, 0, 0.3);
+  --radius: 16px;
+  --radius-sm: 10px;
+}
+
+/* ----- 基础重置 ----- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ----- 导航栏 ----- */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+.nav-date {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* ----- Hero 区域 ----- */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: url('assets/首页banner.png') center center / cover no-repeat;
+  margin-top: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    var(--bg-primary) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 6px 20px;
+  border: 1px solid var(--green);
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--green);
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+  animation: fadeInDown 0.8s ease;
+}
+
+.hero-title {
+  font-size: clamp(42px, 12vw, 96px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 4px;
+  background: linear-gradient(135deg, var(--gold) 0%, #fff 40%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+  filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.3));
+  animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.hero-subtitle {
+  font-size: clamp(16px, 3vw, 24px);
+  color: var(--text-secondary);
+  margin-top: 16px;
+  letter-spacing: 6px;
+  animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.hero-stadium-light {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(0, 210, 106, 0.15) 0%, transparent 70%);
+  animation: stadiumLight 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* ----- 主容器 ----- */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+  position: relative;
+  z-index: 2;
+  margin-top: -40px;
+}
+
+/* ----- 区域通用样式 ----- */
+.section {
+  margin-bottom: 32px;
+  animation: fadeInUp 0.6s ease both;
+}
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-left: 4px;
+}
+
+.section-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ----- 今日赛果卡片 ----- */
+.matches-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.match-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.match-card:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(0, 210, 106, 0.2);
+  transform: translateY(-2px);
+}
+
+.match-team {
+  font-size: 16px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.match-team.home {
+  text-align: right;
+  padding-right: 12px;
+}
+
+.match-team.away {
+  text-align: left;
+  padding-left: 12px;
+}
+
+.match-score {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--green);
+  min-width: 60px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.match-score.pending {
+  color: var(--text-muted);
+}
+
+/* ----- 今日赢家 ----- */
+.winners-list {
+  display: grid;
+  gap: 10px;
+}
+
+.winner-item {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.winner-item:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-1px);
+}
+
+.winner-rank {
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.winner-name {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.winner-score {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+/* ----- 总排行榜 ----- */
+.leaderboard-section {
+  scroll-margin-top: 60px;
+}
+
+.leaderboard {
+  display: grid;
+  gap: 10px;
+}
+
+.leaderboard-item {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.leaderboard-item:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-1px);
+}
+
+.leaderboard-item.top-1 {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(20, 20, 20, 0.9));
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+}
+
+.leaderboard-item.top-2 {
+  background: linear-gradient(135deg, rgba(192, 192, 192, 0.1), rgba(20, 20, 20, 0.9));
+  border-color: rgba(192, 192, 192, 0.2);
+}
+
+.leaderboard-item.top-3 {
+  background: linear-gradient(135deg, rgba(205, 127, 50, 0.1), rgba(20, 20, 20, 0.9));
+  border-color: rgba(205, 127, 50, 0.2);
+}
+
+.leaderboard-rank {
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 28px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.leaderboard-item.top-1 .leaderboard-rank {
+  color: var(--gold);
+  font-size: 18px;
+}
+
+.leaderboard-item.top-2 .leaderboard-rank {
+  color: #c0c0c0;
+  font-size: 16px;
+}
+
+.leaderboard-item.top-3 .leaderboard-rank {
+  color: #cd7f32;
+  font-size: 16px;
+}
+
+.leaderboard-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+.leaderboard-item.top-1 .leaderboard-avatar {
+  border-color: var(--gold);
+}
+
+.leaderboard-name {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.leaderboard-score {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+/* ----- 毒奶榜 ----- */
+.curse-list {
+  display: grid;
+  gap: 10px;
+}
+
+.curse-item {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.curse-item:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(255, 215, 0, 0.15);
+}
+
+/* ----- AI 锐评 ----- */
+.ai-comments {
+  display: grid;
+  gap: 10px;
+}
+
+.ai-comment-item {
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  border-left: 3px solid var(--blue);
+  transition: all 0.3s ease;
+}
+
+.ai-comment-item:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(0, 212, 255, 0.2);
+}
+
+/* ----- MVP 卡片 ----- */
+.mvp-section {
+  margin-bottom: 0;
+}
+
+.mvp-card {
+  position: relative;
+  padding: 32px 24px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(0, 0, 0, 0.6));
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+}
+
+.mvp-glow {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.15), transparent 70%);
+  animation: stadiumLight 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.mvp-content {
+  position: relative;
+  z-index: 1;
+}
+
+.mvp-badge {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 12px;
+  background: var(--gold);
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.mvp-text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* ----- 页脚 ----- */
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 40px;
+  padding: 24px 0;
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer-inner p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.footer-small {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* ----- 加载状态 ----- */
+.loading {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  transition: opacity 0.5s ease;
+}
+
+.loading.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: var(--green);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.loading p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* ----- 错误提示 ----- */
+.error-toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: rgba(255, 50, 50, 0.9);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 300;
+  transition: transform 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.error-toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ----- 动画 ----- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes stadiumLight {
+  0%, 100% { opacity: 0.3; transform: translateX(-50%) scale(1); }
+  50% { opacity: 0.8; transform: translateX(-50%) scale(1.2); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ============================================
+   移动端适配 (Mobile First)
+   ============================================ */
+
+/* 平板及以上 */
+@media (min-width: 600px) {
+  .matches-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .winners-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .leaderboard {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .curse-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* 桌面 */
+@media (min-width: 900px) {
+  .container {
+    padding: 0 24px 60px;
+  }
+
+  .match-card {
+    padding: 20px 28px;
+  }
+
+  .match-team {
+    font-size: 18px;
+  }
+
+  .match-score {
+    font-size: 28px;
+  }
+
+  .section-header h2 {
+    font-size: 22px;
+  }
+
+  .leaderboard-item {
+    padding: 16px 22px;
+  }
+
+  .mvp-card {
+    padding: 40px 32px;
+  }
+
+  .mvp-text {
+    font-size: 22px;
+  }
+}
+
+/* 小屏优化 */
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .match-team {
+    font-size: 14px;
+  }
+
+  .match-score {
+    font-size: 20px;
+    min-width: 50px;
+  }
+
+  .leaderboard-name {
+    font-size: 13px;
+  }
+}
+
+/* 暗色滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
