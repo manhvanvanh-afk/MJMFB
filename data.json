@@ -1,35 +1,829 @@
 {
-  "leaderboard": [
-    { "name": "阿全", "score": 0, "today": 0 },
-    { "name": "阿哲", "score": 0, "today": 0 },
-    { "name": "阿福", "score": 0, "today": 0 },
-    { "name": "阿苍", "score": 0, "today": 0 },
-    { "name": "佑仔", "score": 0, "today": 0 },
-    { "name": "俊杰", "score": 0, "today": 0 },
-    { "name": "凡强", "score": 0, "today": 0 },
-    { "name": "小亮", "score": 0, "today": 0 },
-    { "name": "小明", "score": 0, "today": 0 },
-    { "name": "总统", "score": 0, "today": 0 },
-    { "name": "月月", "score": 0, "today": 0 },
-    { "name": "瓜龙", "score": 0, "today": 0 },
-    { "name": "维敏", "score": 0, "today": 0 },
-    { "name": "群少", "score": 0, "today": 0 },
-    { "name": "老色", "score": 0, "today": 0 },
-    { "name": "老赖", "score": 0, "today": 0 },
-    { "name": "色霸", "score": 0, "today": 0 },
-    { "name": "钟董", "score": 0, "today": 0 },
-    { "name": "面包", "score": 0, "today": 0 }
+  "schedule": [
+    {
+      "id": 1,
+      "group": "A",
+      "matchday": 1,
+      "date": "2026-06-11",
+      "time": "18:00",
+      "home": "墨西哥",
+      "away": "南非",
+      "score": "-"
+    },
+    {
+      "id": 43,
+      "group": "H",
+      "matchday": 1,
+      "date": "2026-06-11",
+      "time": "18:00",
+      "home": "西班牙",
+      "away": "佛得角",
+      "score": "-"
+    },
+    {
+      "id": 2,
+      "group": "A",
+      "matchday": 1,
+      "date": "2026-06-11",
+      "time": "21:00",
+      "home": "韩国",
+      "away": "捷克",
+      "score": "-"
+    },
+    {
+      "id": 44,
+      "group": "H",
+      "matchday": 1,
+      "date": "2026-06-11",
+      "time": "21:00",
+      "home": "沙特",
+      "away": "乌拉圭",
+      "score": "-"
+    },
+    {
+      "id": 7,
+      "group": "B",
+      "matchday": 1,
+      "date": "2026-06-12",
+      "time": "18:00",
+      "home": "加拿大",
+      "away": "波黑",
+      "score": "-"
+    },
+    {
+      "id": 49,
+      "group": "I",
+      "matchday": 1,
+      "date": "2026-06-12",
+      "time": "18:00",
+      "home": "法国",
+      "away": "塞内加尔",
+      "score": "-"
+    },
+    {
+      "id": 8,
+      "group": "B",
+      "matchday": 1,
+      "date": "2026-06-12",
+      "time": "21:00",
+      "home": "卡塔尔",
+      "away": "瑞士",
+      "score": "-"
+    },
+    {
+      "id": 50,
+      "group": "I",
+      "matchday": 1,
+      "date": "2026-06-12",
+      "time": "21:00",
+      "home": "伊拉克",
+      "away": "挪威",
+      "score": "-"
+    },
+    {
+      "id": 13,
+      "group": "C",
+      "matchday": 1,
+      "date": "2026-06-13",
+      "time": "18:00",
+      "home": "巴西",
+      "away": "摩洛哥",
+      "score": "-"
+    },
+    {
+      "id": 55,
+      "group": "J",
+      "matchday": 1,
+      "date": "2026-06-13",
+      "time": "18:00",
+      "home": "阿根廷",
+      "away": "阿尔及利亚",
+      "score": "-"
+    },
+    {
+      "id": 14,
+      "group": "C",
+      "matchday": 1,
+      "date": "2026-06-13",
+      "time": "21:00",
+      "home": "海地",
+      "away": "苏格兰",
+      "score": "-"
+    },
+    {
+      "id": 56,
+      "group": "J",
+      "matchday": 1,
+      "date": "2026-06-13",
+      "time": "21:00",
+      "home": "奥地利",
+      "away": "约旦",
+      "score": "-"
+    },
+    {
+      "id": 19,
+      "group": "D",
+      "matchday": 1,
+      "date": "2026-06-14",
+      "time": "18:00",
+      "home": "美国",
+      "away": "巴拉圭",
+      "score": "-"
+    },
+    {
+      "id": 61,
+      "group": "K",
+      "matchday": 1,
+      "date": "2026-06-14",
+      "time": "18:00",
+      "home": "葡萄牙",
+      "away": "刚果(金)",
+      "score": "-"
+    },
+    {
+      "id": 20,
+      "group": "D",
+      "matchday": 1,
+      "date": "2026-06-14",
+      "time": "21:00",
+      "home": "澳大利亚",
+      "away": "土耳其",
+      "score": "-"
+    },
+    {
+      "id": 62,
+      "group": "K",
+      "matchday": 1,
+      "date": "2026-06-14",
+      "time": "21:00",
+      "home": "乌兹别克斯坦",
+      "away": "哥伦比亚",
+      "score": "-"
+    },
+    {
+      "id": 25,
+      "group": "E",
+      "matchday": 1,
+      "date": "2026-06-15",
+      "time": "18:00",
+      "home": "德国",
+      "away": "库拉索",
+      "score": "-"
+    },
+    {
+      "id": 67,
+      "group": "L",
+      "matchday": 1,
+      "date": "2026-06-15",
+      "time": "18:00",
+      "home": "英格兰",
+      "away": "克罗地亚",
+      "score": "-"
+    },
+    {
+      "id": 26,
+      "group": "E",
+      "matchday": 1,
+      "date": "2026-06-15",
+      "time": "21:00",
+      "home": "科特迪瓦",
+      "away": "厄瓜多尔",
+      "score": "-"
+    },
+    {
+      "id": 68,
+      "group": "L",
+      "matchday": 1,
+      "date": "2026-06-15",
+      "time": "21:00",
+      "home": "加纳",
+      "away": "巴拿马",
+      "score": "-"
+    },
+    {
+      "id": 31,
+      "group": "F",
+      "matchday": 1,
+      "date": "2026-06-16",
+      "time": "18:00",
+      "home": "荷兰",
+      "away": "日本",
+      "score": "-"
+    },
+    {
+      "id": 32,
+      "group": "F",
+      "matchday": 1,
+      "date": "2026-06-16",
+      "time": "21:00",
+      "home": "瑞典",
+      "away": "突尼斯",
+      "score": "-"
+    },
+    {
+      "id": 37,
+      "group": "G",
+      "matchday": 1,
+      "date": "2026-06-17",
+      "time": "18:00",
+      "home": "比利时",
+      "away": "埃及",
+      "score": "-"
+    },
+    {
+      "id": 38,
+      "group": "G",
+      "matchday": 1,
+      "date": "2026-06-17",
+      "time": "21:00",
+      "home": "伊朗",
+      "away": "新西兰",
+      "score": "-"
+    },
+    {
+      "id": 3,
+      "group": "A",
+      "matchday": 2,
+      "date": "2026-06-18",
+      "time": "18:00",
+      "home": "墨西哥",
+      "away": "韩国",
+      "score": "-"
+    },
+    {
+      "id": 39,
+      "group": "G",
+      "matchday": 2,
+      "date": "2026-06-18",
+      "time": "18:00",
+      "home": "比利时",
+      "away": "伊朗",
+      "score": "-"
+    },
+    {
+      "id": 4,
+      "group": "A",
+      "matchday": 2,
+      "date": "2026-06-18",
+      "time": "21:00",
+      "home": "捷克",
+      "away": "南非",
+      "score": "-"
+    },
+    {
+      "id": 40,
+      "group": "G",
+      "matchday": 2,
+      "date": "2026-06-18",
+      "time": "21:00",
+      "home": "新西兰",
+      "away": "埃及",
+      "score": "-"
+    },
+    {
+      "id": 9,
+      "group": "B",
+      "matchday": 2,
+      "date": "2026-06-19",
+      "time": "18:00",
+      "home": "加拿大",
+      "away": "卡塔尔",
+      "score": "-"
+    },
+    {
+      "id": 45,
+      "group": "H",
+      "matchday": 2,
+      "date": "2026-06-19",
+      "time": "18:00",
+      "home": "西班牙",
+      "away": "沙特",
+      "score": "-"
+    },
+    {
+      "id": 10,
+      "group": "B",
+      "matchday": 2,
+      "date": "2026-06-19",
+      "time": "21:00",
+      "home": "瑞士",
+      "away": "波黑",
+      "score": "-"
+    },
+    {
+      "id": 46,
+      "group": "H",
+      "matchday": 2,
+      "date": "2026-06-19",
+      "time": "21:00",
+      "home": "乌拉圭",
+      "away": "佛得角",
+      "score": "-"
+    },
+    {
+      "id": 15,
+      "group": "C",
+      "matchday": 2,
+      "date": "2026-06-20",
+      "time": "18:00",
+      "home": "巴西",
+      "away": "海地",
+      "score": "-"
+    },
+    {
+      "id": 51,
+      "group": "I",
+      "matchday": 2,
+      "date": "2026-06-20",
+      "time": "18:00",
+      "home": "法国",
+      "away": "伊拉克",
+      "score": "-"
+    },
+    {
+      "id": 16,
+      "group": "C",
+      "matchday": 2,
+      "date": "2026-06-20",
+      "time": "21:00",
+      "home": "苏格兰",
+      "away": "摩洛哥",
+      "score": "-"
+    },
+    {
+      "id": 52,
+      "group": "I",
+      "matchday": 2,
+      "date": "2026-06-20",
+      "time": "21:00",
+      "home": "挪威",
+      "away": "塞内加尔",
+      "score": "-"
+    },
+    {
+      "id": 21,
+      "group": "D",
+      "matchday": 2,
+      "date": "2026-06-21",
+      "time": "18:00",
+      "home": "美国",
+      "away": "澳大利亚",
+      "score": "-"
+    },
+    {
+      "id": 57,
+      "group": "J",
+      "matchday": 2,
+      "date": "2026-06-21",
+      "time": "18:00",
+      "home": "阿根廷",
+      "away": "奥地利",
+      "score": "-"
+    },
+    {
+      "id": 22,
+      "group": "D",
+      "matchday": 2,
+      "date": "2026-06-21",
+      "time": "21:00",
+      "home": "土耳其",
+      "away": "巴拉圭",
+      "score": "-"
+    },
+    {
+      "id": 58,
+      "group": "J",
+      "matchday": 2,
+      "date": "2026-06-21",
+      "time": "21:00",
+      "home": "约旦",
+      "away": "阿尔及利亚",
+      "score": "-"
+    },
+    {
+      "id": 27,
+      "group": "E",
+      "matchday": 2,
+      "date": "2026-06-22",
+      "time": "18:00",
+      "home": "德国",
+      "away": "科特迪瓦",
+      "score": "-"
+    },
+    {
+      "id": 63,
+      "group": "K",
+      "matchday": 2,
+      "date": "2026-06-22",
+      "time": "18:00",
+      "home": "葡萄牙",
+      "away": "乌兹别克斯坦",
+      "score": "-"
+    },
+    {
+      "id": 28,
+      "group": "E",
+      "matchday": 2,
+      "date": "2026-06-22",
+      "time": "21:00",
+      "home": "厄瓜多尔",
+      "away": "库拉索",
+      "score": "-"
+    },
+    {
+      "id": 64,
+      "group": "K",
+      "matchday": 2,
+      "date": "2026-06-22",
+      "time": "21:00",
+      "home": "哥伦比亚",
+      "away": "刚果(金)",
+      "score": "-"
+    },
+    {
+      "id": 33,
+      "group": "F",
+      "matchday": 2,
+      "date": "2026-06-23",
+      "time": "18:00",
+      "home": "荷兰",
+      "away": "瑞典",
+      "score": "-"
+    },
+    {
+      "id": 69,
+      "group": "L",
+      "matchday": 2,
+      "date": "2026-06-23",
+      "time": "18:00",
+      "home": "英格兰",
+      "away": "加纳",
+      "score": "-"
+    },
+    {
+      "id": 34,
+      "group": "F",
+      "matchday": 2,
+      "date": "2026-06-23",
+      "time": "21:00",
+      "home": "突尼斯",
+      "away": "日本",
+      "score": "-"
+    },
+    {
+      "id": 70,
+      "group": "L",
+      "matchday": 2,
+      "date": "2026-06-23",
+      "time": "21:00",
+      "home": "巴拿马",
+      "away": "克罗地亚",
+      "score": "-"
+    },
+    {
+      "id": 5,
+      "group": "A",
+      "matchday": 3,
+      "date": "2026-06-24",
+      "time": "18:00",
+      "home": "墨西哥",
+      "away": "捷克",
+      "score": "-"
+    },
+    {
+      "id": 6,
+      "group": "A",
+      "matchday": 3,
+      "date": "2026-06-24",
+      "time": "18:00",
+      "home": "南非",
+      "away": "韩国",
+      "score": "-"
+    },
+    {
+      "id": 29,
+      "group": "E",
+      "matchday": 3,
+      "date": "2026-06-24",
+      "time": "18:00",
+      "home": "德国",
+      "away": "厄瓜多尔",
+      "score": "-"
+    },
+    {
+      "id": 30,
+      "group": "E",
+      "matchday": 3,
+      "date": "2026-06-24",
+      "time": "18:00",
+      "home": "库拉索",
+      "away": "科特迪瓦",
+      "score": "-"
+    },
+    {
+      "id": 53,
+      "group": "I",
+      "matchday": 3,
+      "date": "2026-06-24",
+      "time": "18:00",
+      "home": "法国",
+      "away": "挪威",
+      "score": "-"
+    },
+    {
+      "id": 54,
+      "group": "I",
+      "matchday": 3,
+      "date": "2026-06-24",
+      "time": "18:00",
+      "home": "塞内加尔",
+      "away": "伊拉克",
+      "score": "-"
+    },
+    {
+      "id": 11,
+      "group": "B",
+      "matchday": 3,
+      "date": "2026-06-25",
+      "time": "18:00",
+      "home": "加拿大",
+      "away": "瑞士",
+      "score": "-"
+    },
+    {
+      "id": 12,
+      "group": "B",
+      "matchday": 3,
+      "date": "2026-06-25",
+      "time": "18:00",
+      "home": "波黑",
+      "away": "卡塔尔",
+      "score": "-"
+    },
+    {
+      "id": 35,
+      "group": "F",
+      "matchday": 3,
+      "date": "2026-06-25",
+      "time": "18:00",
+      "home": "荷兰",
+      "away": "突尼斯",
+      "score": "-"
+    },
+    {
+      "id": 36,
+      "group": "F",
+      "matchday": 3,
+      "date": "2026-06-25",
+      "time": "18:00",
+      "home": "日本",
+      "away": "瑞典",
+      "score": "-"
+    },
+    {
+      "id": 59,
+      "group": "J",
+      "matchday": 3,
+      "date": "2026-06-25",
+      "time": "18:00",
+      "home": "阿根廷",
+      "away": "约旦",
+      "score": "-"
+    },
+    {
+      "id": 60,
+      "group": "J",
+      "matchday": 3,
+      "date": "2026-06-25",
+      "time": "18:00",
+      "home": "阿尔及利亚",
+      "away": "奥地利",
+      "score": "-"
+    },
+    {
+      "id": 17,
+      "group": "C",
+      "matchday": 3,
+      "date": "2026-06-26",
+      "time": "18:00",
+      "home": "巴西",
+      "away": "苏格兰",
+      "score": "-"
+    },
+    {
+      "id": 18,
+      "group": "C",
+      "matchday": 3,
+      "date": "2026-06-26",
+      "time": "18:00",
+      "home": "摩洛哥",
+      "away": "海地",
+      "score": "-"
+    },
+    {
+      "id": 41,
+      "group": "G",
+      "matchday": 3,
+      "date": "2026-06-26",
+      "time": "18:00",
+      "home": "比利时",
+      "away": "新西兰",
+      "score": "-"
+    },
+    {
+      "id": 42,
+      "group": "G",
+      "matchday": 3,
+      "date": "2026-06-26",
+      "time": "18:00",
+      "home": "埃及",
+      "away": "伊朗",
+      "score": "-"
+    },
+    {
+      "id": 65,
+      "group": "K",
+      "matchday": 3,
+      "date": "2026-06-26",
+      "time": "18:00",
+      "home": "葡萄牙",
+      "away": "哥伦比亚",
+      "score": "-"
+    },
+    {
+      "id": 66,
+      "group": "K",
+      "matchday": 3,
+      "date": "2026-06-26",
+      "time": "18:00",
+      "home": "刚果(金)",
+      "away": "乌兹别克斯坦",
+      "score": "-"
+    },
+    {
+      "id": 23,
+      "group": "D",
+      "matchday": 3,
+      "date": "2026-06-27",
+      "time": "18:00",
+      "home": "美国",
+      "away": "土耳其",
+      "score": "-"
+    },
+    {
+      "id": 24,
+      "group": "D",
+      "matchday": 3,
+      "date": "2026-06-27",
+      "time": "18:00",
+      "home": "巴拉圭",
+      "away": "澳大利亚",
+      "score": "-"
+    },
+    {
+      "id": 47,
+      "group": "H",
+      "matchday": 3,
+      "date": "2026-06-27",
+      "time": "18:00",
+      "home": "西班牙",
+      "away": "乌拉圭",
+      "score": "-"
+    },
+    {
+      "id": 48,
+      "group": "H",
+      "matchday": 3,
+      "date": "2026-06-27",
+      "time": "18:00",
+      "home": "佛得角",
+      "away": "沙特",
+      "score": "-"
+    },
+    {
+      "id": 71,
+      "group": "L",
+      "matchday": 3,
+      "date": "2026-06-27",
+      "time": "18:00",
+      "home": "英格兰",
+      "away": "巴拿马",
+      "score": "-"
+    },
+    {
+      "id": 72,
+      "group": "L",
+      "matchday": 3,
+      "date": "2026-06-27",
+      "time": "18:00",
+      "home": "克罗地亚",
+      "away": "加纳",
+      "score": "-"
+    }
   ],
-  "matches": [
-    { "home": "阿根廷", "away": "法国", "score": "-" },
-    { "home": "葡萄牙", "away": "墨西哥", "score": "-" },
-    { "home": "巴西", "away": "德国", "score": "-" }
+  "leaderboard": [
+    {
+      "name": "阿全",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "阿哲",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "阿福",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "阿苍",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "佑仔",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "俊杰",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "凡强",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "小亮",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "小明",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "总统",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "月月",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "瓜龙",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "维敏",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "群少",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "老色",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "老赖",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "色霸",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "钟董",
+      "score": 0,
+      "today": 0
+    },
+    {
+      "name": "面包",
+      "score": 0,
+      "today": 0
+    }
   ],
   "curseRanking": [
-    "还没有毒奶记录，大家快开始预测吧 🎯"
+    "等待世界杯开赛... ⚽"
   ],
   "aiComments": [
-    "⚽ 世界杯还没开始，大家的热情已经点燃了！"
+    "🎙️ 2026 美加墨世界杯即将开始，敬请期待！"
   ],
-  "mvp": "等待第一位 MVP 诞生..."
+  "mvp": "等待第一位 MVP 诞生... 🌟",
+  "yesterdayBets": []
 }

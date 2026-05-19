@@ -3,7 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>2026 老同学世界杯联赛</title>
+
+  <!-- ====== 基础标签 ====== -->
+  <title>2026 老同学·世界杯竞猜比赛 🏆</title>
+  <meta name="description" content="老同学微信群的世界杯竞猜战报站 — 排行榜、毒奶榜、AI锐评，每天更新">
+  <link rel="icon" href="assets/worldcup-logo.jpeg" type="image/jpeg">
+
+  <!-- ====== 微信/社交分享标签 ====== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2026 老同学·世界杯竞猜比赛 🏆">
+  <meta property="og:description" content="老同学微信群的世界杯竞猜战报站 — 每日赛果、排行榜、毒奶榜、AI锐评">
+  <meta property="og:image" content="https://manhvanvanh-afk.github.io/MJMFB/assets/hero-banner.jpg">
+  <meta property="og:url" content="https://manhvanvanh-afk.github.io/MJMFB/">
+  <meta property="og:locale" content="zh_CN">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="2026 老同学·世界杯竞猜比赛 🏆">
+  <meta name="twitter:description" content="老同学微信群的世界杯竞猜战报站 — 每日赛果、排行榜、毒奶榜、AI锐评">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,44 +28,90 @@
   <!-- ====== 导航栏 ====== -->
   <nav class="top-nav">
     <div class="nav-inner">
-      <span class="nav-logo">🏆 WorldCup League 2026</span>
+      <span class="nav-logo">🏆 美加墨世界杯 2026</span>
       <span class="nav-date" id="navDate"></span>
     </div>
   </nav>
 
   <!-- ====== Hero 顶部区域 ====== -->
   <header class="hero" id="hero">
+    <div class="grass-overlay"></div>
+    <div class="hero-light left"></div>
+    <div class="hero-light right"></div>
     <div class="hero-overlay"></div>
+
     <div class="hero-content">
-      <div class="hero-badge">2026 世界杯</div>
-      <h1 class="hero-title">WORLD CUP<br>LEAGUE 2026</h1>
-      <p class="hero-subtitle">老同学世界杯联赛</p>
-      <div class="hero-stadium-light"></div>
+      <div class="hero-logo">
+        <img src="assets/worldcup-logo.jpeg" alt="2026 世界杯" class="hero-logo-img">
+      </div>
+      <div class="hero-badge">⚽ 2026 世界杯 · 美加墨</div>
+      <h1 class="hero-title">美加墨世界杯<br>2026</h1>
+      <p class="hero-english">World Cup 2026 · USA · Canada · Mexico</p>
+      <p class="hero-subtitle">老同学·世界杯竞猜比赛</p>
+
+      <!-- 倒计时 -->
+      <div class="countdown" id="countdown">
+        <div class="countdown-item">
+          <span class="countdown-num" id="countdownDays">--</span>
+          <span class="countdown-label">天</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-item">
+          <span class="countdown-num" id="countdownHours">--</span>
+          <span class="countdown-label">时</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-item">
+          <span class="countdown-num" id="countdownMins">--</span>
+          <span class="countdown-label">分</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-item">
+          <span class="countdown-num" id="countdownSecs">--</span>
+          <span class="countdown-label">秒</span>
+        </div>
+      </div>
+      <p class="countdown-text">距 2026 世界杯开幕</p>
     </div>
+
+    <div class="hero-stadium-light"></div>
   </header>
 
   <!-- ====== 主内容区 ====== -->
   <main class="container">
 
-    <!-- 今日赛果 -->
-    <section class="section" id="matchesSection">
+    <!-- 昨日赛果（放最上面） -->
+    <section class="section" id="yesterdaySection">
       <div class="section-header">
-        <h2>📋 今日赛果</h2>
-        <span class="section-subtitle">Match Results</span>
+        <h2>📋 昨日赛果</h2>
+        <span class="section-subtitle" id="yesterdayLabel">Yesterday</span>
       </div>
-      <div class="matches-grid" id="matchesGrid">
-        <!-- 由 JavaScript 渲染 -->
+      <div class="matches-grid" id="yesterdayMatches">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
       </div>
     </section>
 
-    <!-- 今日赢家 -->
+    <!-- 今日比赛 -->
+    <section class="section" id="todaySection">
+      <div class="section-header">
+        <h2>⚽ 今日比赛</h2>
+        <span class="section-subtitle" id="todayLabel">Today</span>
+      </div>
+      <div class="matches-grid" id="todayMatches">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+    </section>
+
+    <!-- 昨日赢家（下注排行） -->
     <section class="section" id="winnersSection">
       <div class="section-header">
-        <h2>🔥 今日赢家</h2>
-        <span class="section-subtitle">Daily Winners</span>
+        <h2>💰 昨日赢家</h2>
+        <span class="section-subtitle">昨日下注 · 谁赚最多</span>
       </div>
       <div class="winners-list" id="winnersList">
-        <!-- 由 JavaScript 渲染 -->
+        <div class="skeleton-card short"></div>
       </div>
     </section>
 
@@ -59,7 +122,9 @@
         <span class="section-subtitle">Leaderboard</span>
       </div>
       <div class="leaderboard" id="leaderboard">
-        <!-- 由 JavaScript 渲染 -->
+        <div class="skeleton-card med"></div>
+        <div class="skeleton-card med"></div>
+        <div class="skeleton-card med"></div>
       </div>
     </section>
 
@@ -70,7 +135,7 @@
         <span class="section-subtitle">Curse Ranking</span>
       </div>
       <div class="curse-list" id="curseList">
-        <!-- 由 JavaScript 渲染 -->
+        <div class="skeleton-card"></div>
       </div>
     </section>
 
@@ -81,7 +146,7 @@
         <span class="section-subtitle">Hot Takes</span>
       </div>
       <div class="ai-comments" id="aiComments">
-        <!-- 由 JavaScript 渲染 -->
+        <div class="skeleton-card"></div>
       </div>
     </section>
 
@@ -96,13 +161,27 @@
       </div>
     </section>
 
+    <!-- 完整赛程表 -->
+    <section class="section" id="scheduleSection">
+      <div class="section-header">
+        <h2>🏟️ 完整赛程表</h2>
+        <span class="section-subtitle">Full Schedule</span>
+      </div>
+      <div class="round-tabs" id="roundTabs">
+        <!-- 由 JavaScript 生成 tab 按钮 -->
+      </div>
+      <div class="schedule-list" id="scheduleList">
+        <div class="skeleton-card med"></div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ====== 页脚 ====== -->
   <footer class="footer">
     <div class="footer-inner">
-      <p>🏆 2026 老同学世界杯联赛 · 纯属娱乐</p>
-      <p class="footer-small">数据每日更新 · 一切为开心</p>
+      <p>🏆 2026 老同学·世界杯竞猜比赛 · 纯属娱乐</p>
+      <p class="footer-small">🇺🇸 🇨🇦 🇲🇽 数据每日更新 · 一切为开心</p>
     </div>
   </footer>
 

@@ -56,20 +56,52 @@ def main():
 
     # ====== 第一步：更新比赛结果 ======
     print_title('第一步：更新比赛结果')
+    print('下面的赛程来自 2026 世界杯分组。选择要更新比分的比赛。\n')
 
-    matches = data.get('matches', [])
-    for i, match in enumerate(matches):
-        print(f'\n比赛 {i+1}: {match["home"]} vs {match["away"]}（当前比分: {match["score"]}）')
-        new_score = get_input('  新比分（格式如 2:1，留空不变）', default=match['score'])
-        match['score'] = new_score
-
-    # 添加新比赛
-    while confirm('\n是否添加新比赛？'):
-        home = get_input('  主队')
-        away = get_input('  客队')
-        score = get_input('  比分（格式如 2:1，未赛填 -）', default='-')
-        matches.append({'home': home, 'away': away, 'score': score})
-        print(f'  ✅ 已添加: {home} vs {away}')
+    schedule = data.get('schedule', [])
+    if not schedule:
+        print('⚠️ 没有赛程数据')
+    else:
+        # 按日期显示，只显示还未开始的比赛或已有比分的
+        today = datetime.now().strftime('%Y-%m-%d')
+        
+        # 按日期分组
+        from collections import OrderedDict
+        by_date = OrderedDict()
+        for m in schedule:
+            d = m.get('date', '')
+            if d not in by_date:
+                by_date[d] = []
+            by_date[d].append(m)
+        
+        match_list = []
+        idx = 0
+        for date, matches in by_date.items():
+            print(f'\n  📅 {date}')
+            for m in matches:
+                idx += 1
+                home_flag = {'Mexico':'🇲🇽','Canada':'🇨🇦','United States':'🇺🇸','Brazil':'🇧🇷','Argentina':'🇦🇷','France':'🇫🇷','Germany':'🇩🇪','Spain':'🇪🇸','England':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','Portugal':'🇵🇹','Netherlands':'🇳🇱','Belgium':'🇧🇪'}.get(m.get('home',''), '')
+                away_flag = {'Mexico':'🇲🇽','Canada':'🇨🇦','United States':'🇺🇸','Brazil':'🇧🇷','Argentina':'🇦🇷','France':'🇫🇷','Germany':'🇩🇪','Spain':'🇪🇸','England':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','Portugal':'🇵🇹','Netherlands':'🇳🇱','Belgium':'🇧🇪'}.get(m.get('away',''), '')
+                score_display = m.get('score', '-')
+                group = m.get('group', '')
+                print(f'  [{idx}] {home_flag} {m["home"]:20s} vs {away_flag} {m["away"]:20s}  比分: {score_display}  [{group}组]')
+                match_list.append(m)
+        
+        print()
+        update_idx = get_input('要更新哪场比赛？（输入编号，留空跳过）')
+        while update_idx:
+            try:
+                idx = int(update_idx) - 1
+                if 0 <= idx < len(match_list):
+                    m = match_list[idx]
+                    new_score = get_input(f'  {m["home"]} vs {m["away"]} 新比分', default=m.get('score', '-'))
+                    m['score'] = new_score
+                    print(f'  ✅ 已更新: {m["home"]} vs {m["away"]} = {new_score}')
+                else:
+                    print('  ⚠️ 编号无效')
+            except ValueError:
+                print('  ⚠️ 请输入数字')
+            update_idx = get_input('继续更新？输入编号（留空结束）')
 
     # ====== 第二步：更新积分 ======
     print_title('第二步：更新积分')

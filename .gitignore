@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 data_backup_*.json
+
+# 原始图片源文件（重复素材，网页只用 assets/ 下的）
+JPG/
+微信名字和头像/
