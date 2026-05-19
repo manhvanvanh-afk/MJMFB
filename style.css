@@ -183,9 +183,9 @@ body {
   display: inline-block;
   padding: 6px 20px;
   border: 1px solid var(--green);
-  border-radius: 20px;
+  border-radius: 16px;
   font-size: 13px;
-  color: var(--green);
+  color: var(--gold);
   letter-spacing: 3px;
   margin-bottom: 20px;
   animation: fadeInDown 0.8s ease;
@@ -390,7 +390,7 @@ body {
 .match-score {
   font-size: 24px;
   font-weight: 900;
-  color: var(--green);
+  color: var(--gold);
   min-width: 60px;
   text-align: center;
   font-variant-numeric: tabular-nums;
@@ -427,6 +427,16 @@ body {
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
+}
+
+
+.bet-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
 }
 
 .bet-medal {
@@ -491,7 +501,7 @@ body {
 }
 
 .bet-lose {
-  color: var(--green);
+  color: var(--gold);
   background: rgba(0, 210, 106, 0.1);
 }
 
@@ -586,7 +596,6 @@ body {
 .leaderboard-score {
   font-size: 16px;
   font-weight: 700;
-  color: var(--green);
 }
 
 /* ============================================
@@ -709,7 +718,7 @@ body {
   flex-shrink: 0;
   padding: 8px 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  border-radius: 16px;
   background: transparent;
   color: var(--text-secondary);
   font-size: 13px;

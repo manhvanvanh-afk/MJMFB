@@ -124,6 +124,8 @@ function renderYesterdayWinners(bets) {
     return `<div class="bet-card">
       <div class="bet-header">
         <span class="bet-medal">${medal}</span>
+        <img class="bet-avatar" src="assets/avatars/${p.name}.jpg" alt="${p.name}"
+          onerror="this.style.display='none'">
         <span class="bet-name">${p.name}</span>
         <span class="bet-total ${isProfit?'bet-profit':'bet-loss'}">${isProfit?'+':''}${p.netProfit}</span>
       </div>
@@ -166,7 +168,7 @@ function renderLeaderboard(leaderboard) {
       <img class="leaderboard-avatar" src="${path}" alt="${p.name}"
         onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%23333%22 width=%22100%22 height=%22100%22/><text fill=%22%23999%22 font-size=%2240%22 x=%2250%22 y=%2265%22 text-anchor=%22middle%22>${p.name[0]}</text></svg>'">
       <span class="leaderboard-name">${p.name}</span>
-      <span class="leaderboard-score">${p.score}</span>
+      <span class="leaderboard-score ${p.score >= 0 ? 'bet-profit' : 'bet-loss'}">${p.score >= 0 ? '+' : ''}${p.score}</span>
     </div>`;
   }).join('');
 }
