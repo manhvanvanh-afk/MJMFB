@@ -1049,6 +1049,17 @@ body {
   cursor: pointer;
 }
 
+
+/* 弹窗标题头像 */
+.modal-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
 /* 弹窗滚动条 */
 .modal-body::-webkit-scrollbar {
   width: 4px;

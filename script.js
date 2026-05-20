@@ -343,7 +343,16 @@ function setupPlayerModal(data) {
     const name = nameEl.textContent;
 
     const history = (data.betHistory || []).filter(h => h.name === name);
-    title.textContent = name + ' 的投注记录';
+    // 弹窗标题：头像 + 姓名 + 总分
+    const player = data.leaderboard.find(p => p.name === name);
+    const score = player ? player.score : 0;
+    const scoreClass = score >= 0 ? 'bet-profit' : 'bet-loss';
+    const scoreSign = score >= 0 ? '+' : '';
+    title.innerHTML = `<span style="display:inline-flex;align-items:center;gap:8px;">
+      <img class="modal-avatar" src="assets/avatars/${name}.jpg" onerror="this.style.display='none'" alt="${name}">
+      ${name}
+      <span class="${scoreClass}" style="font-size:13px;font-weight:600;margin-left:8px;">总分: ${scoreSign}${score}</span>
+    </span>`;
 
     if (history.length === 0) {
       body.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:30px;">暂无投注记录</div>';
