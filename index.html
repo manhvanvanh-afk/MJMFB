@@ -86,6 +86,14 @@
   <!-- ====== 主内容区 ====== -->
   <main class="container">
 
+    <!-- 博彩计算器测试入口 -->
+    <section class="section betting-entry-section" id="bettingEntrySection">
+      <button class="betting-open-btn" id="bettingCalculatorOpen" type="button">
+        <span>📊 博彩计算器</span>
+        <small>当前竞足 · 混合过关 · 全部玩法</small>
+      </button>
+    </section>
+
     <!-- 昨日赛果（放最上面） -->
     <section class="section" id="yesterdaySection">
       <div class="section-header">
@@ -214,6 +222,32 @@
         <button class="modal-close" id="modalClose">&times;</button>
       </div>
       <div class="modal-body" id="modalBody">
+        <div style="text-align:center;color:var(--text-muted);padding:30px;">加载中...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== 比赛赔率弹窗 ====== -->
+  <div class="modal-overlay" id="oddsModalOverlay">
+    <div class="modal-dialog odds-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="oddsModalTitle">比赛赔率</h3>
+        <button class="modal-close" id="oddsModalClose">&times;</button>
+      </div>
+      <div class="modal-body" id="oddsModalBody">
+        <div style="text-align:center;color:var(--text-muted);padding:30px;">加载中...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== 博彩计算器弹窗 ====== -->
+  <div class="modal-overlay calculator-overlay" id="bettingCalculatorOverlay">
+    <div class="modal-dialog calculator-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">博彩计算器</h3>
+        <button class="modal-close" id="bettingCalculatorClose" type="button">&times;</button>
+      </div>
+      <div class="modal-body calculator-body" id="bettingCalculatorBody">
         <div style="text-align:center;color:var(--text-muted);padding:30px;">加载中...</div>
       </div>
     </div>

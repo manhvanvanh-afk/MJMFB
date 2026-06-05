@@ -17,6 +17,7 @@ const COUNTRY_FLAGS = {
   "阿根廷": "🇦🇷", "阿尔及利亚": "🇩🇿", "奥地利": "🇦🇹", "约旦": "🇯🇴",
   "葡萄牙": "🇵🇹", "刚果(金)": "🇨🇩", "乌兹别克斯坦": "🇺🇿", "哥伦比亚": "🇨🇴",
   "英格兰": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "克罗地亚": "🇭🇷", "加纳": "🇬🇭", "巴拿马": "🇵🇦"
+  ,"新加坡": "🇸🇬", "中国": "🇨🇳"
 };
 
 function getFlag(name) { return COUNTRY_FLAGS[name] || ''; }
@@ -68,6 +69,8 @@ async function loadData() {
     renderMVP(data.mvp);
     renderFullSchedule(data.schedule);
     setupPlayerModal(data);
+    setupOddsModal(data);
+    setupBettingCalculator();
 
     document.getElementById('loading').classList.add('hidden');
   } catch (e) {
@@ -97,15 +100,480 @@ function renderMatchesByDate(containerId, labelId, schedule, today, mode) {
   container.innerHTML = ms.map(m => {
     const hf = getFlag(m.home), af = getFlag(m.away);
     const hasScore = m.score && m.score !== '-';
-    return `<div class="match-card">
+    const hasOdds = m.odds && Array.isArray(m.odds.playGroups) && m.odds.playGroups.length > 0;
+    return `<div class="match-card ${hasOdds ? 'has-odds' : ''}" data-match-id="${m.id}">
       <div class="match-main">
         <span class="match-team home">${hf} ${m.home}</span>
         <span class="match-score ${!hasScore?'pending':''}">${m.score||'-'}</span>
         <span class="match-team away">${af} ${m.away}</span>
       </div>
       ${m.time ? `<div class="match-time-below">⏰ ${m.time}</div>` : ''}
+      ${hasOdds ? `<div class="odds-hint">点开查看全部玩法赔率</div>` : ''}
     </div>`;
   }).join('');
+}
+
+function escapeHtml(text) {
+  return String(text ?? '').replace(/[&<>"']/g, (ch) => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  }[ch]));
+}
+
+// ============================================
+// 今日比赛赔率弹窗
+// ============================================
+function setupOddsModal(data) {
+  const today = document.getElementById('todayMatches');
+  const scheduleList = document.getElementById('scheduleList');
+  const overlay = document.getElementById('oddsModalOverlay');
+  const title = document.getElementById('oddsModalTitle');
+  const body = document.getElementById('oddsModalBody');
+  const close = document.getElementById('oddsModalClose');
+
+  if (!today || !overlay || !title || !body || !close) return;
+
+  function closeModal() {
+    overlay.classList.remove('active');
+  }
+
+  function formatOdd(value) {
+    if (value === null || value === undefined || value === '') return '-';
+    return Number(value).toFixed(2).replace(/\.00$/, '');
+  }
+
+  function renderGroup(group) {
+    const items = (group.items || []).filter(item => item.value !== null && item.value !== undefined && item.value !== '');
+    if (items.length === 0) return '';
+
+    return `<div class="odds-group">
+      <div class="odds-group-title">${group.title}</div>
+      <div class="odds-grid">
+        ${items.map(item => `<div class="odds-cell">
+          <span class="odds-label">${item.label}</span>
+          <span class="odds-value">${formatOdd(item.value)}</span>
+        </div>`).join('')}
+      </div>
+    </div>`;
+  }
+
+  close.addEventListener('click', closeModal);
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  function openOddsFromCard(card) {
+    if (!card) return;
+
+    const matchId = Number(card.dataset.matchId);
+    const match = (data.schedule || []).find(m => Number(m.id) === matchId);
+    if (!match || !match.odds) return;
+
+    title.textContent = `${match.home} vs ${match.away}`;
+    body.innerHTML = `
+      <div class="odds-summary">
+        <div>${match.odds.league || '赛事'} · ${match.odds.lotteryId || ''}</div>
+        <div>${match.date} ${match.time || ''}</div>
+        <div>来源：${match.odds.source || '未知'} · 更新：${match.odds.updatedAt || '-'}</div>
+      </div>
+      ${(match.odds.playGroups || []).map(renderGroup).join('')}
+      <div class="odds-note">本页仅作朋友群娱乐记录，不构成任何投注建议。</div>
+    `;
+    overlay.classList.add('active');
+  }
+
+  today.addEventListener('click', (e) => {
+    openOddsFromCard(e.target.closest('.match-card.has-odds'));
+  });
+
+  if (scheduleList) {
+    scheduleList.addEventListener('click', (e) => {
+      openOddsFromCard(e.target.closest('.match-card.has-odds'));
+    });
+  }
+}
+
+// ============================================
+// 博彩计算器测试版
+// ============================================
+function setupBettingCalculator() {
+  const openBtn = document.getElementById('bettingCalculatorOpen');
+  const overlay = document.getElementById('bettingCalculatorOverlay');
+  const closeBtn = document.getElementById('bettingCalculatorClose');
+  const body = document.getElementById('bettingCalculatorBody');
+
+  if (!openBtn || !overlay || !closeBtn || !body) return;
+
+  let oddsData = null;
+  const selected = new Map();
+  const selectedPasses = new Set();
+
+  function closeModal() {
+    overlay.classList.remove('active');
+  }
+
+  function formatOdd(value) {
+    if (value === null || value === undefined || value === '') return '-';
+    return Number(value).toFixed(2).replace(/\.00$/, '');
+  }
+
+  function formatMoney(value) {
+    if (!Number.isFinite(value)) return '0.00';
+    return value.toFixed(2);
+  }
+
+  function timeText(matchTime) {
+    if (!matchTime) return '';
+    return matchTime.replace('T', ' ').slice(0, 16);
+  }
+
+  function validItems(group) {
+    return (group.items || []).filter(item => item.value !== null && item.value !== undefined && item.value !== '');
+  }
+
+  function selectionKey(match, group, item) {
+    return [match.matchId, group.key || group.title, item.label].join('::');
+  }
+
+  function playKey(group) {
+    const key = group.key || group.title;
+    if (key === 'spf' || key === 'rqspf') return 'spf-mix';
+    return key;
+  }
+
+  function isWinDrawGroup(group) {
+    const key = group ? (group.key || group.title) : '';
+    return key === 'spf' || key === 'rqspf';
+  }
+
+  function selectedPlayForMatch(matchId) {
+    const found = Array.from(selected.values()).find(item => item.matchId === String(matchId));
+    return found ? found.playKey : '';
+  }
+
+  function compactPlayTitle(title) {
+    if (title.startsWith('让球胜平负')) return title.replace('让球胜平负', '让球');
+    return title;
+  }
+
+  function renderPlayGroup(match, group, previousGroup) {
+    const items = validItems(group);
+    if (!items.length) return '';
+    const currentPlayKey = playKey(group);
+    const previousPlayKey = previousGroup ? playKey(previousGroup) : '';
+    const lockedPlayKey = selectedPlayForMatch(match.matchId);
+    const disabled = lockedPlayKey && lockedPlayKey !== currentPlayKey;
+    const noDivider = isWinDrawGroup(group) && isWinDrawGroup(previousGroup) ? 'calc-play-group-joined' : '';
+    return `<div class="calc-play-group ${noDivider}">
+      <div class="calc-play-title">${escapeHtml(compactPlayTitle(group.title))}</div>
+      <div class="calc-odds-grid">
+        ${items.map(item => {
+          const key = selectionKey(match, group, item);
+          const active = selected.has(key) ? 'active' : '';
+          return `<button class="calc-odd-btn ${active} ${disabled ? 'disabled' : ''}" type="button"
+            data-key="${escapeHtml(key)}"
+            data-match-id="${escapeHtml(match.matchId)}"
+            data-match="${escapeHtml(match.home + ' vs ' + match.away)}"
+            data-play-key="${escapeHtml(currentPlayKey)}"
+            data-play="${escapeHtml(group.title)}"
+            data-label="${escapeHtml(item.label)}"
+            data-odd="${escapeHtml(item.value)}"
+            ${disabled ? 'disabled' : ''}>
+            <span>${escapeHtml(item.label)}</span>
+            <strong>${formatOdd(item.value)}</strong>
+          </button>`;
+        }).join('')}
+      </div>
+    </div>`;
+  }
+
+  function renderMatch(match) {
+    const groups = match.playGroups || [];
+    return `<article class="calc-match-card">
+      <div class="calc-match-head">
+        <div>
+          <div class="calc-match-title">${escapeHtml(match.home)} <span>vs</span> ${escapeHtml(match.away)}</div>
+          <div class="calc-match-meta">${escapeHtml(match.lotteryId || '')} · ${escapeHtml(match.league || '')} · ${escapeHtml(timeText(match.matchTime))}</div>
+        </div>
+        <div class="calc-match-rank">${match.homeRank ? '主' + escapeHtml(match.homeRank) : ''}${match.awayRank ? ' / 客' + escapeHtml(match.awayRank) : ''}</div>
+      </div>
+      <div class="calc-mix-label">混合过关</div>
+      ${groups.map((group, index) => renderPlayGroup(match, group, groups[index - 1])).join('')}
+    </article>`;
+  }
+
+  function renderCalculator() {
+    if (!oddsData) {
+      body.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:30px;">暂无数据</div>';
+      return;
+    }
+
+    const dayMap = {};
+    (oddsData.matches || []).forEach(match => {
+      const key = match.dateLabel || '未分组';
+      if (!dayMap[key]) dayMap[key] = [];
+      dayMap[key].push(match);
+    });
+
+    body.innerHTML = `
+      <div class="calc-toolbar">
+        <div>
+          <div class="calc-toolbar-title">当前竞足比赛</div>
+          <div class="calc-toolbar-meta">来源：${escapeHtml(oddsData.source || '未知')} · 更新：${escapeHtml(oddsData.updatedAt || '-')} · ${oddsData.count || 0} 场</div>
+        </div>
+        <button class="calc-clear-btn" id="calcClearBtn" type="button">清空</button>
+      </div>
+
+      <div class="calc-content">
+        <div class="calc-match-list">
+          ${Object.keys(dayMap).map(day => `
+            <div class="calc-day-block">
+              <div class="calc-day-title">${escapeHtml(day)}</div>
+              ${dayMap[day].map(renderMatch).join('')}
+            </div>
+          `).join('')}
+        </div>
+
+        <aside class="calc-panel">
+          <div class="calc-panel-title">计算器</div>
+          <label class="calc-field">
+            <span>投注倍数</span>
+            <input id="calcMultipleInput" type="number" min="0" step="1" value="0">
+          </label>
+          <div class="calc-field">
+            <span>过关方式</span>
+            <div class="calc-pass-buttons" id="calcPassButtons">
+              ${Array.from({ length: 8 }, (_, index) => {
+                const value = index + 1;
+                return `<button class="calc-pass-btn" type="button" data-pass="${value}" disabled>${value === 1 ? '单关' : value + '关'}</button>`;
+              }).join('')}
+            </div>
+          </div>
+          <div class="calc-stats" id="calcStats"></div>
+          <div class="calc-selected-list" id="calcSelectedList"></div>
+          <div class="calc-note">测试版按已选赔率做理论估算，仅作朋友群娱乐记录。</div>
+        </aside>
+      </div>
+    `;
+
+    body.querySelectorAll('.calc-odd-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const key = btn.dataset.key;
+        if (selected.has(key)) {
+          selected.delete(key);
+          btn.classList.remove('active');
+        } else {
+          const lockedPlayKey = selectedPlayForMatch(btn.dataset.matchId);
+          if (lockedPlayKey && lockedPlayKey !== btn.dataset.playKey) return;
+          selected.set(key, {
+            key,
+            matchId: btn.dataset.matchId,
+            match: btn.dataset.match,
+            playKey: btn.dataset.playKey,
+            play: btn.dataset.play,
+            label: btn.dataset.label,
+            odd: Number(btn.dataset.odd),
+          });
+          btn.classList.add('active');
+        }
+        updatePlayLocks();
+        updateCalculatorPanel();
+      });
+    });
+
+    document.getElementById('calcClearBtn').addEventListener('click', () => {
+      selected.clear();
+      selectedPasses.clear();
+      body.querySelectorAll('.calc-odd-btn.active').forEach(btn => btn.classList.remove('active'));
+      updatePlayLocks();
+      updateCalculatorPanel();
+    });
+
+    document.getElementById('calcMultipleInput').addEventListener('input', updateCalculatorPanel);
+    document.getElementById('calcMultipleInput').addEventListener('blur', normalizeMultipleInput);
+    body.querySelectorAll('.calc-pass-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (btn.disabled) return;
+        const pass = Number(btn.dataset.pass);
+        if (selectedPasses.has(pass)) {
+          selectedPasses.delete(pass);
+        } else {
+          selectedPasses.add(pass);
+        }
+        updateCalculatorPanel(false);
+      });
+    });
+    updatePlayLocks();
+    updateCalculatorPanel();
+  }
+
+  function updatePlayLocks() {
+    body.querySelectorAll('.calc-odd-btn').forEach(btn => {
+      const lockedPlayKey = selectedPlayForMatch(btn.dataset.matchId);
+      const disabled = Boolean(lockedPlayKey && lockedPlayKey !== btn.dataset.playKey);
+      btn.disabled = disabled;
+      btn.classList.toggle('disabled', disabled);
+    });
+  }
+
+  function normalizeMultipleInput() {
+    const input = document.getElementById('calcMultipleInput');
+    if (!input) return 0;
+    let value = Number(input.value || 0);
+    if (!Number.isFinite(value) || value < 0) value = 0;
+    value = Math.floor(value);
+    input.value = String(value);
+    return value;
+  }
+
+  function groupedSelections() {
+    const map = {};
+    selected.forEach(item => {
+      if (!map[item.matchId]) map[item.matchId] = [];
+      map[item.matchId].push(item);
+    });
+    return map;
+  }
+
+  function combinations(arr, size) {
+    const result = [];
+    function walk(start, picked) {
+      if (picked.length === size) {
+        result.push([...picked]);
+        return;
+      }
+      for (let i = start; i < arr.length; i++) {
+        picked.push(arr[i]);
+        walk(i + 1, picked);
+        picked.pop();
+      }
+    }
+    walk(0, []);
+    return result;
+  }
+
+  function sumProducts(groups) {
+    return groups.reduce((sum, group) => {
+      const groupSum = group.reduce((s, item) => s + item.odd, 0);
+      return sum * groupSum;
+    }, 1);
+  }
+
+  function minProduct(groups) {
+    return groups.reduce((sum, group) => {
+      const minOdd = Math.min(...group.map(item => item.odd));
+      return sum * minOdd;
+    }, 1);
+  }
+
+  function countTickets(groups) {
+    return groups.reduce((sum, group) => sum * group.length, 1);
+  }
+
+  function updatePassButtons(matchCount, shouldAutoPick = true) {
+    const maxPass = Math.min(matchCount, 8);
+    const minPass = matchCount >= 2 ? 2 : 1;
+    selectedPasses.forEach(pass => {
+      if (pass > maxPass || pass < minPass) selectedPasses.delete(pass);
+    });
+    if (shouldAutoPick && matchCount > 0 && selectedPasses.size === 0) {
+      selectedPasses.add(maxPass);
+    }
+
+    body.querySelectorAll('.calc-pass-btn').forEach(btn => {
+      const pass = Number(btn.dataset.pass);
+      const enabled = matchCount > 0 && pass >= minPass && pass <= maxPass;
+      btn.disabled = !enabled;
+      btn.classList.toggle('disabled', !enabled);
+      btn.classList.toggle('active', enabled && selectedPasses.has(pass));
+    });
+  }
+
+  function updateCalculatorPanel(shouldAutoPickPass = true) {
+    const stats = document.getElementById('calcStats');
+    const selectedList = document.getElementById('calcSelectedList');
+    const multipleInput = document.getElementById('calcMultipleInput');
+    if (!stats || !selectedList || !multipleInput) return;
+
+    const grouped = groupedSelections();
+    const matchIds = Object.keys(grouped);
+    updatePassButtons(matchIds.length, shouldAutoPickPass);
+
+    let multiple = Number(multipleInput.value || 0);
+    if (!Number.isFinite(multiple) || multiple < 0) multiple = 0;
+    multiple = Math.floor(multiple);
+    if (String(multipleInput.value) !== String(multiple)) multipleInput.value = String(multiple);
+    const stake = 2 * multiple;
+    const passSizes = Array.from(selectedPasses).sort((a, b) => a - b);
+
+    let ticketCount = 0;
+    let maxPrize = 0;
+    let minPrize = 0;
+
+    if (matchIds.length > 0 && passSizes.length > 0) {
+      passSizes.forEach(passSize => {
+        if (passSize <= 0 || passSize > matchIds.length) return;
+        const comboIds = combinations(matchIds, passSize);
+        comboIds.forEach(ids => {
+          const groups = ids.map(id => grouped[id]);
+          ticketCount += countTickets(groups);
+          maxPrize += sumProducts(groups) * stake;
+          const comboMin = minProduct(groups) * stake;
+          minPrize = minPrize === 0 ? comboMin : Math.min(minPrize, comboMin);
+        });
+      });
+    }
+
+    const totalStake = ticketCount * stake;
+    stats.innerHTML = `
+      <div><span>已选场次</span><strong>${matchIds.length}</strong></div>
+      <div><span>已选项</span><strong>${selected.size}</strong></div>
+      <div><span>投注倍数</span><strong>${multiple}</strong></div>
+      <div><span>注数</span><strong>${ticketCount}</strong></div>
+      <div><span>投入</span><strong>${formatMoney(totalStake)}</strong></div>
+      <div><span>最低命中</span><strong>${formatMoney(minPrize)}</strong></div>
+      <div><span>理论最高</span><strong>${formatMoney(maxPrize)}</strong></div>
+    `;
+
+    if (selected.size === 0) {
+      selectedList.innerHTML = '<div class="calc-empty">还没有选择玩法</div>';
+      return;
+    }
+
+    selectedList.innerHTML = Array.from(selected.values()).map(item => `
+      <div class="calc-selected-item">
+        <span>${escapeHtml(item.match)} · ${escapeHtml(item.play)} · ${escapeHtml(item.label)}</span>
+        <strong>${formatOdd(item.odd)}</strong>
+      </div>
+    `).join('');
+  }
+
+  async function openCalculator() {
+    overlay.classList.add('active');
+    body.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:30px;">正在加载赔率数据...</div>';
+    try {
+      const res = await fetch('odds_data.json?' + Date.now());
+      if (!res.ok) throw new Error('赔率数据读取失败');
+      oddsData = await res.json();
+      renderCalculator();
+    } catch (error) {
+      console.error(error);
+      body.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:30px;">赔率数据加载失败，请先运行 python3 scrape_odds.py</div>';
+    }
+  }
+
+  openBtn.addEventListener('click', openCalculator);
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeModal();
+  });
 }
 
 // ============================================
@@ -274,8 +742,9 @@ function renderFullSchedule(schedule) {
             }
             const hf = getFlag(m.home), af = getFlag(m.away);
             const hasScore = m.score && m.score !== '-';
+            const hasOdds = m.odds && Array.isArray(m.odds.playGroups) && m.odds.playGroups.length > 0;
             const groupLabel = m.group ? ` <span class="match-group">${m.group}组</span>` : '';
-            return `<div class="match-card">
+            return `<div class="match-card ${hasOdds ? 'has-odds' : ''}" data-match-id="${m.id}">
               <div class="match-main">
                 <span class="match-team home">${hf} ${m.home}</span>
                 <span class="match-score ${!hasScore?'pending':''}">${m.score||'-'}</span>
