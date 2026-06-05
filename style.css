@@ -204,18 +204,53 @@ body {
   animation: fadeInUp 0.8s ease 0.2s both;
 }
 
+.hero-title-fallback,
+.hero-subtitle-fallback {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.hero-title-img {
+  display: block;
+  width: min(760px, 90vw);
+  height: auto;
+  margin: -18px auto -20px;
+  filter:
+    saturate(1.08)
+    contrast(1.04)
+    drop-shadow(0 16px 36px rgba(0, 0, 0, 0.62));
+}
+
 .hero-subtitle {
   font-size: clamp(16px, 3vw, 24px);
   color: var(--text-secondary);
-  margin-top: 16px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  line-height: 0;
   letter-spacing: 6px;
   animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.hero-subtitle-img {
+  display: block;
+  width: min(500px, 78vw);
+  height: auto;
+  margin: 0 auto;
+  filter:
+    saturate(1.08)
+    contrast(1.04)
+    drop-shadow(0 10px 16px rgba(0, 0, 0, 0.68))
+    drop-shadow(0 22px 34px rgba(0, 0, 0, 0.52));
 }
 
 .hero-english {
   font-size: clamp(12px, 2vw, 16px);
   color: var(--text-muted);
-  margin-top: 8px;
+  margin-top: -2px;
   letter-spacing: 2px;
   animation: fadeInUp 0.8s ease 0.5s both;
 }
@@ -1650,6 +1685,15 @@ body {
     padding: 40px 32px;
   }
 
+  .hero-title-img {
+    width: min(660px, 98vw);
+    margin: -12px auto -14px;
+  }
+
+  .hero-subtitle-img {
+    width: min(430px, 88vw);
+  }
+
   .mvp-text {
     font-size: 22px;
   }
@@ -1715,6 +1759,14 @@ body {
 @media (max-width: 380px) {
   .hero-title {
     font-size: 32px;
+  }
+
+  .hero-title-img {
+    width: min(560px, 104vw);
+  }
+
+  .hero-subtitle-img {
+    width: min(360px, 92vw);
   }
 
   .match-team {
