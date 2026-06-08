@@ -201,7 +201,7 @@ h2 {
 
 .hero-panel,
 .card,
-.ai-teaser,
+.last-update-card,
 .profile-card {
   position: relative;
   z-index: 1;
@@ -417,7 +417,7 @@ h2 {
 }
 
 .card,
-.ai-teaser,
+.last-update-card,
 .profile-card {
   margin-top: 10px;
   padding: 12px 10px;
@@ -568,46 +568,16 @@ h2 {
   white-space: nowrap;
 }
 
-.ai-teaser {
-  display: grid;
-  grid-template-columns: 52px 1fr auto;
-  align-items: center;
-  gap: 10px;
-  border-color: rgba(125, 71, 255, .65);
-}
-
-.teaser-robot {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  filter: drop-shadow(0 5px 8px rgba(0,0,0,.4));
-}
-
-.ai-teaser strong {
-  display: block;
-  color: #a37bff;
-  font-size: 20px;
-}
-
-.ai-teaser p {
-  color: var(--muted);
-  font-size: 13px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.go-dot {
+.last-update-card {
+  min-height: 40px;
   display: grid;
   place-items: center;
-  align-self: center;
-  width: 24px;
-  height: 44px;
-  border-radius: 50%;
-  background: transparent;
-  color: var(--yellow);
-  font-size: 30px;
-  font-weight: 900;
+  border-color: rgba(255, 255, 255, .08);
+  background: rgba(8, 12, 18, .52);
+  box-shadow: none;
+  color: rgba(247, 247, 251, .46);
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .tab-switch {

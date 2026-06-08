@@ -76,6 +76,7 @@ function renderFallbackFirst() {
   renderAllMatches(fallbackMatches);
   renderAI(normalizeAI([]));
   renderBoards(ranked);
+  renderLastUpdated(null);
 }
 
 async function loadRealData() {
@@ -92,9 +93,17 @@ async function loadRealData() {
     renderAllMatches(appData.schedule);
     renderAI(normalizeAI(appData.aiComments));
     renderBoards(sortLeaderboard(currentLeaderboard, "today"));
+    renderLastUpdated(appData);
   } catch (error) {
     console.warn(error);
   }
+}
+
+function renderLastUpdated(data) {
+  const el = document.getElementById("lastUpdateText");
+  if (!el) return;
+  const text = data?.lastUpdatedText || data?.lastUpdated || "";
+  el.textContent = text ? `最后更新：${text}` : "最后更新：等待云端自动更新";
 }
 
 async function loadOddsData() {

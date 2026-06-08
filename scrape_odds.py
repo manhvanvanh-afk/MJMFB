@@ -13,11 +13,13 @@ import ssl
 import urllib.parse
 import urllib.request
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 DATA_FILE = os.path.join(os.path.dirname(__file__), 'data.json')
 ODDS_FILE = os.path.join(os.path.dirname(__file__), 'odds_data.json')
 API_BASE = 'https://justpost.haoyun999.cn/api'
 SSL_CONTEXT = ssl._create_unverified_context()
+BEIJING_TZ = ZoneInfo('Asia/Shanghai')
 
 
 def normalize_team_name(name):
@@ -185,7 +187,7 @@ def fetch_all_odds():
     data = {
         'source': '好运计算器',
         'api': API_BASE,
-        'updatedAt': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+        'updatedAt': format_beijing_time(datetime.now(BEIJING_TZ)),
         'count': len(rows),
         'matches': rows,
     }
@@ -193,6 +195,11 @@ def fetch_all_odds():
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f'已生成 {ODDS_FILE}，共 {len(rows)} 场')
     return data
+
+
+def format_beijing_time(now):
+    """显示给页面看的北京时间。"""
+    return f'{now.year}年{now.month}月{now.day}日 {now.hour:02d}:{now.minute:02d}'
 
 
 def write_today_demo_match(odds_data):

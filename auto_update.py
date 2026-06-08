@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-自动更新脚本 — 被定时任务调用
-每 12 小时执行一次：
-  1. 爬取 eblcu.net 最新比分
-  2. 有变化就提交并推送 GitHub
+GitHub Actions 云端自动更新脚本。
+
+每次运行只更新数据文件：
+  1. 爬取世界杯比赛比分，更新 data.json
+  2. 爬取世界杯赔率 / 参考指数，更新 odds_data.json
+  3. 写入北京时间最后更新时间，供首页显示
 """
 
 import json
@@ -12,87 +14,86 @@ import os
 import subprocess
 import sys
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_FILE = os.path.join(SCRIPT_DIR, 'data.json')
-SCRAPE_SCRIPT = os.path.join(SCRIPT_DIR, 'scrape_eblcu.py')
+DATA_FILE = os.path.join(SCRIPT_DIR, "data.json")
+ODDS_FILE = os.path.join(SCRIPT_DIR, "odds_data.json")
+SCRAPE_SCORE_SCRIPT = os.path.join(SCRIPT_DIR, "scrape_eblcu.py")
+SCRAPE_ODDS_SCRIPT = os.path.join(SCRIPT_DIR, "scrape_odds.py")
+BEIJING_TZ = ZoneInfo("Asia/Shanghai")
 
 
-def log(msg):
-    print(f'[{datetime.now().strftime("%H:%M:%S")}] {msg}')
+def log(message):
+    print(f"[{datetime.now(BEIJING_TZ).strftime('%H:%M:%S')}] {message}")
 
 
-def git_has_changes():
-    """检查 data.json 是否有未提交的修改"""
+def run_script(path):
+    """运行一个爬虫脚本。失败时打印日志，但不中断另一项数据更新。"""
+    log(f"运行 {os.path.basename(path)}")
     result = subprocess.run(
-        ['git', 'diff', '--name-only', DATA_FILE],
-        capture_output=True, text=True, cwd=SCRIPT_DIR
+        [sys.executable, path],
+        cwd=SCRIPT_DIR,
+        text=True,
+        capture_output=True,
     )
-    return bool(result.stdout.strip())
+    if result.stdout:
+        print(result.stdout)
+    if result.stderr:
+        print(result.stderr)
+    if result.returncode != 0:
+        log(f"{os.path.basename(path)} 运行失败，返回码：{result.returncode}")
+    return result.returncode == 0
+
+
+def load_json(path, fallback):
+    if not os.path.exists(path):
+        return fallback
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def write_json(path, data):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+
+def write_last_updated(score_ok, odds_ok):
+    """把最后更新时间写入 data.json。页面只读这个字段，不改 UI。"""
+    now = datetime.now(BEIJING_TZ).replace(second=0, microsecond=0)
+    text = f"{now.year}年{now.month}月{now.day}日 {now.hour:02d}:{now.minute:02d}"
+
+    data = load_json(DATA_FILE, {})
+    data["lastUpdatedAt"] = now.isoformat()
+    data["lastUpdatedText"] = text
+    data["lastUpdatedSource"] = "GitHub Actions"
+    data["lastUpdateStatus"] = {
+        "score": "ok" if score_ok else "failed",
+        "odds": "ok" if odds_ok else "failed",
+    }
+    write_json(DATA_FILE, data)
+
+    odds = load_json(ODDS_FILE, {
+        "source": "好运计算器",
+        "api": "https://justpost.haoyun999.cn/api",
+        "count": 0,
+        "matches": [],
+    })
+    odds["lastUpdatedAt"] = now.isoformat()
+    odds["updatedAt"] = text
+    write_json(ODDS_FILE, odds)
+
+    log(f"最后更新时间：{text}")
 
 
 def main():
-    log('🚀 自动更新开始')
-
-    # 1. 读取当前数据快照
-    with open(DATA_FILE, 'r', encoding='utf-8') as f:
-        before = json.load(f)
-
-    # 2. 保存修改前的 git hash
-    result = subprocess.run(
-        ['git', 'rev-parse', 'HEAD'],
-        capture_output=True, text=True, cwd=SCRIPT_DIR
-    )
-    old_hash = result.stdout.strip()
-
-    # 3. 运行爬虫（无交互模式）
-    log('🌐 爬取 eblcu.net...')
-    result = subprocess.run(
-        [sys.executable, SCRAPE_SCRIPT],
-        capture_output=True, text=True, cwd=SCRIPT_DIR
-    )
-    print(result.stdout)
-    if result.stderr:
-        print(result.stderr)
-
-    # 4. 检查 data.json 有没有变化
-    if not git_has_changes():
-        log('ℹ️ 没有新比分，跳过推送')
-        return
-
-    # 5. 读取更新后的数据，看看变了什么
-    with open(DATA_FILE, 'r', encoding='utf-8') as f:
-        after = json.load(f)
-
-    # 统计比分有变化的场次
-    updates = 0
-    for am, bm in zip(after['schedule'], before['schedule']):
-        if am['score'] != bm['score'] and am['score'] != '-':
-            updates += 1
-
-    log(f'⚽ {updates} 场比赛比分更新')
-
-    # 6. 提交并推送
-    try:
-        subprocess.run(['git', 'add', DATA_FILE], check=True, cwd=SCRIPT_DIR)
-        today = datetime.now().strftime('%Y-%m-%d %H:%M')
-        subprocess.run(
-            ['git', 'commit', '-m', f'📊 自动更新比分 {today}'],
-            check=True, cwd=SCRIPT_DIR
-        )
-        result = subprocess.run(
-            ['git', 'push'],
-            capture_output=True, text=True, cwd=SCRIPT_DIR
-        )
-        if result.returncode == 0:
-            log('✅ 已推送到 GitHub')
-        else:
-            log(f'⚠️ 推送失败: {result.stderr[:200]}')
-    except subprocess.CalledProcessError as e:
-        log(f'⚠️ Git 操作失败: {e}')
-
-    log('🎉 自动更新完成')
+    log("云端自动更新开始")
+    score_ok = run_script(SCRAPE_SCORE_SCRIPT)
+    odds_ok = run_script(SCRAPE_ODDS_SCRIPT)
+    write_last_updated(score_ok, odds_ok)
+    log("云端自动更新完成")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
