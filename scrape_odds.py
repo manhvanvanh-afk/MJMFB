@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-测试用：从好运计算器接口抓取当前竞足比赛和全部玩法赔率。
+从好运计算器接口抓取世界杯赛程里的比赛和全部玩法赔率。
 
 会生成 odds_data.json，网页里的「博彩计算器」读取这个文件展示和计算。
-同时保留把「新加坡 vs 中国」写入今日比赛的测试数据，方便验证旧弹窗。
 """
 
 import json
@@ -19,6 +18,38 @@ DATA_FILE = os.path.join(os.path.dirname(__file__), 'data.json')
 ODDS_FILE = os.path.join(os.path.dirname(__file__), 'odds_data.json')
 API_BASE = 'https://justpost.haoyun999.cn/api'
 SSL_CONTEXT = ssl._create_unverified_context()
+
+
+def normalize_team_name(name):
+    """统一球队名称，方便和 data.json 的世界杯赛程匹配。"""
+    return str(name or '').replace(' ', '').strip()
+
+
+def load_worldcup_pairs():
+    """读取主项目赛程，只允许抓世界杯赛程内的对阵。"""
+    if not os.path.exists(DATA_FILE):
+        return set()
+
+    with open(DATA_FILE, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    pairs = set()
+    for match in data.get('schedule', []):
+        home = normalize_team_name(match.get('home'))
+        away = normalize_team_name(match.get('away'))
+        if home and away and match.get('id') != 9001:
+            pairs.add((home, away))
+            pairs.add((away, home))
+    return pairs
+
+
+def is_worldcup_match(match, allowed_pairs):
+    """只保留 data.json 赛程里的世界杯对阵。"""
+    if not allowed_pairs:
+        return False
+    home = normalize_team_name(match.get('homeChs') or match.get('hometeamchs'))
+    away = normalize_team_name(match.get('awayChs') or match.get('awayteamchs'))
+    return (home, away) in allowed_pairs
 
 
 def fetch_json(path, params=None):
@@ -133,13 +164,17 @@ def normalize_match(day, match, info):
 
 def fetch_all_odds():
     """抓取当前列表中所有比赛的详细玩法。"""
-    print('正在抓取今日竞足列表...')
+    print('正在抓取竞足列表，并只保留世界杯赛程...')
     matchs = fetch_json('/Game/GetSimpleMatchsAll')
+    allowed_pairs = load_worldcup_pairs()
     rows = []
     for day in matchs.get('data', []):
         for match in day.get('list', []):
             match_id = match.get('matchId')
             if not match_id:
+                continue
+            if not is_worldcup_match(match, allowed_pairs):
+                print(f'  跳过非世界杯赛程：{match.get("homeChs")} vs {match.get("awayChs")}')
                 continue
             print(f'  抓取 {match.get("lotteryId")} {match.get("homeChs")} vs {match.get("awayChs")}')
             detail = fetch_json('/Game/GetMoreSpInfo', {'matchId': match_id})
@@ -215,7 +250,7 @@ def write_today_demo_match(odds_data):
 
 def main():
     odds_data = fetch_all_odds()
-    write_today_demo_match(odds_data)
+    print('已关闭测试赛写入，只保留世界杯赔率数据')
 
 
 if __name__ == '__main__':

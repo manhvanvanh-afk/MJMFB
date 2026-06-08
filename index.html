@@ -2,262 +2,137 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-  <!-- ====== 基础标签 ====== -->
-  <title>2026 老同学·世界杯竞猜比赛 🏆</title>
-  <meta name="description" content="老同学微信群的世界杯竞猜战报站 — 排行榜、毒奶榜、AI锐评，每天更新">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>群友买球计分板 · 手机测试版</title>
+  <meta name="description" content="群友世界杯竞猜手机端测试页面">
   <link rel="icon" href="assets/worldcup-logo.jpeg" type="image/jpeg">
-
-  <!-- ====== 微信/社交分享标签 ====== -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="2026 老同学·世界杯竞猜比赛 🏆">
-  <meta property="og:description" content="老同学微信群的世界杯竞猜战报站 — 每日赛果、排行榜、毒奶榜、AI锐评">
-  <meta property="og:image" content="https://manhvanvanh-afk.github.io/MJMFB/assets/og-image-v2.jpg?v=20260519">
-  <meta property="og:url" content="https://manhvanvanh-afk.github.io/MJMFB/">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <link rel="image_src" href="https://manhvanvanh-afk.github.io/MJMFB/assets/og-image-v2.jpg?v=20260519">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="2026 老同学·世界杯竞猜比赛 🏆">
-  
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <meta name="twitter:description" content="老同学微信群的世界杯竞猜战报站 — 每日赛果、排行榜、毒奶榜、AI锐评">
-
-  <link rel="stylesheet" href="style.css?v=20260519">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- ====== 导航栏 ====== -->
-  <nav class="top-nav">
-    <div class="nav-inner">
-      <span class="nav-logo">🏆 美加墨世界杯 2026</span>
-      <span class="nav-date" id="navDate"></span>
-    </div>
-  </nav>
-
-  <!-- ====== Hero 顶部区域 ====== -->
-  <header class="hero" id="hero">
-    <div class="grass-overlay"></div>
-    <div class="hero-light left"></div>
-    <div class="hero-light right"></div>
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-      <div class="hero-logo">
-        <img src="assets/worldcup-logo.jpeg" alt="2026 世界杯" class="hero-logo-img">
-      </div>
-      <h1 class="hero-title">
-        <span class="hero-title-fallback">美加墨世界杯 2026</span>
-        <img class="hero-title-img" src="assets/hero-title-betting-cutout.png" alt="美加墨世界杯 2026">
-      </h1>
-      <p class="hero-english">World Cup 2026 · USA · Canada · Mexico</p>
-      <p class="hero-subtitle">
-        <span class="hero-subtitle-fallback">老同学·世界杯竞猜比赛</span>
-        <img class="hero-subtitle-img" src="assets/hero-subtitle-betting-cropped.png" alt="老同学·世界杯竞猜比赛">
-      </p>
-
-      <!-- 倒计时 -->
-      <div class="countdown" id="countdown">
-        <div class="countdown-item">
-          <span class="countdown-num" id="countdownDays">--</span>
-          <span class="countdown-label">天</span>
+  <main class="phone-shell" aria-label="手机端测试页面">
+    <section class="screen active" id="screen-home">
+      <header class="app-header">
+        <div class="brand-lockup hero-title-stack">
+          <img src="assets/hero-title-betting-cutout.png" alt="群友买球计分板" class="hero-title-cutout">
+          <img src="assets/hero-subtitle-betting-cutout.png" alt="世界杯竞猜" class="hero-subtitle-cutout">
         </div>
-        <span class="countdown-sep">:</span>
-        <div class="countdown-item">
-          <span class="countdown-num" id="countdownHours">--</span>
-          <span class="countdown-label">时</span>
+      </header>
+
+      <section class="hero-panel">
+        <div class="section-title">
+          <span>🏆 今日积分榜前三</span>
+          <small>实时气氛组</small>
         </div>
-        <span class="countdown-sep">:</span>
-        <div class="countdown-item">
-          <span class="countdown-num" id="countdownMins">--</span>
-          <span class="countdown-label">分</span>
+        <div class="podium" id="podium"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-title">
+          <span>🔥 排行榜速览</span>
+          <small>今日积分 / 总积分</small>
         </div>
-        <span class="countdown-sep">:</span>
-        <div class="countdown-item">
-          <span class="countdown-num" id="countdownSecs">--</span>
-          <span class="countdown-label">秒</span>
+        <div class="mini-rank" id="miniRank"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-title">
+          <span>⚽ 今日比赛</span>
+          <small id="todayDate"></small>
         </div>
-      </div>
-      <p class="countdown-text">距 2026 世界杯开幕</p>
-    </div>
+        <div class="match-list compact" id="homeMatches"></div>
+      </section>
 
-    <div class="hero-stadium-light"></div>
-  </header>
-
-  <!-- ====== 主内容区 ====== -->
-  <main class="container">
-
-    <!-- 博彩计算器测试入口 -->
-    <section class="section betting-entry-section" id="bettingEntrySection">
-      <button class="betting-open-btn" id="bettingCalculatorOpen" type="button">
-        <span>📊 博彩计算器</span>
-        <small>当前竞足 · 混合过关 · 全部玩法</small>
-      </button>
+      <section class="ai-teaser" data-go="ai">
+        <img src="assets/generated/ai-robot.png" alt="" class="teaser-robot">
+        <div>
+          <strong>AI 毒舌点评</strong>
+          <p>美加墨赛程一开，群里的毒奶先热身。</p>
+        </div>
+        <span class="go-dot">›</span>
+      </section>
     </section>
 
-    <!-- 昨日赛果（放最上面） -->
-    <section class="section" id="yesterdaySection">
-      <div class="section-header">
-        <h2>📋 昨日赛果</h2>
-        <span class="section-subtitle" id="yesterdayLabel">Yesterday</span>
+    <section class="screen" id="screen-rank">
+      <header class="page-header sticker-header">
+        <img src="assets/generated/title-rank-text.png" alt="排行榜" class="title-text">
+        <img src="assets/generated/rank-mascot.png" alt="" class="header-mascot rank-mascot">
+      </header>
+      <div class="tab-switch">
+        <button class="active" data-rank-tab="today">今日</button>
+        <button data-rank-tab="week">本周</button>
+        <button data-rank-tab="total">总榜</button>
       </div>
-      <div class="matches-grid" id="yesterdayMatches">
-        <div class="skeleton-card"></div>
-        <div class="skeleton-card"></div>
-      </div>
+      <div class="leaderboard-table" id="leaderboard"></div>
     </section>
 
-    <!-- 今日比赛 -->
-    <section class="section" id="todaySection">
-      <div class="section-header">
-        <h2>⚽ 今日比赛</h2>
-        <span class="section-subtitle" id="todayLabel">Today</span>
-      </div>
-      <div class="matches-grid" id="todayMatches">
-        <div class="skeleton-card"></div>
-        <div class="skeleton-card"></div>
-      </div>
+    <section class="screen" id="screen-matches">
+      <header class="page-header sticker-header">
+        <img src="assets/generated/title-matches-text.png" alt="比赛" class="title-text">
+        <img src="assets/generated/panda.png" alt="" class="header-mascot">
+      </header>
+      <div class="date-bar"><span id="matchDate"></span></div>
+      <div class="round-tabs" id="roundTabs"></div>
+      <div class="match-list" id="matchList"></div>
     </section>
 
-    <!-- 昨日赢家（下注排行） -->
-    <section class="section" id="winnersSection">
-      <div class="section-header">
-        <h2>💰 昨日战况</h2>
-        <span class="section-subtitle">昨日战绩 · 谁赚最多</span>
-      </div>
-      <div class="winners-list" id="winnersList">
-        <div class="skeleton-card short"></div>
-      </div>
-    </section>
-
-    <!-- 总排行榜 -->
-    <section class="section leaderboard-section" id="leaderboardSection">
-      <div class="section-header">
-        <h2>🏅 总排行榜</h2>
-        <span class="section-subtitle">Leaderboard</span>
-      </div>
-      <div class="leaderboard" id="leaderboard">
-        <div class="skeleton-card med"></div>
-        <div class="skeleton-card med"></div>
-        <div class="skeleton-card med"></div>
-      </div>
-    </section>
-
-    <!-- 毒奶榜 -->
-    <section class="section" id="curseSection">
-      <div class="section-header">
-        <h2>🤡 毒奶榜</h2>
-        <span class="section-subtitle">Curse Ranking</span>
-      </div>
-      <div class="curse-list" id="curseList">
-        <div class="skeleton-card"></div>
-      </div>
-    </section>
-
-    <!-- AI 锐评 -->
-    <section class="section" id="aiSection">
-      <div class="section-header">
-        <h2>🎙️ AI 锐评</h2>
-        <span class="section-subtitle">Hot Takes</span>
-      </div>
-      <div class="ai-comments" id="aiComments">
-        <div class="skeleton-card"></div>
-      </div>
-    </section>
-
-    <!-- 今日 MVP -->
-    <section class="section mvp-section" id="mvpSection">
-      <div class="mvp-card" id="mvpCard">
-        <div class="mvp-glow"></div>
-        <div class="mvp-content">
-          <div class="mvp-badge">🌟 今日球神</div>
-          <p class="mvp-text" id="mvpText">加载中...</p>
+    <section class="screen" id="screen-ai">
+      <header class="page-header sticker-header">
+        <img src="assets/generated/title-ai-text.png" alt="AI点评" class="title-text">
+        <img src="assets/generated/ai-robot.png" alt="" class="header-mascot">
+      </header>
+      <div class="update-bar" id="aiUpdateBar">正在生成今日点评...</div>
+      <div class="comment-list" id="aiComments"></div>
+      <div class="duo-board">
+        <div class="danger-board">
+          <h3>翻车榜（今日）</h3>
+          <div id="curseBoard"></div>
+        </div>
+        <div class="god-board">
+          <h3>封神榜（今日）</h3>
+          <div id="godBoard"></div>
         </div>
       </div>
     </section>
 
-    <!-- 完整赛程表 -->
-    <section class="section" id="scheduleSection">
-      <div class="section-header">
-        <h2>🏟️ 完整赛程表</h2>
-        <span class="section-subtitle">Full Schedule</span>
-      </div>
-      <div class="round-tabs" id="roundTabs">
-        <!-- 由 JavaScript 生成 tab 按钮 -->
-      </div>
-      <div class="schedule-list" id="scheduleList">
-        <div class="skeleton-card med"></div>
-      </div>
+    <section class="screen" id="screen-calculator">
+      <header class="page-header sticker-header">
+        <img src="assets/generated/title-calculator-text.png" alt="计算器" class="title-text">
+        <img src="assets/generated/doge.png" alt="" class="header-mascot">
+      </header>
+      <section class="calculator-card">
+        <div class="calc-toolbar">
+          <div class="calc-status" id="calcStatus">正在加载赔率数据...</div>
+          <button class="calc-clear-btn" id="calcClearBtn" type="button">清空</button>
+        </div>
+        <div class="odds-match-list" id="oddsMatchList"></div>
+        <div class="calc-row compact">
+          <label for="stakeInput">投注倍数</label>
+          <input id="stakeInput" type="number" min="0" step="1" value="0">
+        </div>
+        <div class="calc-pass-buttons" id="calcPassButtons"></div>
+        <div class="calc-stats" id="calcStats"></div>
+        <div class="calc-result">
+          <span>预计投入</span>
+          <strong id="returnAmount">0.00</strong>
+        </div>
+        <div class="calc-result profit">
+          <span>理论最高</span>
+          <strong id="profitAmount">0.00</strong>
+        </div>
+        <div class="selected-odds" id="selectedOdds"></div>
+        <p class="calc-note">这里只做娱乐测试，不代表任何投注建议。</p>
+      </section>
     </section>
 
+    <nav class="bottom-nav" aria-label="底部导航">
+      <button class="active" data-nav="home"><span>🏠</span>首页</button>
+      <button data-nav="rank"><span>🏆</span>排行榜</button>
+      <button data-nav="matches"><span>⚽</span>比赛</button>
+      <button data-nav="ai"><span>🤖</span>AI点评</button>
+      <button data-nav="calculator"><span>🔢</span>计算器</button>
+    </nav>
   </main>
 
-  <!-- ====== 页脚 ====== -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <p>🏆 2026 老同学·世界杯竞猜比赛 · 纯属娱乐</p>
-      <p class="footer-small">🇺🇸 🇨🇦 🇲🇽 数据每日更新 · 一切为开心</p>
-      <p class="footer-disclaimer">⚠️ 本网站仅供娱乐，所有竞猜均为虚拟积分，不涉及任何真实金钱交易</p>
-    </div>
-  </footer>
-
-  <!-- ====== 加载状态 ====== -->
-  <div class="loading" id="loading">
-    <div class="loading-spinner"></div>
-    <p>⚽ 正在加载战报...</p>
-  </div>
-
-  <!-- ====== 错误提示 ====== -->
-  <div class="error-toast" id="errorToast">
-    <span>⚠️</span>
-    <span id="errorMessage">数据加载失败</span>
-  </div>
-
-  <script src="script.js?v=20260519"></script>
-
-  <!-- ====== 个人投注记录弹窗 ====== -->
-  <div class="modal-overlay" id="modalOverlay">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <h3 class="modal-title" id="modalTitle">投注记录</h3>
-        <button class="modal-close" id="modalClose">&times;</button>
-      </div>
-      <div class="modal-body" id="modalBody">
-        <div style="text-align:center;color:var(--text-muted);padding:30px;">加载中...</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ====== 比赛赔率弹窗 ====== -->
-  <div class="modal-overlay" id="oddsModalOverlay">
-    <div class="modal-dialog odds-dialog">
-      <div class="modal-header">
-        <h3 class="modal-title" id="oddsModalTitle">比赛赔率</h3>
-        <button class="modal-close" id="oddsModalClose">&times;</button>
-      </div>
-      <div class="modal-body" id="oddsModalBody">
-        <div style="text-align:center;color:var(--text-muted);padding:30px;">加载中...</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ====== 博彩计算器弹窗 ====== -->
-  <div class="modal-overlay calculator-overlay" id="bettingCalculatorOverlay">
-    <div class="modal-dialog calculator-dialog">
-      <div class="modal-header">
-        <h3 class="modal-title">博彩计算器</h3>
-        <button class="modal-close" id="bettingCalculatorClose" type="button">&times;</button>
-      </div>
-      <div class="modal-body calculator-body" id="bettingCalculatorBody">
-        <div style="text-align:center;color:var(--text-muted);padding:30px;">加载中...</div>
-      </div>
-    </div>
-  </div>
-
+  <script src="script.js"></script>
 </body>
 </html>
