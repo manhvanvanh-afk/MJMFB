@@ -1,7 +1,7 @@
 {
   "source": "好运计算器",
   "api": "https://justpost.haoyun999.cn/api",
-  "updatedAt": "2026年6月9日 07:04",
+  "updatedAt": "2026年6月9日 18:49",
   "count": 21,
   "matches": [
     {
@@ -29,15 +29,15 @@
           "items": [
             {
               "label": "主胜",
-              "value": 1.34
+              "value": 1.31
             },
             {
               "label": "平",
-              "value": 3.92
+              "value": 4.1
             },
             {
               "label": "客胜",
-              "value": 7.85
+              "value": 8.3
             }
           ]
         },
@@ -47,7 +47,7 @@
           "items": [
             {
               "label": "让胜",
-              "value": 2.2
+              "value": 2.13
             },
             {
               "label": "让平",
@@ -55,7 +55,7 @@
             },
             {
               "label": "让负",
-              "value": 2.7
+              "value": 2.82
             }
           ]
         },
@@ -133,7 +133,7 @@
             },
             {
               "label": "平其他",
-              "value": 600
+              "value": 500
             },
             {
               "label": "0:1",
@@ -233,7 +233,7 @@
           "items": [
             {
               "label": "胜胜",
-              "value": 1.91
+              "value": 1.88
             },
             {
               "label": "胜平",
@@ -245,15 +245,15 @@
             },
             {
               "label": "平胜",
-              "value": 3.65
+              "value": 3.6
             },
             {
               "label": "平平",
-              "value": 5.45
+              "value": 5.6
             },
             {
               "label": "平负",
-              "value": 16
+              "value": 17
             },
             {
               "label": "负胜",
@@ -265,7 +265,7 @@
             },
             {
               "label": "负负",
-              "value": 15
+              "value": 16
             }
           ]
         }
@@ -2432,7 +2432,7 @@
           "items": [
             {
               "label": "主胜",
-              "value": 1.72
+              "value": 1.75
             },
             {
               "label": "平",
@@ -2440,7 +2440,7 @@
             },
             {
               "label": "客胜",
-              "value": 4.1
+              "value": 3.92
             }
           ]
         },
@@ -2450,15 +2450,15 @@
           "items": [
             {
               "label": "让胜",
-              "value": 3.42
+              "value": 3.5
             },
             {
               "label": "让平",
-              "value": 3.35
+              "value": 3.45
             },
             {
               "label": "让负",
-              "value": 1.86
+              "value": 1.81
             }
           ]
         },
@@ -5612,5 +5612,5 @@
       ]
     }
   ],
-  "lastUpdatedAt": "2026-06-09T07:04:00+08:00"
+  "lastUpdatedAt": "2026-06-09T18:49:00+08:00"
 }
