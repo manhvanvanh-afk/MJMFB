@@ -1,7 +1,7 @@
 {
   "source": "好运计算器",
   "api": "https://justpost.haoyun999.cn/api",
-  "updatedAt": "2026年6月9日 18:49",
+  "updatedAt": "2026年6月10日 02:33",
   "count": 21,
   "matches": [
     {
@@ -830,15 +830,15 @@
           "items": [
             {
               "label": "主胜",
-              "value": 1.87
+              "value": 1.83
             },
             {
               "label": "平",
-              "value": 3.02
+              "value": 3.05
             },
             {
               "label": "客胜",
-              "value": 3.8
+              "value": 3.92
             }
           ]
         },
@@ -848,15 +848,15 @@
           "items": [
             {
               "label": "让胜",
-              "value": 3.95
+              "value": 3.8
             },
             {
               "label": "让平",
-              "value": 3.4
+              "value": 3.35
             },
             {
               "label": "让负",
-              "value": 1.72
+              "value": 1.76
             }
           ]
         },
@@ -5612,5 +5612,5 @@
       ]
     }
   ],
-  "lastUpdatedAt": "2026-06-09T18:49:00+08:00"
+  "lastUpdatedAt": "2026-06-10T02:33:00+08:00"
 }
