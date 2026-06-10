@@ -850,7 +850,7 @@ h2 {
   margin-bottom: 12px;
   overflow-y: auto;
   padding-right: 2px;
-  overscroll-behavior: contain;
+  overscroll-behavior-y: auto;
   scrollbar-width: none;
   touch-action: pan-y;
   -webkit-overflow-scrolling: touch;
