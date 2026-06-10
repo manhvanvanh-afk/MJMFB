@@ -1,7 +1,7 @@
 {
   "source": "好运计算器",
   "api": "https://justpost.haoyun999.cn/api",
-  "updatedAt": "2026年6月10日 15:39",
+  "updatedAt": "2026年6月10日 19:58",
   "count": 21,
   "matches": [
     {
@@ -12,8 +12,8 @@
       "matchTime": "2026-06-12T03:00:00",
       "home": "墨西哥",
       "away": "南非",
-      "homeRank": "3",
-      "awayRank": "2",
+      "homeRank": "14",
+      "awayRank": "60",
       "handicap": "-1",
       "single": {
         "spf": true,
@@ -279,8 +279,8 @@
       "matchTime": "2026-06-12T10:00:00",
       "home": "韩国",
       "away": "捷克",
-      "homeRank": "4",
-      "awayRank": "1",
+      "homeRank": "25",
+      "awayRank": "39",
       "handicap": "-1",
       "single": {
         "spf": true,
@@ -546,8 +546,8 @@
       "matchTime": "2026-06-13T03:00:00",
       "home": "加拿大",
       "away": "波黑",
-      "homeRank": "3",
-      "awayRank": "2",
+      "homeRank": "30",
+      "awayRank": "64",
       "handicap": "-1",
       "single": {
         "spf": true,
@@ -813,8 +813,8 @@
       "matchTime": "2026-06-13T09:00:00",
       "home": "美国",
       "away": "巴拉圭",
-      "homeRank": "3",
-      "awayRank": "2",
+      "homeRank": "17",
+      "awayRank": "40",
       "handicap": "-1",
       "single": {
         "spf": true,
@@ -1080,8 +1080,8 @@
       "matchTime": "2026-06-14T03:00:00",
       "home": "卡塔尔",
       "away": "瑞士",
-      "homeRank": "4",
-      "awayRank": "1",
+      "homeRank": "57",
+      "awayRank": "19",
       "handicap": "+2",
       "single": {
         "spf": false,
@@ -1347,8 +1347,8 @@
       "matchTime": "2026-06-14T06:00:00",
       "home": "巴西",
       "away": "摩洛哥",
-      "homeRank": "2",
-      "awayRank": "3",
+      "homeRank": "6",
+      "awayRank": "7",
       "handicap": "-1",
       "single": {
         "spf": true,
@@ -1614,8 +1614,8 @@
       "matchTime": "2026-06-14T09:00:00",
       "home": "海地",
       "away": "苏格兰",
-      "homeRank": "4",
-      "awayRank": "1",
+      "homeRank": "83",
+      "awayRank": "42",
       "handicap": "+1",
       "single": {
         "spf": false,
@@ -1881,8 +1881,8 @@
       "matchTime": "2026-06-14T12:00:00",
       "home": "澳大利亚",
       "away": "土耳其",
-      "homeRank": "4",
-      "awayRank": "1",
+      "homeRank": "27",
+      "awayRank": "22",
       "handicap": "+1",
       "single": {
         "spf": true,
@@ -2148,8 +2148,8 @@
       "matchTime": "2026-06-15T01:00:00",
       "home": "德国",
       "away": "库拉索",
-      "homeRank": "1",
-      "awayRank": "4",
+      "homeRank": "10",
+      "awayRank": "82",
       "handicap": "-3",
       "single": {
         "spf": false,
@@ -2415,8 +2415,8 @@
       "matchTime": "2026-06-15T04:00:00",
       "home": "荷兰",
       "away": "日本",
-      "homeRank": "2",
-      "awayRank": "4",
+      "homeRank": "8",
+      "awayRank": "18",
       "handicap": "-1",
       "single": {
         "spf": true,
@@ -2682,8 +2682,8 @@
       "matchTime": "2026-06-15T07:00:00",
       "home": "科特迪瓦",
       "away": "厄瓜多尔",
-      "homeRank": "3",
-      "awayRank": "2",
+      "homeRank": "33",
+      "awayRank": "23",
       "handicap": "+1",
       "single": {
         "spf": false,
@@ -2949,8 +2949,8 @@
       "matchTime": "2026-06-15T10:00:00",
       "home": "瑞典",
       "away": "突尼斯",
-      "homeRank": "1",
-      "awayRank": "3",
+      "homeRank": "38",
+      "awayRank": "46",
       "handicap": "-1",
       "single": {
         "spf": true,
@@ -3217,7 +3217,7 @@
       "home": "西班牙",
       "away": "佛得角",
       "homeRank": "2",
-      "awayRank": "3",
+      "awayRank": "67",
       "handicap": "-2",
       "single": {
         "spf": false,
@@ -3483,8 +3483,8 @@
       "matchTime": "2026-06-16T03:00:00",
       "home": "比利时",
       "away": "埃及",
-      "homeRank": "1",
-      "awayRank": "2",
+      "homeRank": "9",
+      "awayRank": "29",
       "handicap": "-1",
       "single": {
         "spf": true,
@@ -3750,8 +3750,8 @@
       "matchTime": "2026-06-16T06:00:00",
       "home": "沙特",
       "away": "乌拉圭",
-      "homeRank": "4",
-      "awayRank": "1",
+      "homeRank": "61",
+      "awayRank": "16",
       "handicap": "+1",
       "single": {
         "spf": true,
@@ -4017,8 +4017,8 @@
       "matchTime": "2026-06-16T09:00:00",
       "home": "伊朗",
       "away": "新西兰",
-      "homeRank": "3",
-      "awayRank": "4",
+      "homeRank": "21",
+      "awayRank": "85",
       "handicap": "-1",
       "single": {
         "spf": false,
@@ -4284,8 +4284,8 @@
       "matchTime": "2026-06-17T03:00:00",
       "home": "法国",
       "away": "塞内加尔",
-      "homeRank": "2",
-      "awayRank": "3",
+      "homeRank": "3",
+      "awayRank": "15",
       "handicap": "-1",
       "single": {
         "spf": true,
@@ -4551,8 +4551,8 @@
       "matchTime": "2026-06-17T06:00:00",
       "home": "伊拉克",
       "away": "挪威",
-      "homeRank": "4",
-      "awayRank": "1",
+      "homeRank": "56",
+      "awayRank": "31",
       "handicap": "+2",
       "single": {
         "spf": false,
@@ -4818,8 +4818,8 @@
       "matchTime": "2026-06-17T12:00:00",
       "home": "奥地利",
       "away": "约旦",
-      "homeRank": "1",
-      "awayRank": "3",
+      "homeRank": "24",
+      "awayRank": "63",
       "handicap": "-1",
       "single": {
         "spf": true,
@@ -5085,7 +5085,7 @@
       "matchTime": "2026-06-18T04:00:00",
       "home": "英格兰",
       "away": "克罗地亚",
-      "homeRank": "1",
+      "homeRank": "",
       "awayRank": "2",
       "handicap": "-1",
       "single": {
@@ -5352,7 +5352,7 @@
       "matchTime": "2026-06-18T07:00:00",
       "home": "加纳",
       "away": "巴拿马",
-      "homeRank": "4",
+      "homeRank": "",
       "awayRank": "3",
       "handicap": "-1",
       "single": {
@@ -5612,5 +5612,5 @@
       ]
     }
   ],
-  "lastUpdatedAt": "2026-06-10T15:39:00+08:00"
+  "lastUpdatedAt": "2026-06-10T19:58:00+08:00"
 }
