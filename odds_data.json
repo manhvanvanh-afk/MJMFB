@@ -1,7 +1,7 @@
 {
   "source": "好运计算器",
   "api": "https://justpost.haoyun999.cn/api",
-  "updatedAt": "2026年6月18日 09:45",
+  "updatedAt": "2026年6月18日 14:31",
   "count": 12,
   "matches": [
     {
@@ -29,11 +29,11 @@
           "items": [
             {
               "label": "主胜",
-              "value": 1.69
+              "value": 1.66
             },
             {
               "label": "平",
-              "value": 3.25
+              "value": 3.36
             },
             {
               "label": "客胜",
@@ -47,15 +47,15 @@
           "items": [
             {
               "label": "让胜",
-              "value": 3.25
+              "value": 3.2
             },
             {
               "label": "让平",
-              "value": 3.32
+              "value": 3.35
             },
             {
               "label": "让负",
-              "value": 1.92
+              "value": 1.93
             }
           ]
         },
@@ -65,15 +65,15 @@
           "items": [
             {
               "label": "1:0",
-              "value": 6.25
+              "value": 6.5
             },
             {
               "label": "2:0",
-              "value": 7
+              "value": 6.25
             },
             {
               "label": "2:1",
-              "value": 6.75
+              "value": 6.25
             },
             {
               "label": "3:0",
@@ -81,7 +81,7 @@
             },
             {
               "label": "3:1",
-              "value": 14
+              "value": 13
             },
             {
               "label": "3:2",
@@ -125,7 +125,7 @@
             },
             {
               "label": "2:2",
-              "value": 14
+              "value": 15
             },
             {
               "label": "3:3",
@@ -137,27 +137,27 @@
             },
             {
               "label": "0:1",
-              "value": 11
-            },
-            {
-              "label": "0:2",
-              "value": 23
-            },
-            {
-              "label": "0:3",
-              "value": 65
-            },
-            {
-              "label": "1:2",
               "value": 12
             },
             {
+              "label": "0:2",
+              "value": 26
+            },
+            {
+              "label": "0:3",
+              "value": 70
+            },
+            {
+              "label": "1:2",
+              "value": 13
+            },
+            {
               "label": "1:3",
-              "value": 50
+              "value": 55
             },
             {
               "label": "2:3",
-              "value": 50
+              "value": 55
             },
             {
               "label": "0:4",
@@ -233,39 +233,39 @@
           "items": [
             {
               "label": "胜胜",
-              "value": 2.7
+              "value": 2.55
             },
             {
               "label": "胜平",
-              "value": 15
+              "value": 14
             },
             {
               "label": "胜负",
-              "value": 36
+              "value": 32
             },
             {
               "label": "平胜",
-              "value": 4.3
+              "value": 4.4
             },
             {
               "label": "平平",
-              "value": 5
+              "value": 5.3
             },
             {
               "label": "平负",
-              "value": 9
+              "value": 10
             },
             {
               "label": "负胜",
-              "value": 23
+              "value": 21
             },
             {
               "label": "负平",
-              "value": 15
+              "value": 14
             },
             {
               "label": "负负",
-              "value": 7.35
+              "value": 8
             }
           ]
         }
@@ -296,15 +296,15 @@
           "items": [
             {
               "label": "主胜",
-              "value": 1.35
+              "value": 1.38
             },
             {
               "label": "平",
-              "value": 4.1
+              "value": 3.95
             },
             {
               "label": "客胜",
-              "value": 6.9
+              "value": 6.6
             }
           ]
         },
@@ -314,15 +314,15 @@
           "items": [
             {
               "label": "让胜",
-              "value": 2.23
+              "value": 2.33
             },
             {
               "label": "让平",
-              "value": 3.35
+              "value": 3.3
             },
             {
               "label": "让负",
-              "value": 2.62
+              "value": 2.52
             }
           ]
         },
@@ -332,7 +332,7 @@
           "items": [
             {
               "label": "1:0",
-              "value": 5.5
+              "value": 5.75
             },
             {
               "label": "2:0",
@@ -340,23 +340,23 @@
             },
             {
               "label": "2:1",
-              "value": 6.8
+              "value": 6.5
             },
             {
               "label": "3:0",
-              "value": 8
+              "value": 8.75
             },
             {
               "label": "3:1",
-              "value": 11
+              "value": 10
             },
             {
               "label": "3:2",
-              "value": 33
+              "value": 30
             },
             {
               "label": "4:0",
-              "value": 18
+              "value": 19
             },
             {
               "label": "4:1",
@@ -364,11 +364,11 @@
             },
             {
               "label": "4:2",
-              "value": 75
+              "value": 65
             },
             {
               "label": "5:0",
-              "value": 45
+              "value": 55
             },
             {
               "label": "5:1",
@@ -376,11 +376,11 @@
             },
             {
               "label": "5:2",
-              "value": 175
+              "value": 125
             },
             {
               "label": "胜其他",
-              "value": 42
+              "value": 45
             },
             {
               "label": "0:0",
@@ -396,7 +396,7 @@
             },
             {
               "label": "3:3",
-              "value": 100
+              "value": 70
             },
             {
               "label": "平其他",
@@ -500,19 +500,19 @@
           "items": [
             {
               "label": "胜胜",
-              "value": 1.9
+              "value": 2
             },
             {
               "label": "胜平",
-              "value": 21
+              "value": 17
             },
             {
               "label": "胜负",
-              "value": 60
+              "value": 50
             },
             {
               "label": "平胜",
-              "value": 3.7
+              "value": 3.75
             },
             {
               "label": "平平",
@@ -524,11 +524,11 @@
             },
             {
               "label": "负胜",
-              "value": 29
+              "value": 26
             },
             {
               "label": "负平",
-              "value": 21
+              "value": 17
             },
             {
               "label": "负负",
@@ -563,15 +563,15 @@
           "items": [
             {
               "label": "主胜",
-              "value": 1.24
+              "value": 1.2
             },
             {
               "label": "平",
-              "value": 4.7
+              "value": 5
             },
             {
               "label": "客胜",
-              "value": 9.1
+              "value": 10.5
             }
           ]
         },
@@ -581,15 +581,15 @@
           "items": [
             {
               "label": "让胜",
-              "value": 1.87
+              "value": 1.76
             },
             {
               "label": "让平",
-              "value": 3.45
+              "value": 3.55
             },
             {
               "label": "让负",
-              "value": 3.28
+              "value": 3.6
             }
           ]
         },
@@ -603,11 +603,11 @@
             },
             {
               "label": "2:0",
-              "value": 5.5
+              "value": 5
             },
             {
               "label": "2:1",
-              "value": 6.75
+              "value": 6.5
             },
             {
               "label": "3:0",
@@ -615,7 +615,7 @@
             },
             {
               "label": "3:1",
-              "value": 10
+              "value": 9.5
             },
             {
               "label": "3:2",
@@ -631,7 +631,7 @@
             },
             {
               "label": "4:2",
-              "value": 60
+              "value": 50
             },
             {
               "label": "5:0",
@@ -643,19 +643,19 @@
             },
             {
               "label": "5:2",
-              "value": 150
+              "value": 120
             },
             {
               "label": "胜其他",
-              "value": 30
+              "value": 27
             },
             {
               "label": "0:0",
-              "value": 13
+              "value": 16
             },
             {
               "label": "1:1",
-              "value": 7.75
+              "value": 8.5
             },
             {
               "label": "2:2",
@@ -663,7 +663,7 @@
             },
             {
               "label": "3:3",
-              "value": 125
+              "value": 90
             },
             {
               "label": "平其他",
@@ -671,11 +671,11 @@
             },
             {
               "label": "0:1",
-              "value": 21
+              "value": 25
             },
             {
               "label": "0:2",
-              "value": 65
+              "value": 70
             },
             {
               "label": "0:3",
@@ -683,7 +683,7 @@
             },
             {
               "label": "1:2",
-              "value": 23
+              "value": 27
             },
             {
               "label": "1:3",
@@ -729,15 +729,15 @@
           "items": [
             {
               "label": "0球",
-              "value": 13
+              "value": 16
             },
             {
               "label": "1球",
-              "value": 5.2
+              "value": 5.45
             },
             {
               "label": "2球",
-              "value": 3.4
+              "value": 3.5
             },
             {
               "label": "3球",
@@ -745,19 +745,19 @@
             },
             {
               "label": "4球",
-              "value": 5.25
+              "value": 5
             },
             {
               "label": "5球",
-              "value": 9
+              "value": 8.75
             },
             {
               "label": "6球",
-              "value": 17
+              "value": 14.5
             },
             {
               "label": "7+球",
-              "value": 25
+              "value": 20
             }
           ]
         },
@@ -767,39 +767,39 @@
           "items": [
             {
               "label": "胜胜",
-              "value": 1.7
+              "value": 1.65
             },
             {
               "label": "胜平",
-              "value": 23
+              "value": 21
             },
             {
               "label": "胜负",
-              "value": 65
+              "value": 55
             },
             {
               "label": "平胜",
-              "value": 3.55
+              "value": 3.6
             },
             {
               "label": "平平",
-              "value": 7.25
+              "value": 8.3
             },
             {
               "label": "平负",
-              "value": 20
-            },
-            {
-              "label": "负胜",
-              "value": 28
-            },
-            {
-              "label": "负平",
               "value": 23
             },
             {
+              "label": "负胜",
+              "value": 22
+            },
+            {
+              "label": "负平",
+              "value": 21
+            },
+            {
               "label": "负负",
-              "value": 17
+              "value": 21
             }
           ]
         }
@@ -814,7 +814,7 @@
       "home": "墨西哥",
       "away": "韩国",
       "homeRank": "13",
-      "awayRank": "21",
+      "awayRank": "22",
       "handicap": "-1",
       "single": {
         "spf": true,
@@ -830,15 +830,15 @@
           "items": [
             {
               "label": "主胜",
-              "value": 1.86
+              "value": 1.89
             },
             {
               "label": "平",
-              "value": 3
+              "value": 2.91
             },
             {
               "label": "客胜",
-              "value": 3.87
+              "value": 3.9
             }
           ]
         },
@@ -848,15 +848,15 @@
           "items": [
             {
               "label": "让胜",
-              "value": 3.78
+              "value": 4.05
             },
             {
               "label": "让平",
-              "value": 3.45
+              "value": 3.32
             },
             {
               "label": "让负",
-              "value": 1.74
+              "value": 1.72
             }
           ]
         },
@@ -866,27 +866,27 @@
           "items": [
             {
               "label": "1:0",
-              "value": 6
+              "value": 6.25
             },
             {
               "label": "2:0",
-              "value": 7.5
+              "value": 8
             },
             {
               "label": "2:1",
-              "value": 7
+              "value": 6.25
             },
             {
               "label": "3:0",
-              "value": 16
+              "value": 17
             },
             {
               "label": "3:1",
-              "value": 16
+              "value": 15.5
             },
             {
               "label": "3:2",
-              "value": 30
+              "value": 25
             },
             {
               "label": "4:0",
@@ -898,11 +898,11 @@
             },
             {
               "label": "4:2",
-              "value": 100
+              "value": 80
             },
             {
               "label": "5:0",
-              "value": 150
+              "value": 170
             },
             {
               "label": "5:1",
@@ -918,43 +918,43 @@
             },
             {
               "label": "0:0",
-              "value": 8
+              "value": 8.5
             },
             {
               "label": "1:1",
-              "value": 5.1
+              "value": 5.2
             },
             {
               "label": "2:2",
-              "value": 15
+              "value": 12.5
             },
             {
               "label": "3:3",
-              "value": 90
+              "value": 50
             },
             {
               "label": "平其他",
-              "value": 500
+              "value": 300
             },
             {
               "label": "0:1",
-              "value": 9.25
+              "value": 10
             },
             {
               "label": "0:2",
-              "value": 20
+              "value": 23
             },
             {
               "label": "0:3",
-              "value": 65
+              "value": 70
             },
             {
               "label": "1:2",
-              "value": 10.5
+              "value": 11.5
             },
             {
               "label": "1:3",
-              "value": 50
+              "value": 45
             },
             {
               "label": "2:3",
@@ -970,7 +970,7 @@
             },
             {
               "label": "2:4",
-              "value": 200
+              "value": 175
             },
             {
               "label": "0:5",
@@ -996,35 +996,35 @@
           "items": [
             {
               "label": "0球",
-              "value": 8
+              "value": 8.5
             },
             {
               "label": "1球",
-              "value": 4.1
+              "value": 4.25
             },
             {
               "label": "2球",
-              "value": 3
+              "value": 3.25
             },
             {
               "label": "3球",
-              "value": 3.75
+              "value": 3.7
             },
             {
               "label": "4球",
-              "value": 6.55
+              "value": 6
             },
             {
               "label": "5球",
-              "value": 14.5
+              "value": 12
             },
             {
               "label": "6球",
-              "value": 26
+              "value": 23
             },
             {
               "label": "7+球",
-              "value": 40
+              "value": 34
             }
           ]
         },
@@ -1034,15 +1034,15 @@
           "items": [
             {
               "label": "胜胜",
-              "value": 3.05
+              "value": 3.1
             },
             {
               "label": "胜平",
-              "value": 15
+              "value": 14
             },
             {
               "label": "胜负",
-              "value": 30
+              "value": 29
             },
             {
               "label": "平胜",
@@ -1050,7 +1050,7 @@
             },
             {
               "label": "平平",
-              "value": 4.5
+              "value": 4.65
             },
             {
               "label": "平负",
@@ -1058,11 +1058,11 @@
             },
             {
               "label": "负胜",
-              "value": 25
+              "value": 24
             },
             {
               "label": "负平",
-              "value": 15
+              "value": 14
             },
             {
               "label": "负负",
@@ -1081,7 +1081,7 @@
       "home": "美国",
       "away": "澳大利亚",
       "homeRank": "15",
-      "awayRank": "22",
+      "awayRank": "23",
       "handicap": "-1",
       "single": {
         "spf": true,
@@ -1097,11 +1097,11 @@
           "items": [
             {
               "label": "主胜",
-              "value": 1.47
+              "value": 1.45
             },
             {
               "label": "平",
-              "value": 3.7
+              "value": 3.83
             },
             {
               "label": "客胜",
@@ -1115,15 +1115,15 @@
           "items": [
             {
               "label": "让胜",
-              "value": 2.56
+              "value": 2.51
             },
             {
               "label": "让平",
-              "value": 3.3
+              "value": 3.25
             },
             {
               "label": "让负",
-              "value": 2.3
+              "value": 2.36
             }
           ]
         },
@@ -1137,27 +1137,27 @@
             },
             {
               "label": "2:0",
-              "value": 6.5
+              "value": 6.6
             },
             {
               "label": "2:1",
-              "value": 6.5
+              "value": 6
             },
             {
               "label": "3:0",
-              "value": 10
+              "value": 10.5
             },
             {
               "label": "3:1",
-              "value": 11
+              "value": 10.5
             },
             {
               "label": "3:2",
-              "value": 25
+              "value": 23
             },
             {
               "label": "4:0",
-              "value": 21
+              "value": 23
             },
             {
               "label": "4:1",
@@ -1165,11 +1165,11 @@
             },
             {
               "label": "4:2",
-              "value": 75
+              "value": 65
             },
             {
               "label": "5:0",
-              "value": 60
+              "value": 65
             },
             {
               "label": "5:1",
@@ -1189,7 +1189,7 @@
             },
             {
               "label": "1:1",
-              "value": 6.5
+              "value": 6.6
             },
             {
               "label": "2:2",
@@ -1197,19 +1197,19 @@
             },
             {
               "label": "3:3",
-              "value": 100
+              "value": 85
             },
             {
               "label": "平其他",
-              "value": 600
+              "value": 450
             },
             {
               "label": "0:1",
-              "value": 13
+              "value": 14
             },
             {
               "label": "0:2",
-              "value": 30
+              "value": 32
             },
             {
               "label": "0:3",
@@ -1217,7 +1217,7 @@
             },
             {
               "label": "1:2",
-              "value": 17
+              "value": 17.5
             },
             {
               "label": "1:3",
@@ -1267,11 +1267,11 @@
             },
             {
               "label": "1球",
-              "value": 4.5
+              "value": 4.6
             },
             {
               "label": "2球",
-              "value": 3.1
+              "value": 3.2
             },
             {
               "label": "3球",
@@ -1279,19 +1279,19 @@
             },
             {
               "label": "4球",
-              "value": 5.9
+              "value": 5.7
             },
             {
               "label": "5球",
-              "value": 11.5
+              "value": 11
             },
             {
               "label": "6球",
-              "value": 23
+              "value": 22
             },
             {
               "label": "7+球",
-              "value": 35
+              "value": 31
             }
           ]
         },
@@ -1364,15 +1364,15 @@
           "items": [
             {
               "label": "主胜",
-              "value": 4.9
+              "value": 5.1
             },
             {
               "label": "平",
-              "value": 3.25
+              "value": 3.28
             },
             {
               "label": "客胜",
-              "value": 1.62
+              "value": 1.59
             }
           ]
         },
@@ -1382,15 +1382,15 @@
           "items": [
             {
               "label": "让胜",
-              "value": 2
+              "value": 2.07
             },
             {
               "label": "让平",
-              "value": 3.25
+              "value": 3.2
             },
             {
               "label": "让负",
-              "value": 3.12
+              "value": 3
             }
           ]
         },
@@ -1400,15 +1400,15 @@
           "items": [
             {
               "label": "1:0",
-              "value": 11
+              "value": 11.5
             },
             {
               "label": "2:0",
-              "value": 27
+              "value": 28
             },
             {
               "label": "2:1",
-              "value": 14.5
+              "value": 15.5
             },
             {
               "label": "3:0",
@@ -1416,7 +1416,7 @@
             },
             {
               "label": "3:1",
-              "value": 60
+              "value": 65
             },
             {
               "label": "3:2",
@@ -1464,7 +1464,7 @@
             },
             {
               "label": "3:3",
-              "value": 100
+              "value": 90
             },
             {
               "label": "平其他",
@@ -1484,11 +1484,11 @@
             },
             {
               "label": "1:2",
-              "value": 6.5
+              "value": 6.25
             },
             {
               "label": "1:3",
-              "value": 12
+              "value": 11.5
             },
             {
               "label": "2:3",
@@ -1538,7 +1538,7 @@
             },
             {
               "label": "2球",
-              "value": 3.05
+              "value": 3.1
             },
             {
               "label": "3球",
@@ -1550,15 +1550,15 @@
             },
             {
               "label": "5球",
-              "value": 13
+              "value": 12.5
             },
             {
               "label": "6球",
-              "value": 24
+              "value": 23
             },
             {
               "label": "7+球",
-              "value": 35
+              "value": 34
             }
           ]
         },
@@ -1649,15 +1649,15 @@
           "items": [
             {
               "label": "让胜",
-              "value": 1.8
+              "value": 1.73
             },
             {
               "label": "让平",
-              "value": 4
+              "value": 4.1
             },
             {
               "label": "让负",
-              "value": 3.1
+              "value": 3.25
             }
           ]
         },
@@ -1835,11 +1835,11 @@
           "items": [
             {
               "label": "胜胜",
-              "value": 1.29
+              "value": 1.26
             },
             {
               "label": "胜平",
-              "value": 30
+              "value": 32
             },
             {
               "label": "胜负",
@@ -1847,15 +1847,15 @@
             },
             {
               "label": "平胜",
-              "value": 4
+              "value": 4.05
             },
             {
               "label": "平平",
-              "value": 14.5
+              "value": 15.5
             },
             {
               "label": "平负",
-              "value": 40
+              "value": 50
             },
             {
               "label": "负胜",
@@ -1863,11 +1863,11 @@
             },
             {
               "label": "负平",
-              "value": 30
+              "value": 32
             },
             {
               "label": "负负",
-              "value": 40
+              "value": 45
             }
           ]
         }
@@ -1898,15 +1898,15 @@
           "items": [
             {
               "label": "主胜",
-              "value": 1.96
+              "value": 1.92
             },
             {
               "label": "平",
-              "value": 3.05
+              "value": 3.1
             },
             {
               "label": "客胜",
-              "value": 3.43
+              "value": 3.5
             }
           ]
         },
@@ -1916,15 +1916,15 @@
           "items": [
             {
               "label": "让胜",
-              "value": 4.35
+              "value": 4.1
             },
             {
               "label": "让平",
-              "value": 3.5
+              "value": 3.4
             },
             {
               "label": "让负",
-              "value": 1.63
+              "value": 1.69
             }
           ]
         },
@@ -1942,7 +1942,7 @@
             },
             {
               "label": "2:1",
-              "value": 6.5
+              "value": 6.45
             },
             {
               "label": "3:0",
@@ -1954,7 +1954,7 @@
             },
             {
               "label": "3:2",
-              "value": 28
+              "value": 27
             },
             {
               "label": "4:0",
@@ -1962,11 +1962,11 @@
             },
             {
               "label": "4:1",
-              "value": 50
+              "value": 45
             },
             {
               "label": "4:2",
-              "value": 100
+              "value": 85
             },
             {
               "label": "5:0",
@@ -1978,7 +1978,7 @@
             },
             {
               "label": "5:2",
-              "value": 350
+              "value": 300
             },
             {
               "label": "胜其他",
@@ -2002,15 +2002,15 @@
             },
             {
               "label": "平其他",
-              "value": 600
+              "value": 500
             },
             {
               "label": "0:1",
-              "value": 8.75
+              "value": 9.25
             },
             {
               "label": "0:2",
-              "value": 18
+              "value": 18.5
             },
             {
               "label": "0:3",
@@ -2068,31 +2068,31 @@
             },
             {
               "label": "1球",
-              "value": 4.2
+              "value": 4.25
             },
             {
               "label": "2球",
-              "value": 3
+              "value": 3.15
             },
             {
               "label": "3球",
-              "value": 3.75
+              "value": 3.7
             },
             {
               "label": "4球",
-              "value": 6.25
+              "value": 6.1
             },
             {
               "label": "5球",
-              "value": 13
+              "value": 12
             },
             {
               "label": "6球",
-              "value": 25
+              "value": 24
             },
             {
               "label": "7+球",
-              "value": 35
+              "value": 32
             }
           ]
         },
@@ -3209,5 +3209,5 @@
       ]
     }
   ],
-  "lastUpdatedAt": "2026-06-18T09:45:00+08:00"
+  "lastUpdatedAt": "2026-06-18T14:31:00+08:00"
 }
