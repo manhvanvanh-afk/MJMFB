@@ -1,7 +1,7 @@
 {
   "source": "好运计算器",
   "api": "https://justpost.haoyun999.cn/api",
-  "updatedAt": "2026年6月24日 16:05",
+  "updatedAt": "2026年6月24日 19:16",
   "count": 18,
   "matches": [
     {
@@ -12,8 +12,8 @@
       "matchTime": "2026-06-25T03:00:00",
       "home": "瑞士",
       "away": "加拿大",
-      "homeRank": "18",
-      "awayRank": "28",
+      "homeRank": "17",
+      "awayRank": "29",
       "handicap": "-1",
       "single": {
         "spf": false,
@@ -33,11 +33,11 @@
             },
             {
               "label": "平",
-              "value": 2.71
+              "value": 2.66
             },
             {
               "label": "客胜",
-              "value": 3.25
+              "value": 3.32
             }
           ]
         },
@@ -233,11 +233,11 @@
           "items": [
             {
               "label": "胜胜",
-              "value": 3.85
+              "value": 3.9
             },
             {
               "label": "胜平",
-              "value": 13.5
+              "value": 13
             },
             {
               "label": "胜负",
@@ -261,11 +261,11 @@
             },
             {
               "label": "负平",
-              "value": 13.5
+              "value": 13
             },
             {
               "label": "负负",
-              "value": 5.65
+              "value": 5.75
             }
           ]
         }
@@ -279,8 +279,8 @@
       "matchTime": "2026-06-25T03:00:00",
       "home": "波黑",
       "away": "卡塔尔",
-      "homeRank": "64",
-      "awayRank": "57",
+      "homeRank": "65",
+      "awayRank": "56",
       "handicap": "-1",
       "single": {
         "spf": true,
@@ -296,15 +296,15 @@
           "items": [
             {
               "label": "主胜",
-              "value": 1.28
+              "value": 1.26
             },
             {
               "label": "平",
-              "value": 5
+              "value": 5.17
             },
             {
               "label": "客胜",
-              "value": 6.75
+              "value": 7
             }
           ]
         },
@@ -314,7 +314,7 @@
           "items": [
             {
               "label": "让胜",
-              "value": 1.93
+              "value": 1.89
             },
             {
               "label": "让平",
@@ -322,7 +322,7 @@
             },
             {
               "label": "让负",
-              "value": 3
+              "value": 3.1
             }
           ]
         },
@@ -336,7 +336,7 @@
             },
             {
               "label": "2:0",
-              "value": 5.9
+              "value": 5.5
             },
             {
               "label": "2:1",
@@ -352,7 +352,7 @@
             },
             {
               "label": "3:2",
-              "value": 19
+              "value": 22
             },
             {
               "label": "4:0",
@@ -364,11 +364,11 @@
             },
             {
               "label": "4:2",
-              "value": 32
+              "value": 36
             },
             {
               "label": "5:0",
-              "value": 50
+              "value": 45
             },
             {
               "label": "5:1",
@@ -404,7 +404,7 @@
             },
             {
               "label": "0:1",
-              "value": 21
+              "value": 22
             },
             {
               "label": "0:2",
@@ -420,7 +420,7 @@
             },
             {
               "label": "1:3",
-              "value": 60
+              "value": 70
             },
             {
               "label": "2:3",
@@ -470,7 +470,7 @@
             },
             {
               "label": "2球",
-              "value": 4.1
+              "value": 3.9
             },
             {
               "label": "3球",
@@ -482,15 +482,15 @@
             },
             {
               "label": "5球",
-              "value": 7.5
+              "value": 7.7
             },
             {
               "label": "6球",
-              "value": 12.5
+              "value": 13.5
             },
             {
               "label": "7+球",
-              "value": 17
+              "value": 18
             }
           ]
         },
@@ -546,7 +546,7 @@
       "matchTime": "2026-06-25T06:00:00",
       "home": "苏格兰",
       "away": "巴西",
-      "homeRank": "41",
+      "homeRank": "40",
       "awayRank": "5",
       "handicap": "+1",
       "single": {
@@ -581,15 +581,15 @@
           "items": [
             {
               "label": "让胜",
-              "value": 3.57
+              "value": 3.7
             },
             {
               "label": "让平",
-              "value": 3.6
+              "value": 3.8
             },
             {
               "label": "让负",
-              "value": 1.75
+              "value": 1.68
             }
           ]
         },
@@ -603,7 +603,7 @@
             },
             {
               "label": "2:0",
-              "value": 55
+              "value": 60
             },
             {
               "label": "2:1",
@@ -655,11 +655,11 @@
             },
             {
               "label": "1:1",
-              "value": 9.35
+              "value": 9.5
             },
             {
               "label": "2:2",
-              "value": 23
+              "value": 25
             },
             {
               "label": "3:3",
@@ -687,7 +687,7 @@
             },
             {
               "label": "1:3",
-              "value": 9
+              "value": 8.5
             },
             {
               "label": "2:3",
@@ -870,15 +870,15 @@
             },
             {
               "label": "2:0",
-              "value": 5.2
+              "value": 5
             },
             {
               "label": "2:1",
-              "value": 8
+              "value": 8.5
             },
             {
               "label": "3:0",
-              "value": 5.5
+              "value": 5.2
             },
             {
               "label": "3:1",
@@ -926,7 +926,7 @@
             },
             {
               "label": "2:2",
-              "value": 32
+              "value": 40
             },
             {
               "label": "3:3",
@@ -938,7 +938,7 @@
             },
             {
               "label": "0:1",
-              "value": 30
+              "value": 35
             },
             {
               "label": "0:2",
@@ -1000,7 +1000,7 @@
             },
             {
               "label": "1球",
-              "value": 6.7
+              "value": 6.8
             },
             {
               "label": "2球",
@@ -1008,7 +1008,7 @@
             },
             {
               "label": "3球",
-              "value": 3.55
+              "value": 3.45
             },
             {
               "label": "4球",
@@ -1016,7 +1016,7 @@
             },
             {
               "label": "5球",
-              "value": 6.8
+              "value": 7.1
             },
             {
               "label": "6球",
@@ -1081,7 +1081,7 @@
       "home": "南非",
       "away": "韩国",
       "homeRank": "61",
-      "awayRank": "23",
+      "awayRank": "24",
       "handicap": "+1",
       "single": {
         "spf": true,
@@ -1133,27 +1133,27 @@
           "items": [
             {
               "label": "1:0",
-              "value": 12.5
+              "value": 13
             },
             {
               "label": "2:0",
-              "value": 30
+              "value": 33
             },
             {
               "label": "2:1",
-              "value": 17
+              "value": 18.5
             },
             {
               "label": "3:0",
-              "value": 75
+              "value": 85
             },
             {
               "label": "3:1",
-              "value": 45
+              "value": 55
             },
             {
               "label": "3:2",
-              "value": 60
+              "value": 65
             },
             {
               "label": "4:0",
@@ -1185,11 +1185,11 @@
             },
             {
               "label": "0:0",
-              "value": 9
+              "value": 10
             },
             {
               "label": "1:1",
-              "value": 6.5
+              "value": 6.6
             },
             {
               "label": "2:2",
@@ -1209,7 +1209,7 @@
             },
             {
               "label": "0:2",
-              "value": 6.75
+              "value": 5.8
             },
             {
               "label": "0:3",
@@ -1217,7 +1217,7 @@
             },
             {
               "label": "1:2",
-              "value": 6.25
+              "value": 6
             },
             {
               "label": "1:3",
@@ -1263,19 +1263,19 @@
           "items": [
             {
               "label": "0球",
-              "value": 9
+              "value": 10
             },
             {
               "label": "1球",
-              "value": 4.2
+              "value": 4.4
             },
             {
               "label": "2球",
-              "value": 3.2
+              "value": 3.1
             },
             {
               "label": "3球",
-              "value": 3.8
+              "value": 3.65
             },
             {
               "label": "4球",
@@ -1309,11 +1309,11 @@
             },
             {
               "label": "胜负",
-              "value": 27
+              "value": 25
             },
             {
               "label": "平胜",
-              "value": 11.5
+              "value": 12
             },
             {
               "label": "平平",
@@ -1347,8 +1347,8 @@
       "matchTime": "2026-06-25T09:00:00",
       "home": "捷克",
       "away": "墨西哥",
-      "homeRank": "44",
-      "awayRank": "11",
+      "homeRank": "43",
+      "awayRank": "12",
       "handicap": "+1",
       "single": {
         "spf": true,
@@ -1364,7 +1364,7 @@
           "items": [
             {
               "label": "主胜",
-              "value": 3.63
+              "value": 3.55
             },
             {
               "label": "平",
@@ -1372,7 +1372,7 @@
             },
             {
               "label": "客胜",
-              "value": 1.76
+              "value": 1.78
             }
           ]
         },
@@ -1382,15 +1382,15 @@
           "items": [
             {
               "label": "让胜",
-              "value": 1.81
+              "value": 1.78
             },
             {
               "label": "让平",
-              "value": 3.43
+              "value": 3.45
             },
             {
               "label": "让负",
-              "value": 3.5
+              "value": 3.6
             }
           ]
         },
@@ -1615,7 +1615,7 @@
       "home": "厄瓜多尔",
       "away": "德国",
       "homeRank": "30",
-      "awayRank": "8",
+      "awayRank": "9",
       "handicap": "+1",
       "single": {
         "spf": true,
@@ -2148,8 +2148,8 @@
       "matchTime": "2026-06-26T07:00:00",
       "home": "突尼斯",
       "away": "荷兰",
-      "homeRank": "58",
-      "awayRank": "7",
+      "homeRank": "57",
+      "awayRank": "8",
       "handicap": "+2",
       "single": {
         "spf": false,
@@ -2183,7 +2183,7 @@
           "items": [
             {
               "label": "让胜",
-              "value": 2.52
+              "value": 2.6
             },
             {
               "label": "让平",
@@ -2191,7 +2191,7 @@
             },
             {
               "label": "让负",
-              "value": 2.1
+              "value": 2.05
             }
           ]
         },
@@ -2369,7 +2369,7 @@
           "items": [
             {
               "label": "胜胜",
-              "value": 30
+              "value": 37
             },
             {
               "label": "胜平",
@@ -2381,11 +2381,11 @@
             },
             {
               "label": "平胜",
-              "value": 40
+              "value": 45
             },
             {
               "label": "平平",
-              "value": 11.5
+              "value": 12.5
             },
             {
               "label": "平负",
@@ -2401,7 +2401,7 @@
             },
             {
               "label": "负负",
-              "value": 1.35
+              "value": 1.32
             }
           ]
         }
@@ -2432,15 +2432,15 @@
           "items": [
             {
               "label": "主胜",
-              "value": 1.86
+              "value": 1.83
             },
             {
               "label": "平",
-              "value": 3.25
+              "value": 3.3
             },
             {
               "label": "客胜",
-              "value": 3.52
+              "value": 3.57
             }
           ]
         },
@@ -2450,7 +2450,7 @@
           "items": [
             {
               "label": "让胜",
-              "value": 3.52
+              "value": 3.43
             },
             {
               "label": "让平",
@@ -2458,7 +2458,7 @@
             },
             {
               "label": "让负",
-              "value": 1.72
+              "value": 1.74
             }
           ]
         },
@@ -2636,11 +2636,11 @@
           "items": [
             {
               "label": "胜胜",
-              "value": 3.05
+              "value": 2.9
             },
             {
               "label": "胜平",
-              "value": 13
+              "value": 13.5
             },
             {
               "label": "胜负",
@@ -2648,7 +2648,7 @@
             },
             {
               "label": "平胜",
-              "value": 5
+              "value": 4.9
             },
             {
               "label": "平平",
@@ -2656,7 +2656,7 @@
             },
             {
               "label": "平负",
-              "value": 7.5
+              "value": 8
             },
             {
               "label": "负胜",
@@ -2664,11 +2664,11 @@
             },
             {
               "label": "负平",
-              "value": 13
+              "value": 13.5
             },
             {
               "label": "负负",
-              "value": 5.75
+              "value": 6
             }
           ]
         }
@@ -2683,7 +2683,7 @@
       "home": "巴拉圭",
       "away": "澳大利亚",
       "homeRank": "37",
-      "awayRank": "25",
+      "awayRank": "26",
       "handicap": "-1",
       "single": {
         "spf": false,
@@ -2950,7 +2950,7 @@
       "home": "土耳其",
       "away": "美国",
       "homeRank": "32",
-      "awayRank": "13",
+      "awayRank": "14",
       "handicap": "+1",
       "single": {
         "spf": true,
@@ -3216,7 +3216,7 @@
       "matchTime": "2026-06-27T03:00:00",
       "home": "挪威",
       "away": "法国",
-      "homeRank": "27",
+      "homeRank": "22",
       "awayRank": "2",
       "handicap": "+1",
       "single": {
@@ -4017,7 +4017,7 @@
       "matchTime": "2026-06-27T08:00:00",
       "home": "乌拉圭",
       "away": "西班牙",
-      "homeRank": "19",
+      "homeRank": "18",
       "awayRank": "3",
       "handicap": "+1",
       "single": {
@@ -4285,7 +4285,7 @@
       "home": "埃及",
       "away": "伊朗",
       "homeRank": "27",
-      "awayRank": "22",
+      "awayRank": "21",
       "handicap": "-1",
       "single": {
         "spf": false,
@@ -4811,5 +4811,5 @@
       ]
     }
   ],
-  "lastUpdatedAt": "2026-06-24T16:05:00+08:00"
+  "lastUpdatedAt": "2026-06-24T19:16:00+08:00"
 }
