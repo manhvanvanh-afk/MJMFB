@@ -1,7 +1,7 @@
 {
   "source": "好运计算器",
   "api": "https://justpost.haoyun999.cn/api",
-  "updatedAt": "2026年6月27日 18:26",
+  "updatedAt": "2026年6月27日 19:56",
   "count": 4,
   "matches": [
     {
@@ -29,7 +29,7 @@
           "items": [
             {
               "label": "主胜",
-              "value": 1.65
+              "value": 1.66
             },
             {
               "label": "平",
@@ -37,7 +37,7 @@
             },
             {
               "label": "客胜",
-              "value": 5.11
+              "value": 5.05
             }
           ]
         },
@@ -233,11 +233,11 @@
           "items": [
             {
               "label": "胜胜",
-              "value": 2.7
+              "value": 2.77
             },
             {
               "label": "胜平",
-              "value": 15
+              "value": 14
             },
             {
               "label": "胜负",
@@ -261,7 +261,7 @@
             },
             {
               "label": "负平",
-              "value": 15
+              "value": 14
             },
             {
               "label": "负负",
@@ -466,11 +466,11 @@
             },
             {
               "label": "1球",
-              "value": 7.9
+              "value": 8.2
             },
             {
               "label": "2球",
-              "value": 4.7
+              "value": 4.8
             },
             {
               "label": "3球",
@@ -478,7 +478,7 @@
             },
             {
               "label": "4球",
-              "value": 4.1
+              "value": 3.95
             },
             {
               "label": "5球",
@@ -922,7 +922,7 @@
             },
             {
               "label": "1:1",
-              "value": 15
+              "value": 16
             },
             {
               "label": "2:2",
@@ -938,7 +938,7 @@
             },
             {
               "label": "0:1",
-              "value": 7.75
+              "value": 7.9
             },
             {
               "label": "0:2",
@@ -946,23 +946,23 @@
             },
             {
               "label": "0:3",
-              "value": 5.3
+              "value": 5.15
             },
             {
               "label": "1:2",
-              "value": 9.5
+              "value": 10
             },
             {
               "label": "1:3",
-              "value": 9.5
+              "value": 9.25
             },
             {
               "label": "2:3",
-              "value": 40
+              "value": 42
             },
             {
               "label": "0:4",
-              "value": 7.25
+              "value": 7
             },
             {
               "label": "1:4",
@@ -1000,11 +1000,11 @@
             },
             {
               "label": "1球",
-              "value": 7
+              "value": 7.15
             },
             {
               "label": "2球",
-              "value": 4.45
+              "value": 4.55
             },
             {
               "label": "3球",
@@ -1012,7 +1012,7 @@
             },
             {
               "label": "4球",
-              "value": 4.1
+              "value": 4
             },
             {
               "label": "5球",
@@ -1073,5 +1073,5 @@
       ]
     }
   ],
-  "lastUpdatedAt": "2026-06-27T18:26:00+08:00"
+  "lastUpdatedAt": "2026-06-27T19:56:00+08:00"
 }
