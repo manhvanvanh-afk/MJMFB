@@ -1247,11 +1247,11 @@
   "mvp": "",
   "yesterdayBets": [],
   "betHistory": [],
-  "lastUpdatedAt": "2026-07-17T14:40:00+08:00",
-  "lastUpdatedText": "2026年7月17日 14:40",
+  "lastUpdatedAt": "2026-07-17T16:57:00+08:00",
+  "lastUpdatedText": "2026年7月17日 16:57",
   "lastUpdatedSource": "GitHub Actions",
   "lastUpdateStatus": {
-    "score": "failed",
+    "score": "ok",
     "odds": "ok"
   }
 }
